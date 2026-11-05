@@ -1,0 +1,118 @@
+T+  0.0  BMS alarm at B3. Site operator reports rising module temperature.
+T+  7.0  Pumper 1 on scene.
+--- decision 1 at T+7.0: Pumper 1 is first on scene. Set the initial plan.
+   [35s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Cool B3 now, preassign B4; shelter homes and school
+     - P1 cool B3: B3 is heating but not venting; early cooling may prevent runaway.
+     - P2 cool B4: On arrival, protect B3's nearest downwind neighbour before it heats.
+     - Shelter in place: Glenvale homes: Glenvale homes lie directly downwind; protect residents before smoke arrives.
+     - Shelter in place: Glenvale Primary: Protect Glenvale Primary ahead of possible plume movement; wind lacks independent confirmation.
+     why: Cool B3 before it vents; testing favours this over cooling only neighbours. Use two streams from upwind, keep crews at least 17 m from any venting enclosure, and keep doors closed. If B3 vents or ignites, redirect its stream to exposures.
+     sensor: Fixed gas readings are unverified and noisy by about 6% LEL; zero does not establish safe entry.
+     sensor: BMS and anemometer have no independent confirmation until A1 arrives.
+     effect: Enclosures involved after 20 minutes: Current orders: 1.2 -> Plan: 0.0
+     effect: B3 runaway probability within 20 minutes: Current orders: 100% -> Plan: 0% across 16 simulations
+     effect: Peak indoor HF at Glenvale homes: Current orders: 2.36 ppm -> Plan: 0.00 ppm
+T+  7.0  Shelter-in-place issued for Glenvale homes.
+T+  7.0  Shelter-in-place issued for Glenvale Primary.
+T+  8.3  P1 stream flowing on B3.
+T+ 11.0  Pumper 2 on scene.
+T+ 12.3  P2 stream flowing on B4.
+T+ 15.0  Aerial 1 on scene.
+--- decision 2 at T+15.0: Aerial 1 is on scene. Its thermal camera and smoke drift reports are now available.
+   [22s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons] Hold B3 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B3 and P2 cooling B4; neither enclosure is venting or burning. Maintain shelter at Glenvale homes and Glenvale Primary, and keep A1 available as reserve.
+     sensor: Fixed gas readings are unverified and noisy; none authorizes opening an enclosure.
+     sensor: Wind from 261 degrees has no independent smoke drift confirmation.
+     effect: Enclosures involved in 20 minutes: Current orders: 0.0 -> Hold plan: 0.0
+     effect: Peak indoor HF at Glenvale Primary: Current orders: 0.0 ppm -> Hold plan: 0.0 ppm
+T+ 19.0 *A3 BMS telemetry froze at 15 C.
+T+ 20.0  HAZMAT 1 on scene.
+--- decision 3 at T+20.0: HAZMAT 1 is on scene with verified gas readings and air monitoring.
+   [31s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons,test_plan,test_plan] Hold B3 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 on B3 and P2 on B4; maintain shelter at Glenvale homes and Glenvale Primary. B3 remains hot but is not visibly venting or burning, so verified low gas alone does not justify opening it. Keep A1 ready: the model's A5 spread prediction lacks supporting heat readings.
+     sensor: Fixed gas detectors overread against H1's verified meter; use H1 readings.
+     sensor: B3 camera implies hotter modules than BMS; tested a 90 C assumption.
+     sensor: Wind from 272 degrees has no independent smoke-drift confirmation.
+     effect: Enclosures involved in 20 minutes, assuming B3 modules 90 C: Current orders: 1.4 -> Hold: 1.4
+     effect: Maximum crew exposure: Current orders: 0% -> Hold: 0%
+T+ 25.0 *Site anemometer vane seized. It keeps reporting its last reading.
+--- decision 4 at T+26.7: B3 is at 101 C (bms) and rising.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Hold B3 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B3 and P2 cooling B4; maintain shelter at Glenvale homes and Glenvale Primary. B3 is still heating, but adding A1 cooling B2 gave no modelled benefit. If B3 vents, keep crews at least 17 m away; if it burns, shift water to exposures.
+     sensor: Wind direction remains unverified until visible smoke drift is reported.
+     sensor: Fixed gas readings are noisy: B1 reports 10.1% LEL versus H1's verified 0.9%; use H1 readings.
+     effect: Enclosures involved in 20 minutes: Current orders: 1.0 -> Hold: 1.0
+     effect: B3 runaway probability within 20 minutes: Current orders: 100% -> Hold: 100%
+     effect: Peak indoor HF at Glenvale homes: Current orders: 0.54 ppm -> Hold: 0.54 ppm
+T+ 27.0 *Wind begins backing toward the south-west.
+T+ 28.8  B3 is venting gas. Thermal runaway has started.
+--- decision 5 at T+28.8: B3 is venting gas. Thermal runaway has started.
+   [38s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Withdraw P2; cool B4 with A1 and B2 with P1
+     - P2 to North gate: Current position is within B3's approximately 17 m deflagration zone.
+     - A1 cool B4: Maintain downwind exposure cooling from beyond 17 m of B3.
+     - P1 cool B2: B3 cannot be extinguished externally; protect its other immediate neighbour.
+     why: Maintain shelter at Glenvale homes and Glenvale Primary. Let B3 burn, keep crews beyond 17 m, and cool B2 and B4 with two streams. Replace P2 because its current position is inside the exclusion distance.
+     sensor: A3 BMS is flat, but A1's 12 C skin reading supports a cool enclosure; tested using camera-implied 11 C.
+     sensor: Fixed gas readings disagree with H1, including A1 enclosure at 11.3% versus verified 1.7% LEL; trust H1.
+     effect: Enclosures involved at 20 minutes: Current orders: 1.0 -> Plan: 1.0
+     effect: Peak indoor HF at Glenvale homes: Current orders: 0.6 ppm -> Plan: 0.6 ppm
+     effect: Maximum crew smoke exposure: Current orders: 0% -> Plan: 5%
+T+ 29.0  Pumper 3 on scene.
+T+ 30.0  P1 stream flowing on B2.
+T+ 31.2  A1 stream flowing on B4.
+T+ 32.3  B3 is on fire.
+--- decision 6 at T+32.3: B3 is on fire.
+   [24s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Hold B2 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B2 and A1 cooling B4; let B3 burn and keep crews clear. Maintain shelter at Glenvale homes and Glenvale Primary. Adding A4 cooling showed no benefit over 20 minutes.
+     sensor: Anemometer reports wind from 271 degrees; use A1 smoke drift implying 239 degrees.
+     sensor: B4 BMS reads 18.9 C versus camera-implied modules about 37 C; tested assuming 37 C.
+     sensor: B3 BMS is unavailable; use visible fire, thermal camera and H1 verified gas readings.
+     effect: Enclosures involved at 20 minutes: Current orders: 1.0 -> Hold: 1.0
+     effect: Peak indoor HF at Glenvale Primary: Current orders: 0.34 ppm -> Hold: 0.34 ppm
+     effect: Peak indoor HF at Glenvale homes: Current orders: 0.19 ppm -> Hold: 0.19 ppm
+--- decision 7 at T+36.3: B3 is on fire.
+   [22s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Hold B2 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B2 and A1 cooling B4; let B3 burn. Maintain shelter at Glenvale homes and Glenvale Primary as smoke drifts northeast. Extra A3 cooling showed no benefit over 20 minutes.
+     sensor: Anemometer reads from 271 degrees; A1 smoke drift implies 233 degrees. Tests used 233 degrees.
+     sensor: A5 fixed detector reads 12% LEL versus H1's verified 0%; trust H1's meter.
+     effect: Enclosures involved after 20 minutes: Current orders: 1.0 -> Hold: 1.0
+     effect: Peak indoor HF at Glenvale Primary: Current orders: 0.47 ppm -> Hold: 0.47 ppm
+--- decision 8 at T+41.7: A3: BMS reads 15 C but the thermal camera implies 52 C.
+   [28s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Hold B2 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 on B2 and A1 on B4; maintain shelter at Glenvale homes and Glenvale Primary. Using A3 at 52 C and the observed smoke direction, extra cooling showed no spread reduction over 20 minutes. Conserve water and track A3 with A1’s camera.
+     sensor: A3 BMS reads 15.2 C despite camera-implied 52 C; tested using 52 C.
+     sensor: Anemometer reads from 271 degrees; smoke implies from 222 degrees, used in testing.
+     sensor: A4 fixed detector reads 11.3% LEL; H1 verifies 0%, so trust H1.
+     effect: Enclosures involved at 20 minutes, corrected assumptions: Current orders: 1.0 -> Additional A3 cooling: 1.0
+     effect: Glenvale Primary peak indoor HF: Current orders: 0.58 ppm -> Additional A3 cooling: 0.58 ppm
+T+ 47.5  Spread stopped. No enclosure is heating and no new enclosure has ignited for 15 minutes.
+--- decision 9 at T+56.7: Scheduled review: check the plan is still right.
+   [25s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Hold B2 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B2 and A1 cooling B4 while B3 burns. Keep Glenvale homes and Glenvale Primary sheltered as smoke reaches the school. Tests using camera-corrected temperatures and observed smoke drift found no spread benefit from two extra streams.
+     sensor: A3 BMS 14.6°C conflicts with camera skin 47.3°C; tested assuming module temperature 70°C.
+     sensor: Anemometer from 271° conflicts with observed drift; tested wind from 222°.
+     sensor: B2 BMS is flat beside B3; independent camera confirms cooling, tested at 11°C module temperature.
+     effect: Enclosures involved after 20 minutes: Current orders: 1.0 -> Hold: 1.0
+     effect: Glenvale Primary peak indoor HF: Current orders: 0.59 ppm -> Hold: 0.59 ppm
+     effect: Maximum crew exposure: Current orders: 7% -> Hold: 7%
+--- decision 10 at T+71.7: Scheduled review: check the plan is still right.
+   [24s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Hold B2 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B2 and A1 cooling B4; let B3 burn. Maintain shelter at Glenvale homes and Glenvale Primary. Testing with corrected A3 temperature and wind showed no benefit from two extra streams.
+     sensor: A3 BMS conflicts with camera; tested with approximately 81 C module temperature.
+     sensor: Anemometer reports wind from 271 degrees; used smoke-derived 231 degrees.
+     sensor: B6 fixed detector reads 14.5% LEL versus H1 verified 0.4%; trust H1.
+     effect: Enclosures involved in 20 minutes: Current orders: 1.0 -> Hold: 1.0
+     effect: Peak indoor HF at Glenvale Primary: Current orders: 0.54 ppm -> Hold: 0.54 ppm
+     effect: Maximum crew exposure: Current orders: 6% -> Hold: 6%
+--- decision 11 at T+86.7: Scheduled review: check the plan is still right.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Hold B2 and B4 cooling; maintain homes and school shelter
+     why: Keep P1 cooling B2 and A1 cooling B4; let B3 burn. Keep Glenvale homes and Glenvale Primary sheltered as smoke drifts northeast. Testing with corrected A3 temperature and wind showed no benefit from two additional streams.
+     sensor: A3 BMS reads 15 C despite 55.3 C skin; tested assuming 83 C modules.
+     sensor: Anemometer reports wind from 271 degrees; trusted observed smoke and tested from 229 degrees.
+     effect: Enclosures involved at 20 minutes: Current orders: 1.0 -> Hold: 1.0
+     effect: Glenvale Primary peak indoor HF: Current orders: 0.55 ppm -> Hold: 0.55 ppm
+     effect: Maximum crew exposure: Current orders: 7% -> Hold: 7%
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=48 worstIndoor=0.41 dose=19
+   Glenvale homes: outdoor 0.16 indoor 0.05 dose 0 (Shelter)
+   Glenvale Primary: outdoor 1.38 indoor 0.41 dose 19 (Shelter)
+   Hollis farm: outdoor 0.00 indoor 0.00 dose 0 (None)

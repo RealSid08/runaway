@@ -1,0 +1,9 @@
+[project]
+name = "runaway-incident-mcp"
+version = "0.1.0"
+description = "MCP tools that let the planning advisor read the incident and test plans"
+requires-python = ">=3.12,<3.14"
+dependencies = ["mcp>=2.0", "httpx>=0.27"]
+
+[tool.uv]
+package = false

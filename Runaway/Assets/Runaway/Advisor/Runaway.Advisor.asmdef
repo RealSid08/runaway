@@ -1,0 +1,14 @@
+{
+    "name": "Runaway.Advisor",
+    "rootNamespace": "Runaway.Advisor",
+    "references": ["Runaway.Sim"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

@@ -1,0 +1,897 @@
+{
+  "seed": 7,
+  "policy": "accept",
+  "outcome": {
+    "Minutes": 90.0,
+    "Lost": 1,
+    "Deflagrations": 0,
+    "Injuries": 0,
+    "Withdrawals": 0,
+    "MaxCrewExposure": 2.821413792341588,
+    "ContainedMin": 47.5,
+    "WaterKl": 330.9800000000004,
+    "Receptors": [
+      {
+        "Id": "homes",
+        "Name": "Glenvale homes",
+        "Action": "Shelter",
+        "PeakOutdoor": 0.1586034017522013,
+        "PeakIndoor": 0.04758102052566039,
+        "Dose": 0.07566675119578514
+      },
+      {
+        "Id": "school",
+        "Name": "Glenvale Primary",
+        "Action": "Shelter",
+        "PeakOutdoor": 1.3750952319409244,
+        "PeakIndoor": 0.4125285695822773,
+        "Dose": 18.79309258087373
+      },
+      {
+        "Id": "farm",
+        "Name": "Hollis farm",
+        "Action": "None",
+        "PeakOutdoor": 0.0,
+        "PeakIndoor": 0.0,
+        "Dose": 0.0
+      }
+    ],
+    "WorstIndoor": 0.4125285695822773,
+    "TotalDose": 18.868759332069516
+  },
+  "decisions": [
+    {
+      "Number": 1,
+      "Time": 420.0,
+      "Trigger": "Pumper 1 is first on scene. Set the initial plan.",
+      "Card": {
+        "headline": "Cool B3 now, preassign B4; shelter homes and school",
+        "actions": [
+          {
+            "type": "cool",
+            "unit": "P1",
+            "container": "B3",
+            "staging": null,
+            "receptor": null,
+            "reason": "B3 is heating but not venting; early cooling may prevent runaway."
+          },
+          {
+            "type": "cool",
+            "unit": "P2",
+            "container": "B4",
+            "staging": null,
+            "receptor": null,
+            "reason": "On arrival, protect B3's nearest downwind neighbour before it heats."
+          },
+          {
+            "type": "shelter",
+            "unit": null,
+            "container": null,
+            "staging": null,
+            "receptor": "homes",
+            "reason": "Glenvale homes lie directly downwind; protect residents before smoke arrives."
+          },
+          {
+            "type": "shelter",
+            "unit": null,
+            "container": null,
+            "staging": null,
+            "receptor": "school",
+            "reason": "Protect Glenvale Primary ahead of possible plume movement; wind lacks independent confirmation."
+          }
+        ],
+        "rationale": "Cool B3 before it vents; testing favours this over cooling only neighbours. Use two streams from upwind, keep crews at least 17 m from any venting enclosure, and keep doors closed. If B3 vents or ignites, redirect its stream to exposures.",
+        "evidence": [
+          "B3 BMS: 68°C, rising 1.9°C/min; scene report: no visible venting.",
+          "Site anemometer: wind from 265° at 3.5 m/s; Glenvale homes bearing 84°.",
+          "Forecast: B3 runaway probability 72% within 10 minutes.",
+          "Dispatch: P2 arrives in 4 minutes; A1 thermal camera in 8 minutes."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "Current orders: 1.2",
+            "with": "Plan: 0.0"
+          },
+          {
+            "label": "B3 runaway probability within 20 minutes",
+            "without": "Current orders: 100%",
+            "with": "Plan: 0% across 16 simulations"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale homes",
+            "without": "Current orders: 2.36 ppm",
+            "with": "Plan: 0.00 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Testing returned no cautions, but temperature and wind lack independent checks; simulated prevention is not guaranteed.",
+        "would_change_my_mind": "Visible venting from B3 would trigger immediate redirection of P1 to exposure cooling.",
+        "sensor_concerns": [
+          "Fixed gas readings are unverified and noisy by about 6% LEL; zero does not establish safe entry.",
+          "BMS and anemometer have no independent confirmation until A1 arrives."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 35.2034808,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 0,
+          "Unit": "P1",
+          "Container": "B3",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 420.0
+        },
+        {
+          "Type": 0,
+          "Unit": "P2",
+          "Container": "B4",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 420.0
+        },
+        {
+          "Type": 3,
+          "Unit": null,
+          "Container": null,
+          "Staging": null,
+          "Receptor": "homes",
+          "Source": "advisor",
+          "Time": 420.0
+        },
+        {
+          "Type": 3,
+          "Unit": null,
+          "Container": null,
+          "Staging": null,
+          "Receptor": "school",
+          "Source": "advisor",
+          "Time": 420.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 2,
+      "Time": 900.0,
+      "Trigger": "Aerial 1 is on scene. Its thermal camera and smoke drift reports are now available.",
+      "Card": {
+        "headline": "Hold B3 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B3 and P2 cooling B4; neither enclosure is venting or burning. Maintain shelter at Glenvale homes and Glenvale Primary, and keep A1 available as reserve.",
+        "evidence": [
+          "B3 BMS: 75.6 C, rising 2 C/min; Aerial 1 thermal camera: skin 41.6 C.",
+          "B4 Aerial 1 thermal camera: skin 15.7 C with P2 cooling.",
+          "Forecast: B3 runaway probability 39% within 20 minutes; all other enclosures 0%.",
+          "Situation report: no visible venting or fire; no smoke drift report available."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "Current orders: 0.0",
+            "with": "Hold plan: 0.0"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale Primary",
+            "without": "Current orders: 0.0 ppm",
+            "with": "Hold plan: 0.0 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Cooling is supported by thermal readings, but the forecast still identifies B3 risk.",
+        "would_change_my_mind": "B3 begins venting white gas: reassess crew clearance and redirect cooling to exposures.",
+        "sensor_concerns": [
+          "Fixed gas readings are unverified and noisy; none authorizes opening an enclosure.",
+          "Wind from 261 degrees has no independent smoke drift confirmation."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 22.0898849,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 3,
+      "Time": 1200.0,
+      "Trigger": "HAZMAT 1 is on scene with verified gas readings and air monitoring.",
+      "Card": {
+        "headline": "Hold B3 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 on B3 and P2 on B4; maintain shelter at Glenvale homes and Glenvale Primary. B3 remains hot but is not visibly venting or burning, so verified low gas alone does not justify opening it. Keep A1 ready: the model's A5 spread prediction lacks supporting heat readings.",
+        "evidence": [
+          "B3 BMS: 80.4 C, rising 3 C/min; A1 camera: skin 59.6 C, implying modules near 90 C.",
+          "H1 meter: B3 0.2% LEL, B4 0%; fixed detectors: 9.3% and 9.5%.",
+          "A1 camera: B4 skin 16.4 C; A5 skin 12 C.",
+          "H1 air monitoring: Glenvale homes and Glenvale Primary HF 0 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes, assuming B3 modules 90 C",
+            "without": "Current orders: 1.4",
+            "with": "Hold: 1.4"
+          },
+          {
+            "label": "Maximum crew exposure",
+            "without": "Current orders: 0%",
+            "with": "Hold: 0%"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Verified gas supports holding, but simulations change sharply with B3 temperature and predict unsupported A5 spread.",
+        "would_change_my_mind": "Visible venting at B3 would trigger immediate crew clearance beyond 17 m and reassessment.",
+        "sensor_concerns": [
+          "Fixed gas detectors overread against H1's verified meter; use H1 readings.",
+          "B3 camera implies hotter modules than BMS; tested a 90 C assumption.",
+          "Wind from 272 degrees has no independent smoke-drift confirmation."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 31.1440802,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 4,
+      "Time": 1600.0,
+      "Trigger": "B3 is at 101 C (bms) and rising.",
+      "Card": {
+        "headline": "Hold B3 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B3 and P2 cooling B4; maintain shelter at Glenvale homes and Glenvale Primary. B3 is still heating, but adding A1 cooling B2 gave no modelled benefit. If B3 vents, keep crews at least 17 m away; if it burns, shift water to exposures.",
+        "evidence": [
+          "B3 BMS: 101.3 C, rising 6.2 C/min despite P1 cooling.",
+          "A1 thermal camera: B3 skin 60.7 C, implying module temperature about 92 C.",
+          "B4 BMS: 14.8 C under P2 cooling; A1 camera: 15.1 C skin.",
+          "Site anemometer: wind from 271 degrees at 4.6 m/s; no independent smoke-drift check."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Hold: 1.0"
+          },
+          {
+            "label": "B3 runaway probability within 20 minutes",
+            "without": "Current orders: 100%",
+            "with": "Hold: 100%"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale homes",
+            "without": "Current orders: 0.54 ppm",
+            "with": "Hold: 0.54 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Camera supports B3 heating; simulations favour holding, but wind lacks independent confirmation.",
+        "would_change_my_mind": "A1 reports smoke drifting toward crews or beyond the currently sheltered communities.",
+        "sensor_concerns": [
+          "Wind direction remains unverified until visible smoke drift is reported.",
+          "Fixed gas readings are noisy: B1 reports 10.1% LEL versus H1's verified 0.9%; use H1 readings."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 23.1047642,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 5,
+      "Time": 1730.0,
+      "Trigger": "B3 is venting gas. Thermal runaway has started.",
+      "Card": {
+        "headline": "Withdraw P2; cool B4 with A1 and B2 with P1",
+        "actions": [
+          {
+            "type": "stage",
+            "unit": "P2",
+            "container": null,
+            "staging": "north",
+            "receptor": null,
+            "reason": "Current position is within B3's approximately 17 m deflagration zone."
+          },
+          {
+            "type": "cool",
+            "unit": "A1",
+            "container": "B4",
+            "staging": null,
+            "receptor": null,
+            "reason": "Maintain downwind exposure cooling from beyond 17 m of B3."
+          },
+          {
+            "type": "cool",
+            "unit": "P1",
+            "container": "B2",
+            "staging": null,
+            "receptor": null,
+            "reason": "B3 cannot be extinguished externally; protect its other immediate neighbour."
+          }
+        ],
+        "rationale": "Maintain shelter at Glenvale homes and Glenvale Primary. Let B3 burn, keep crews beyond 17 m, and cool B2 and B4 with two streams. Replace P2 because its current position is inside the exclusion distance.",
+        "evidence": [
+          "B3 BMS: 157.4 C, rising 26.1 C/min; visible gas venting.",
+          "Unit positions and site geometry: P2 approximately 15 m from B3.",
+          "A1 smoke observation: drifting toward 86 degrees, toward Glenvale homes.",
+          "Forecast: B4 runaway probability 16% within 20 minutes; B2 2%."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved at 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Plan: 1.0"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale homes",
+            "without": "Current orders: 0.6 ppm",
+            "with": "Plan: 0.6 ppm"
+          },
+          {
+            "label": "Maximum crew smoke exposure",
+            "without": "Current orders: 0%",
+            "with": "Plan: 5%"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Independent readings support the plan; simulation shows containment but does not capture the positional deflagration hazard.",
+        "would_change_my_mind": "A1 reports smoke turning north across the aisle toward row A.",
+        "sensor_concerns": [
+          "A3 BMS is flat, but A1's 12 C skin reading supports a cool enclosure; tested using camera-implied 11 C.",
+          "Fixed gas readings disagree with H1, including A1 enclosure at 11.3% versus verified 1.7% LEL; trust H1."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 38.4028909,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 1,
+          "Unit": "P2",
+          "Container": null,
+          "Staging": "north",
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 1730.0
+        },
+        {
+          "Type": 0,
+          "Unit": "A1",
+          "Container": "B4",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 1730.0
+        },
+        {
+          "Type": 0,
+          "Unit": "P1",
+          "Container": "B2",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 1730.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 6,
+      "Time": 1940.0,
+      "Trigger": "B3 is on fire.",
+      "Card": {
+        "headline": "Hold B2 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B2 and A1 cooling B4; let B3 burn and keep crews clear. Maintain shelter at Glenvale homes and Glenvale Primary. Adding A4 cooling showed no benefit over 20 minutes.",
+        "evidence": [
+          "A1 thermal camera: B4 skin 27.8 C, implying modules about 37 C; B2 skin 12 C.",
+          "A1 smoke observation: drift toward 59 degrees, implying wind from 239 degrees.",
+          "H1 verified meter: B3 23.3% LEL, above the enclosure-opening limit.",
+          "Forecast: B4 runaway probability 13% within 20 minutes, highest among uninvolved enclosures."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved at 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Hold: 1.0"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale Primary",
+            "without": "Current orders: 0.34 ppm",
+            "with": "Hold: 0.34 ppm"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale homes",
+            "without": "Current orders: 0.19 ppm",
+            "with": "Hold: 0.19 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Corrected-wind tests support current orders without safety cautions, but omit future wind changes.",
+        "would_change_my_mind": "A1 thermal camera shows A4 heating rapidly despite stable B2 and B4 temperatures.",
+        "sensor_concerns": [
+          "Anemometer reports wind from 271 degrees; use A1 smoke drift implying 239 degrees.",
+          "B4 BMS reads 18.9 C versus camera-implied modules about 37 C; tested assuming 37 C.",
+          "B3 BMS is unavailable; use visible fire, thermal camera and H1 verified gas readings."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 24.4229567,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 7,
+      "Time": 2180.0,
+      "Trigger": "B3 is on fire.",
+      "Card": {
+        "headline": "Hold B2 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B2 and A1 cooling B4; let B3 burn. Maintain shelter at Glenvale homes and Glenvale Primary as smoke drifts northeast. Extra A3 cooling showed no benefit over 20 minutes.",
+        "evidence": [
+          "A1 thermal camera: B3 skin 351.8 C; B2 12.5 C; B4 20.6 C.",
+          "A1 smoke observation: drifting toward 53 degrees, implying wind from 233 degrees.",
+          "Glenvale Primary air monitor: HF 0.75 ppm; shelter already active.",
+          "Forecast using smoke drift: B4 runaway probability 4% within 20 minutes."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Hold: 1.0"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale Primary",
+            "without": "Current orders: 0.47 ppm",
+            "with": "Hold: 0.47 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Exposures remain cool and corrected-wind tests support holding; future wind changes are unmodelled.",
+        "would_change_my_mind": "A1's thermal camera shows sustained heating of A3 across the aisle.",
+        "sensor_concerns": [
+          "Anemometer reads from 271 degrees; A1 smoke drift implies 233 degrees. Tests used 233 degrees.",
+          "A5 fixed detector reads 12% LEL versus H1's verified 0%; trust H1's meter."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 22.2133701,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 8,
+      "Time": 2500.0,
+      "Trigger": "A3: BMS reads 15 C but the thermal camera implies 52 C.",
+      "Card": {
+        "headline": "Hold B2 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 on B2 and A1 on B4; maintain shelter at Glenvale homes and Glenvale Primary. Using A3 at 52 C and the observed smoke direction, extra cooling showed no spread reduction over 20 minutes. Conserve water and track A3 with A1’s camera.",
+        "evidence": [
+          "A1 thermal camera: A3 skin 36.9 C, implying module temperature about 52 C.",
+          "A1 smoke observation: drift toward 42 degrees, directly toward Glenvale Primary.",
+          "Glenvale Primary air monitor: HF 1.25 ppm; shelter already active.",
+          "Corrected test_plan: adding A3 cooling, or A3 plus A4 cooling, produced no spread reduction; no cautions."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved at 20 minutes, corrected assumptions",
+            "without": "Current orders: 1.0",
+            "with": "Additional A3 cooling: 1.0"
+          },
+          {
+            "label": "Glenvale Primary peak indoor HF",
+            "without": "Current orders: 0.58 ppm",
+            "with": "Additional A3 cooling: 0.58 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Corrected simulations support holding, but A3 telemetry is unreliable and future wind changes are unmodelled.",
+        "would_change_my_mind": "A1’s camera shows A3 continuing to heat on successive readings.",
+        "sensor_concerns": [
+          "A3 BMS reads 15.2 C despite camera-implied 52 C; tested using 52 C.",
+          "Anemometer reads from 271 degrees; smoke implies from 222 degrees, used in testing.",
+          "A4 fixed detector reads 11.3% LEL; H1 verifies 0%, so trust H1."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 27.5754398,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 9,
+      "Time": 3400.0,
+      "Trigger": "Scheduled review: check the plan is still right.",
+      "Card": {
+        "headline": "Hold B2 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B2 and A1 cooling B4 while B3 burns. Keep Glenvale homes and Glenvale Primary sheltered as smoke reaches the school. Tests using camera-corrected temperatures and observed smoke drift found no spread benefit from two extra streams.",
+        "evidence": [
+          "Aerial 1: B2 skin 12°C, B4 18.3°C; B3 burning at 443.2°C.",
+          "A4 BMS: 85.2°C, rising 2.1°C/min; camera skin 56.9°C corroborates.",
+          "Aerial 1: smoke toward 42°, aligned with Glenvale Primary at 40°.",
+          "Glenvale Primary air monitor: HF 1.21 ppm; shelter active."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Hold: 1.0"
+          },
+          {
+            "label": "Glenvale Primary peak indoor HF",
+            "without": "Current orders: 0.59 ppm",
+            "with": "Hold: 0.59 ppm"
+          },
+          {
+            "label": "Maximum crew exposure",
+            "without": "Current orders: 7%",
+            "with": "Hold: 7%"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Corrected tests support holding, but A4 is warming and sensor faults limit certainty.",
+        "would_change_my_mind": "Aerial 1 confirms A4 skin temperature continues rising, prompting added exposure cooling.",
+        "sensor_concerns": [
+          "A3 BMS 14.6°C conflicts with camera skin 47.3°C; tested assuming module temperature 70°C.",
+          "Anemometer from 271° conflicts with observed drift; tested wind from 222°.",
+          "B2 BMS is flat beside B3; independent camera confirms cooling, tested at 11°C module temperature."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 25.1734642,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 10,
+      "Time": 4300.0,
+      "Trigger": "Scheduled review: check the plan is still right.",
+      "Card": {
+        "headline": "Hold B2 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B2 and A1 cooling B4; let B3 burn. Maintain shelter at Glenvale homes and Glenvale Primary. Testing with corrected A3 temperature and wind showed no benefit from two extra streams.",
+        "evidence": [
+          "A1 thermal camera: B2 skin 22.0 C, B4 21.4 C; B3 burning at 438.5 C.",
+          "A1 thermal camera: A3 skin 54.2 C implies approximately 81 C modules; BMS reports 15.3 C.",
+          "A1 smoke observation: drift toward 51 degrees implies wind from 231 degrees.",
+          "Glenvale Primary air monitor: HF 0.88 ppm; shelter active."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Hold: 1.0"
+          },
+          {
+            "label": "Peak indoor HF at Glenvale Primary",
+            "without": "Current orders: 0.54 ppm",
+            "with": "Hold: 0.54 ppm"
+          },
+          {
+            "label": "Maximum crew exposure",
+            "without": "Current orders: 6%",
+            "with": "Hold: 6%"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Corrected-assumption tests support holding, but only 16 simulations and conflicting sensors limit certainty.",
+        "would_change_my_mind": "A1 confirms sustained temperature rise at A3 or A4.",
+        "sensor_concerns": [
+          "A3 BMS conflicts with camera; tested with approximately 81 C module temperature.",
+          "Anemometer reports wind from 271 degrees; used smoke-derived 231 degrees.",
+          "B6 fixed detector reads 14.5% LEL versus H1 verified 0.4%; trust H1."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 24.4561149,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 11,
+      "Time": 5200.0,
+      "Trigger": "Scheduled review: check the plan is still right.",
+      "Card": {
+        "headline": "Hold B2 and B4 cooling; maintain homes and school shelter",
+        "actions": [],
+        "rationale": "Keep P1 cooling B2 and A1 cooling B4; let B3 burn. Keep Glenvale homes and Glenvale Primary sheltered as smoke drifts northeast. Testing with corrected A3 temperature and wind showed no benefit from two additional streams.",
+        "evidence": [
+          "A1 thermal camera: B2 skin 15.9 C; B4 19.1 C; B3 435.1 C.",
+          "A1 thermal camera: A3 skin 55.3 C implies modules about 83 C; A4 skin 64.6 C.",
+          "A1 smoke observation: drift toward 49 degrees, implying wind from 229 degrees.",
+          "Community air monitoring: Glenvale Primary HF 1.06 ppm; Glenvale homes 0.01 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved at 20 minutes",
+            "without": "Current orders: 1.0",
+            "with": "Hold: 1.0"
+          },
+          {
+            "label": "Glenvale Primary peak indoor HF",
+            "without": "Current orders: 0.55 ppm",
+            "with": "Hold: 0.55 ppm"
+          },
+          {
+            "label": "Maximum crew exposure",
+            "without": "Current orders: 7%",
+            "with": "Hold: 7%"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Corrected-sensor tests support holding; 16 simulations cannot exclude further heating or wind changes.",
+        "would_change_my_mind": "A1 confirms rising skin temperatures on A3 or A4.",
+        "sensor_concerns": [
+          "A3 BMS reads 15 C despite 55.3 C skin; tested assuming 83 C modules.",
+          "Anemometer reports wind from 271 degrees; trusted observed smoke and tested from 229 degrees."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 27.2876038,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    }
+  ],
+  "events": [
+    {
+      "Time": 0.0,
+      "Kind": "start",
+      "Text": "BMS alarm at B3. Site operator reports rising module temperature.",
+      "Subject": "B3",
+      "Hidden": false
+    },
+    {
+      "Time": 420.0,
+      "Kind": "arrival",
+      "Text": "Pumper 1 on scene.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 420.0,
+      "Kind": "protect",
+      "Text": "Shelter-in-place issued for Glenvale homes.",
+      "Subject": "homes",
+      "Hidden": false
+    },
+    {
+      "Time": 420.0,
+      "Kind": "protect",
+      "Text": "Shelter-in-place issued for Glenvale Primary.",
+      "Subject": "school",
+      "Hidden": false
+    },
+    {
+      "Time": 500.0,
+      "Kind": "tactic",
+      "Text": "P1 stream flowing on B3.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 660.0,
+      "Kind": "arrival",
+      "Text": "Pumper 2 on scene.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 740.0,
+      "Kind": "tactic",
+      "Text": "P2 stream flowing on B4.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 900.0,
+      "Kind": "arrival",
+      "Text": "Aerial 1 on scene.",
+      "Subject": "A1",
+      "Hidden": false
+    },
+    {
+      "Time": 1140.0,
+      "Kind": "sensor",
+      "Text": "A3 BMS telemetry froze at 15 C.",
+      "Subject": "A3",
+      "Hidden": true
+    },
+    {
+      "Time": 1200.0,
+      "Kind": "arrival",
+      "Text": "HAZMAT 1 on scene.",
+      "Subject": "H1",
+      "Hidden": false
+    },
+    {
+      "Time": 1500.0,
+      "Kind": "sensor",
+      "Text": "Site anemometer vane seized. It keeps reporting its last reading.",
+      "Subject": null,
+      "Hidden": true
+    },
+    {
+      "Time": 1620.0,
+      "Kind": "wind",
+      "Text": "Wind begins backing toward the south-west.",
+      "Subject": null,
+      "Hidden": true
+    },
+    {
+      "Time": 1730.0,
+      "Kind": "venting",
+      "Text": "B3 is venting gas. Thermal runaway has started.",
+      "Subject": "B3",
+      "Hidden": false
+    },
+    {
+      "Time": 1740.0,
+      "Kind": "arrival",
+      "Text": "Pumper 3 on scene.",
+      "Subject": "P3",
+      "Hidden": false
+    },
+    {
+      "Time": 1800.0,
+      "Kind": "tactic",
+      "Text": "P1 stream flowing on B2.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 1870.0,
+      "Kind": "tactic",
+      "Text": "A1 stream flowing on B4.",
+      "Subject": "A1",
+      "Hidden": false
+    },
+    {
+      "Time": 1940.0,
+      "Kind": "fire",
+      "Text": "B3 is on fire.",
+      "Subject": "B3",
+      "Hidden": false
+    },
+    {
+      "Time": 2850.0,
+      "Kind": "contained",
+      "Text": "Spread stopped. No enclosure is heating and no new enclosure has ignited for 15 minutes.",
+      "Subject": null,
+      "Hidden": false
+    }
+  ]
+}

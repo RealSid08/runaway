@@ -1,0 +1,22 @@
+# Unity
+Runaway/[Ll]ibrary/
+Runaway/[Tt]emp/
+Runaway/[Oo]bj/
+Runaway/[Ll]ogs/
+Runaway/[Uu]ser[Ss]ettings/
+Runaway/*.csproj
+Runaway/*.sln
+Runaway/.vs/
+Runaway/.idea/
+build/
+# .NET
+tools/**/bin/
+tools/**/obj/
+# Python
+**/.venv/
+**/__pycache__/
+ml/data/
+# local run output
+eval/lessons-headless.json
+capture/
+.DS_Store

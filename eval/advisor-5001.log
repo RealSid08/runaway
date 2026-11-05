@@ -26,3 +26,36 @@ T+  9.7  A1 is on fire.
 T+ 15.2  Aerial 1 on scene.
 T+ 17.5  HAZMAT 1 on scene.
 --- decision 4 at T+17.7: Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes. HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.
+   [22s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Extra cooling gives no predicted benefit while smoke stays clear of Glenvale homes and Glenvale Primary.
+     sensor: Several fixed gas detectors read higher than HAZMAT 1, so trust its meter.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 21.8  Pumper 3 on scene.
+--- decision 5 at T+21.8: Pumper 3 has arrived. Its tanker means a fourth hose can run.
+   [24s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Cooling B1 adds no predicted benefit, so hold spare crews and water.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 22.8 *The wind swung round to blow from the south-west.
+T+ 24.8  The spread has stopped. Nothing new has caught fire for 15 minutes.
+--- decision 6 at T+36.8: Regular check that the plan is still right.
+   [19s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Crews remain upwind, and testing predicts no further spread.
+     sensor: B1's fixed gas detector reads 16.5%, but HAZMAT 1 verifies only 0.4%.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 38.5 *B6's battery sensor froze and kept reading 17°C.
+--- decision 7 at T+51.8: Regular check that the plan is still right.
+   [21s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Extra cooling showed no benefit, so keep spare crews north and conserve water.
+     sensor: B2's battery sensor reads 59 C but the camera suggests 76 C inside, so testing used 76 C.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Hollis farm indoor HF peak: 0.06 ppm -> 0.06 ppm
+--- decision 8 at T+66.8: Regular check that the plan is still right.
+   [18s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Extra cooling adds no predicted benefit while crews remain clear of smoke.
+     sensor: B6 fixed gas detector reads 11 percent, but HAZMAT 1 verifies zero.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 71.5  A1 has burnt out.
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=25 worstIndoor=0.65 dose=3
+   Glenvale homes: outdoor 0.00 indoor 0.00 dose 0 (None)
+   Glenvale Primary: outdoor 0.00 indoor 0.00 dose 0 (None)
+   Hollis farm: outdoor 2.16 indoor 0.65 dose 3 (Shelter)

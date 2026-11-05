@@ -54,6 +54,7 @@ namespace Runaway.App
         string _runDir;
         public string RepoRoot { get; private set; }
         public bool CaptureMode;
+        public bool SkipLessons;
         public List<string> LiveTools { get { var l = _advisor?.Live; if (l == null) return new List<string>(); lock (l) return new List<string>(l); } }
         public float FrameDelta => Time.deltaTime;
 
@@ -270,6 +271,9 @@ namespace Runaway.App
 
         public void ForcePhase(Phase p) => SetPhase(p);
 
+        /// <summary>Preview tooling: show stored lessons on the review screen.</summary>
+        public void PreviewLessons(int n) { NewLessons = Lessons.All.Skip(Math.Max(0, Lessons.All.Count - n)).ToList(); DecisionsChanged?.Invoke(); }
+
         public void Accept() { if (Pending?.Card != null) Respond("accepted", Pending.Card.ToOrders()); }
         public void Dismiss() { Respond("dismissed", new List<Order>()); }
         public void ApplyEdited(IEnumerable<int> keep)
@@ -317,11 +321,11 @@ namespace Runaway.App
                 }
             }
             ReviewReady = true;
-            if (Mode != AdvisorMode.Off) LessonsPending = true;
+            if (Mode != AdvisorMode.Off && !SkipLessons) LessonsPending = true;
             SetPhase(Phase.Review);
             SaveRun();
             DecisionsChanged?.Invoke();
-            if (Mode != AdvisorMode.Off)
+            if (Mode != AdvisorMode.Off && !SkipLessons)
             {
                 LessonsPending = true;
                 var json = DebriefBuilder.Build(Sim, Decisions, Mode.ToString());

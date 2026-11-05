@@ -36,3 +36,28 @@ T+ 21.8  HAZMAT 1 on scene.
 T+ 29.0 *B1's battery sensor froze and kept reading 18°C.
 T+ 33.0  Pumper 3 on scene.
 --- decision 4 at T+33.0: Pumper 3 has arrived. Its tanker means a fourth hose can run.
+   [31s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan,test_plan] Keep current cooling and shelter orders
+     why: Keep Pumper 1 cooling B4 and Pumper 2 cooling B6. Keep Glenvale homes and Glenvale Primary sheltered, with Pumper 3 in reserve.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 42.2 *The wind swung round to blow from the south-west.
+--- decision 5 at T+43.8: Smoke is blowing north-east, but the site wind sensor still says the wind is from the south.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons] Keep the current cooling and shelter orders
+     why: Pumper 1 and Pumper 2 are keeping B4 and B6 cool. Keep Glenvale Primary and Glenvale homes sheltered as smoke drifts northeast.
+     sensor: The site wind sensor says from 182 degrees, conflicting with Aerial 1's observed smoke drift.
+     effect: Enclosures involved after 20 minutes: 1 -> 1
+     effect: Peak indoor HF at school: 0.6 ppm -> 0.6 ppm
+--- decision 6 at T+58.8: Regular check that the plan is still right.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan,test_plan] Relieve Pumper 2 and keep B6 cooling
+     - Pumper 3 cools B6: Pumper 3 takes over cooling before Pumper 2 withdraws.
+     - Pumper 2 moves to the south gate: Move Pumper 2 clear of smoke before exposure builds.
+     why: Keep Pumper 1 cooling B4 and both Glenvale communities sheltered. Relieving Pumper 2 reduces crew exposure while keeping spread contained.
+     sensor: The anemometer conflicts with Aerial 1's smoke report, so tests used wind from 235 degrees.
+     sensor: A1's fixed gas detector reads 12% while HAZMAT 1 verifies zero.
+     effect: Maximum crew exposure: 89% -> 43%
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 60.0  Pumper 3 is spraying water on B6.
+T+ 67.0  B5 has burnt out.
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=22 worstIndoor=0.60 dose=6
+   Glenvale homes: outdoor 0.30 indoor 0.09 dose 1 (Shelter)
+   Glenvale Primary: outdoor 1.99 indoor 0.60 dose 5 (Shelter)
+   Hollis farm: outdoor 0.00 indoor 0.00 dose 0 (None)

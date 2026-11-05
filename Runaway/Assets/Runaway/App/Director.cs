@@ -21,6 +21,7 @@ namespace Runaway.App
         float _nextLapse;
         bool _done;
         int _editAt = 3;
+        bool _edited;
         Vector2 _cursor = new Vector2(1400, 700);
 
         public void Begin(string dir, GameController g, Ui ui, SiteView site, CameraRig rig)
@@ -138,7 +139,7 @@ namespace Runaway.App
                     seen = rec.Number;
                     yield return Wait(0.4f);
                     Still($"card-{seen}");
-                    bool conflict = rec.Trigger.Contains("thermal camera") || rec.Card.SensorConcerns.Any(s => s.Contains("A3"));
+                    bool conflict = rec.Trigger.Contains("battery sensor reads") || rec.Card.SensorConcerns.Any(s => s.Contains("A3")) || G.Sim.Obs.Containers.Any(c => c.SensorConflict);
                     if (conflict && !thermalShown)
                     {
                         thermalShown = true;
@@ -153,8 +154,9 @@ namespace Runaway.App
                     }
                     yield return Wait(2.4f);
                     var card = rec.Card;
-                    if (seen == _editAt && card.Actions.Count >= 2 && _ui.EditButton != null)
+                    if (!_edited && seen >= _editAt && card.Actions.Count >= 2 && _ui.EditButton != null)
                     {
+                        _edited = true;
                         yield return Press(_ui.EditButton, _ui.BeginEdit);
                         yield return Wait(0.6f);
                         var last = _ui.ActionChecks.LastOrDefault();

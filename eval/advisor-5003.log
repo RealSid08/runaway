@@ -1,0 +1,92 @@
+T+  0.0  The battery in B5 is overheating. The site operator has raised the alarm.
+T+  5.8  Pumper 1 on scene.
+--- decision 1 at T+5.8: Pumper 1 is the first crew on scene. Time for a first plan.
+   [33s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Cool B4 and B6 and shelter Hollis farm
+     - Pumper 1 cools B4: Pumper 1 protects the downwind neighbour before it heats.
+     - Pumper 2 cools B6: Pumper 2 protects the other close neighbour on arrival.
+     - Hollis farm shelters indoors: Shelter Hollis farm before toxic smoke arrives.
+     why: Hollis farm is downwind while Glenvale homes and Glenvale Primary are upwind. Cool from the north beyond 17 m and keep enclosures closed.
+     sensor: Fixed gas readings are noisy and cannot establish safe entry.
+     effect: Enclosures involved in 20 minutes: 2.0 -> 1.1
+     effect: Hollis farm peak indoor HF: 1.19 ppm -> 0.33 ppm
+T+  5.8  Hollis farm told to shelter indoors.
+T+  7.2  Pumper 1 is spraying water on B4.
+--- decision 2 at T+9.8: B5 is heating up. It is at 102°C and rising.
+   [26s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling B4 and Pumper 2 cooling B6 as B5 heats rapidly. Keep Hollis farm sheltered and crews at least 17 m from B5 if it vents.
+     sensor: The trigger says 102 C, but the latest battery reading is 118 C.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     effect: Enclosures involved in 20 minutes: 1.2 -> 1.2
+T+ 10.3  Pumper 2 on scene.
+T+ 10.5  B5 is venting flammable gas. Its battery is in thermal runaway.
+T+ 11.7  Pumper 2 is spraying water on B6.
+--- decision 3 at T+13.8: B5 is venting flammable gas. Its battery is in thermal runaway. B5 is venting flammable gas. Its battery is in thermal runaway.
+   [43s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan,test_plan,test_plan] Withdraw both pumpers north and cool B4
+     - Pumper 1 moves to the north gate: Move Pumper 1 beyond B5's 17 metre danger area.
+     - Pumper 2 moves to the north gate: Move Pumper 2 beyond B5's 17 metre danger area.
+     - Aerial 1 cools B4: Aerial 1 should protect B4 from a safe distance on arrival.
+     why: B5 can explode, so withdraw crews and let it burn. Keep Hollis farm sheltered and have Aerial 1 cool B4 on arrival.
+     sensor: A5's battery sensor is flat beside B5, so I tested an assumed 80 C.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     effect: Enclosures involved after 20 minutes: 2.4 -> 1.2
+     effect: Peak indoor HF at Hollis farm: 0.56 ppm -> 0.41 ppm
+T+ 16.5  B5 is on fire.
+--- decision 4 at T+16.5: B5 is on fire.
+   [26s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan,test_plan] Cool B3 and B6 now
+     - Pumper 1 cools B3: Pumper 1 can protect B3 before B4 spreads fire.
+     - Pumper 2 cools B6: Pumper 2 can stop B6 heating beside burning B5.
+     why: Keep Aerial 1 assigned to B4 and Hollis farm sheltered. Cool early to contain spread, keeping crews at least 17 m from venting enclosures.
+     sensor: The site wind meter has no independent smoke drift check.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     effect: Enclosures involved in 20 minutes: 4.8 -> 2.0
+     effect: Peak indoor HF at Hollis farm: 0.97 ppm -> 0.69 ppm
+T+ 17.7  Pumper 1 is spraying water on B3.
+T+ 17.7  Pumper 2 is spraying water on B6.
+T+ 17.7  Aerial 1 on scene.
+T+ 20.0  Aerial 1 is spraying water on B4.
+--- decision 5 at T+20.5: B5 is on fire. Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.
+   [20s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons] Keep the current plan
+     why: Keep Aerial 1 cooling B4 and both pumpers cooling B3 and B6. Crews are upwind and Hollis farm is already sheltered from HF smoke.
+     sensor: B6 fixed gas reading is unverified and cannot establish safe entry.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Hollis farm indoor HF: 0.34 ppm -> 0.34 ppm
+T+ 25.7  HAZMAT 1 on scene.
+--- decision 6 at T+25.7: HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep cooling B3, B4 and B6, and keep Hollis farm sheltered. Entering B5 adds crew exposure without reducing spread.
+     sensor: The B2 fixed gas detector reads 17.5%, but HAZMAT 1 verifies 2.1%.
+     sensor: The A3 fixed gas detector reads 10.2%, but HAZMAT 1 verifies 0.2%.
+     effect: Enclosures involved after 20 minutes: 1 -> 1
+     effect: Maximum crew exposure: 0% -> 0%
+T+ 31.7  The spread has stopped. Nothing new has caught fire for 15 minutes.
+T+ 36.7  Pumper 3 on scene.
+--- decision 7 at T+36.7: Pumper 3 has arrived. Its tanker means a fourth hose can run.
+   [22s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep cooling B3, B4 and B6 and keep Hollis farm sheltered. A fourth stream adds no tested benefit, so hold Pumper 3 in reserve.
+     sensor: B6's battery sensor is flat beside fire, so testing used the camera estimate of 14 C.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 41.0 *The wind swung round to blow from the south-west.
+--- decision 8 at T+51.7: Regular check that the plan is still right.
+   [21s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons] Keep the current plan
+     why: Keep cooling B3, B4 and B6 while B5 burns. Keep Hollis farm sheltered and crews upwind.
+     sensor: A4's fixed gas detector reads 16%, but HAZMAT 1 verifies zero.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at Hollis farm: 0.57 ppm -> 0.57 ppm
+--- decision 9 at T+66.7: Regular check that the plan is still right.
+   [28s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Stage Pumper 1 north and keep neighbours cooled
+     - Pumper 1 moves to the north gate: Save water while Aerial 1 and Pumper 2 protect B5's neighbours.
+     why: Testing shows the same spread control with Pumper 1 held north. Keep Hollis farm sheltered as toxic smoke continues southwest.
+     sensor: A5's fixed gas detector reads 10.4% while HAZMAT 1 verifies 0%.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at Hollis farm: 0.5 ppm -> 0.5 ppm
+--- decision 10 at T+73.2: Smoke is blowing south-west, but the site wind sensor still says the wind is from the north-east.
+   [21s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons] Keep the current plan
+     why: Keep Aerial 1 cooling B4 and Pumper 2 cooling B6. Keep Hollis farm sheltered and spare crews north, clear of toxic smoke.
+     sensor: The site wind sensor differs from observed smoke by 26 degrees, so testing used wind from 55 degrees.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at Hollis farm: 0.59 ppm -> 0.59 ppm
+T+ 85.2  B5 has burnt out.
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=32 worstIndoor=0.51 dose=20
+   Glenvale homes: outdoor 0.00 indoor 0.00 dose 0 (None)
+   Glenvale Primary: outdoor 0.00 indoor 0.00 dose 0 (None)
+   Hollis farm: outdoor 1.70 indoor 0.51 dose 20 (Shelter)

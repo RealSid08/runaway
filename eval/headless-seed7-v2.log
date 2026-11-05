@@ -94,3 +94,13 @@ T+ 47.5  The spread has stopped. Nothing new has caught fire for 15 minutes.
      effect: Enclosures involved in 20 minutes: 1 -> 1
      effect: Peak school indoor HF: 0.54 ppm -> 0.54 ppm
 --- decision 11 at T+86.7: Regular check that the plan is still right.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 2 cooling B2 and Aerial 1 cooling B4. Maintain shelter at Glenvale homes and Glenvale Primary because toxic smoke still reaches the school.
+     sensor: A3 battery sensor reads 15 C despite hot skin, so testing assumed 83 C inside.
+     sensor: The anemometer disagrees with smoke drift, so testing used wind from 229 degrees.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: School peak indoor HF: 0.55 ppm -> 0.55 ppm
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=48 worstIndoor=0.41 dose=19
+   Glenvale homes: outdoor 0.16 indoor 0.05 dose 0 (Shelter)
+   Glenvale Primary: outdoor 1.38 indoor 0.41 dose 19 (Shelter)
+   Hollis farm: outdoor 0.00 indoor 0.00 dose 0 (None)

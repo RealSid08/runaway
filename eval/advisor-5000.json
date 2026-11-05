@@ -1,0 +1,577 @@
+{
+  "seed": 5000,
+  "policy": "accept",
+  "outcome": {
+    "Minutes": 90.0,
+    "Lost": 1,
+    "Deflagrations": 0,
+    "Injuries": 0,
+    "Withdrawals": 0,
+    "MaxCrewExposure": 17.05874536276399,
+    "ContainedMin": 21.5,
+    "WaterKl": 299.5666666666668,
+    "Receptors": [
+      {
+        "Id": "homes",
+        "Name": "Glenvale homes",
+        "Action": "Shelter",
+        "PeakOutdoor": 0.3011702493267109,
+        "PeakIndoor": 0.09035107479801326,
+        "Dose": 0.5737821250504603
+      },
+      {
+        "Id": "school",
+        "Name": "Glenvale Primary",
+        "Action": "Shelter",
+        "PeakOutdoor": 1.9947773584356503,
+        "PeakIndoor": 0.5984332075306951,
+        "Dose": 5.483187882813392
+      },
+      {
+        "Id": "farm",
+        "Name": "Hollis farm",
+        "Action": "None",
+        "PeakOutdoor": 0.0,
+        "PeakIndoor": 0.0,
+        "Dose": 0.0
+      }
+    ],
+    "WorstIndoor": 0.5984332075306951,
+    "TotalDose": 6.056970007863852
+  },
+  "decisions": [
+    {
+      "Number": 1,
+      "Time": 500.0,
+      "Trigger": "Pumper 1 is the first crew on scene. Time for a first plan.",
+      "Card": {
+        "headline": "Cool B4 and B6 and shelter both communities",
+        "actions": [
+          {
+            "type": "cool",
+            "unit": "P1",
+            "container": "B4",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 1 should cool B4 now because it is heating fastest."
+          },
+          {
+            "type": "cool",
+            "unit": "P2",
+            "container": "B6",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 2 should cool B6 on arrival to stop spread."
+          },
+          {
+            "type": "shelter",
+            "unit": null,
+            "container": null,
+            "staging": null,
+            "receptor": "school",
+            "reason": "Shelter Glenvale Primary before any HF smoke reaches it."
+          },
+          {
+            "type": "shelter",
+            "unit": null,
+            "container": null,
+            "staging": null,
+            "receptor": "homes",
+            "reason": "Shelter Glenvale homes as a precaution while wind remains unverified."
+          }
+        ],
+        "rationale": "Let B5 burn and cool its neighbours from upwind, keeping crews at least 17 m from venting enclosures. Two streams matched three in testing, while shelter provides early protection if smoke shifts.",
+        "evidence": [
+          "Pumper 1 reports B5 burning.",
+          "B4 battery sensor reads 31 C and rises 2.9 C per minute.",
+          "The site anemometer reads wind from 176 degrees at 5.2 metres per second."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "2.8",
+            "with": "1.0"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Testing supports early cooling, but independent temperature and wind checks are unavailable.",
+        "would_change_my_mind": "If Aerial 1 finds hotter neighbours or different smoke drift, change cooling priorities and crew positions.",
+        "sensor_concerns": [
+          "The wind reading has no independent smoke drift check.",
+          "Fixed gas readings are noisy and HAZMAT 1 has not verified them."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 30.1520851,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 0,
+          "Unit": "P1",
+          "Container": "B4",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 500.0
+        },
+        {
+          "Type": 0,
+          "Unit": "P2",
+          "Container": "B6",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 500.0
+        },
+        {
+          "Type": 3,
+          "Unit": null,
+          "Container": null,
+          "Staging": null,
+          "Receptor": "school",
+          "Source": "advisor",
+          "Time": 500.0
+        },
+        {
+          "Type": 3,
+          "Unit": null,
+          "Container": null,
+          "Staging": null,
+          "Receptor": "homes",
+          "Source": "advisor",
+          "Time": 500.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 2,
+      "Time": 880.0,
+      "Trigger": "Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.",
+      "Card": {
+        "headline": "Stage Aerial 1 south and maintain current cooling",
+        "actions": [
+          {
+            "type": "stage",
+            "unit": "A1",
+            "container": null,
+            "staging": "south",
+            "receptor": null,
+            "reason": "Keep Aerial 1 upwind and ready without another stream."
+          }
+        ],
+        "rationale": "Keep Pumper 1 cooling B4 and Pumper 2 cooling B6. Keep Glenvale homes and Glenvale Primary sheltered while Aerial 1 moves clear of smoke.",
+        "evidence": [
+          "Aerial 1 reports smoke drifting north toward 2 degrees.",
+          "The thermal camera shows B4 skin at 22 C and B6 at 29 C.",
+          "The battery sensor shows A5 at 46 C, rising 3.9 C per minute."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Maximum crew exposure",
+            "without": "1%",
+            "with": "0%"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Sensors agree and both tested options contain spread, but future wind changes remain uncertain.",
+        "would_change_my_mind": "If A5 keeps heating, start Aerial 1 cooling it from upwind.",
+        "sensor_concerns": [
+          "Fixed gas readings are noisy and HAZMAT 1 has not verified them."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 22.5429396,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 1,
+          "Unit": "A1",
+          "Container": null,
+          "Staging": "south",
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 880.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 3,
+      "Time": 1310.0,
+      "Trigger": "HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep cooling B4 and B6 and maintain shelter at Glenvale homes and Glenvale Primary. Adding Aerial 1 cooling gives no predicted benefit.",
+        "evidence": [
+          "Aerial 1's camera shows B4 at 23 C and B6 at 24 C.",
+          "HAZMAT 1 measures HF at Glenvale homes at 0 ppm.",
+          "The forecast gives B4 an 11% runaway chance within 20 minutes."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Cooling is working, but the tests do not include future wind changes.",
+        "would_change_my_mind": "If neighbours heat up or toxic smoke turns toward either community.",
+        "sensor_concerns": [
+          "B2's fixed gas detector reads about 10% while HAZMAT 1 measures near zero."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 27.0793137,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 4,
+      "Time": 1980.0,
+      "Trigger": "Pumper 3 has arrived. Its tanker means a fourth hose can run.",
+      "Card": {
+        "headline": "Keep current cooling and shelter orders",
+        "actions": [],
+        "rationale": "Keep Pumper 1 cooling B4 and Pumper 2 cooling B6. Keep Glenvale homes and Glenvale Primary sheltered, with Pumper 3 in reserve.",
+        "evidence": [
+          "Aerial 1 measures B4 skin at 22 C and B6 at 20 C.",
+          "The A5 battery sensor reads 73 C, rising 0.2 C per minute.",
+          "Plan tests show extra cooling adds no benefit and entry increases crew exposure."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Independent readings support containment, but the tests cannot predict wind changes.",
+        "would_change_my_mind": "If Aerial 1 reports rising neighbour temperatures or smoke turning toward either community.",
+        "sensor_concerns": [],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 30.5099407,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 5,
+      "Time": 2630.0,
+      "Trigger": "Smoke is blowing north-east, but the site wind sensor still says the wind is from the south.",
+      "Card": {
+        "headline": "Keep the current cooling and shelter orders",
+        "actions": [],
+        "rationale": "Pumper 1 and Pumper 2 are keeping B4 and B6 cool. Keep Glenvale Primary and Glenvale homes sheltered as smoke drifts northeast.",
+        "evidence": [
+          "Aerial 1 reports smoke drifting northeast toward 36 degrees.",
+          "Aerial 1's thermal camera shows B4 at 18 C and B6 at 14 C.",
+          "Glenvale Primary's air monitor reads HF at 1.77 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Peak indoor HF at school",
+            "without": "0.6 ppm",
+            "with": "0.6 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Testing with wind from 216 degrees supports current orders, but further wind changes remain uncertain.",
+        "would_change_my_mind": "If neighbouring enclosures heat up or indoor HF rises, reassess cooling and shelter.",
+        "sensor_concerns": [
+          "The site wind sensor says from 182 degrees, conflicting with Aerial 1's observed smoke drift."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 22.8411307,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 6,
+      "Time": 3530.0,
+      "Trigger": "Regular check that the plan is still right.",
+      "Card": {
+        "headline": "Relieve Pumper 2 and keep B6 cooling",
+        "actions": [
+          {
+            "type": "cool",
+            "unit": "P3",
+            "container": "B6",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 3 takes over cooling before Pumper 2 withdraws."
+          },
+          {
+            "type": "stage",
+            "unit": "P2",
+            "container": null,
+            "staging": "south",
+            "receptor": null,
+            "reason": "Move Pumper 2 clear of smoke before exposure builds."
+          }
+        ],
+        "rationale": "Keep Pumper 1 cooling B4 and both Glenvale communities sheltered. Relieving Pumper 2 reduces crew exposure while keeping spread contained.",
+        "evidence": [
+          "Pumper 2 has accumulated 43% crew exposure.",
+          "Aerial 1 reports smoke drifting northeast toward 55 degrees.",
+          "Air monitoring at Glenvale Primary reads HF at 0.78 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Maximum crew exposure",
+            "without": "89%",
+            "with": "43%"
+          },
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Tests using observed smoke direction support relief, but future wind changes remain uncertain.",
+        "would_change_my_mind": "If smoke changes direction, reassess crew positions and community protection immediately.",
+        "sensor_concerns": [
+          "The anemometer conflicts with Aerial 1's smoke report, so tests used wind from 235 degrees.",
+          "A1's fixed gas detector reads 12% while HAZMAT 1 verifies zero."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 26.8839122,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 0,
+          "Unit": "P3",
+          "Container": "B6",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 3530.0
+        },
+        {
+          "Type": 1,
+          "Unit": "P2",
+          "Container": null,
+          "Staging": "south",
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 3530.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    }
+  ],
+  "events": [
+    {
+      "Time": 0.0,
+      "Kind": "start",
+      "Text": "The battery in B5 is overheating. The site operator has raised the alarm.",
+      "Subject": "B5",
+      "Hidden": false
+    },
+    {
+      "Time": 160.0,
+      "Kind": "venting",
+      "Text": "B5 is venting flammable gas. Its battery is in thermal runaway.",
+      "Subject": "B5",
+      "Hidden": false
+    },
+    {
+      "Time": 380.0,
+      "Kind": "fire",
+      "Text": "B5 is on fire.",
+      "Subject": "B5",
+      "Hidden": false
+    },
+    {
+      "Time": 500.0,
+      "Kind": "arrival",
+      "Text": "Pumper 1 on scene.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 500.0,
+      "Kind": "protect",
+      "Text": "Glenvale Primary told to shelter indoors.",
+      "Subject": "school",
+      "Hidden": false
+    },
+    {
+      "Time": 500.0,
+      "Kind": "protect",
+      "Text": "Glenvale homes told to shelter indoors.",
+      "Subject": "homes",
+      "Hidden": false
+    },
+    {
+      "Time": 590.0,
+      "Kind": "tactic",
+      "Text": "Pumper 1 is spraying water on B4.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 630.0,
+      "Kind": "arrival",
+      "Text": "Pumper 2 on scene.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 710.0,
+      "Kind": "tactic",
+      "Text": "Pumper 2 is spraying water on B6.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 720.0,
+      "Kind": "sensor",
+      "Text": "The site wind sensor jammed and kept showing the old wind.",
+      "Subject": null,
+      "Hidden": true
+    },
+    {
+      "Time": 880.0,
+      "Kind": "arrival",
+      "Text": "Aerial 1 on scene.",
+      "Subject": "A1",
+      "Hidden": false
+    },
+    {
+      "Time": 1290.0,
+      "Kind": "contained",
+      "Text": "The spread has stopped. Nothing new has caught fire for 15 minutes.",
+      "Subject": null,
+      "Hidden": false
+    },
+    {
+      "Time": 1310.0,
+      "Kind": "arrival",
+      "Text": "HAZMAT 1 on scene.",
+      "Subject": "H1",
+      "Hidden": false
+    },
+    {
+      "Time": 1740.0,
+      "Kind": "sensor",
+      "Text": "B1's battery sensor froze and kept reading 18°C.",
+      "Subject": "B1",
+      "Hidden": true
+    },
+    {
+      "Time": 1980.0,
+      "Kind": "arrival",
+      "Text": "Pumper 3 on scene.",
+      "Subject": "P3",
+      "Hidden": false
+    },
+    {
+      "Time": 2530.0,
+      "Kind": "wind",
+      "Text": "The wind swung round to blow from the south-west.",
+      "Subject": null,
+      "Hidden": true
+    },
+    {
+      "Time": 3600.0,
+      "Kind": "tactic",
+      "Text": "Pumper 3 is spraying water on B6.",
+      "Subject": "P3",
+      "Hidden": false
+    },
+    {
+      "Time": 4020.0,
+      "Kind": "burnt_out",
+      "Text": "B5 has burnt out.",
+      "Subject": "B5",
+      "Hidden": false
+    }
+  ]
+}

@@ -505,7 +505,7 @@ namespace Runaway.App
         void RenderFeed()
         {
             _feed.Clear();
-            var items = _events.Skip(Math.Max(0, _events.Count - 6)).ToList();
+            var items = _events.Skip(Math.Max(0, _events.Count - 5)).ToList();
             _feed.style.display = items.Count == 0 ? DisplayStyle.None : DisplayStyle.Flex;
             foreach (var it in items)
             {
@@ -753,11 +753,11 @@ namespace Runaway.App
                 L($"+{d.Time / 60:0}", "decision-time", h);
                 L(RespText(d.Response), "response medium " + d.Response, h);
                 L(d.Card.Headline, "decision-headline medium", box);
-                if (d.Counterfactual != null)
+                if (d.Counterfactual != null && d.Card.Actions.Count > 0)
                 {
                     var cf = d.Counterfactual;
                     var cw = cf.Receptors.OrderByDescending(r => r.PeakIndoor).First();
-                    L($"{d.CounterfactualLabel}: {cf.Lost} enclosures lost instead of {o.Lost}.", "decision-cf", box);
+                    L((cf.Lost == o.Lost ? $"{d.CounterfactualLabel}: the same outcome, {o.Lost} lost." : $"{d.CounterfactualLabel}: {cf.Lost} {(cf.Lost == 1 ? "enclosure" : "enclosures")} lost instead of {o.Lost}."), "decision-cf", box);
                 }
             }
             if (G.Decisions.All(d => d.Card == null)) L("No advisor in this exercise.", "muted", ds);
@@ -770,7 +770,8 @@ namespace Runaway.App
             var right = E("col", cols);
             right.style.marginRight = 0;
             L("Lessons for next time", "col-title medium", right);
-            _lessonsBox = E("", right);
+            var ls = new ScrollView(ScrollViewMode.Vertical); ls.style.flexGrow = 1; right.Add(ls);
+            _lessonsBox = E("", ls);
             RenderLessons();
 
             var foot = E("review-foot", p);

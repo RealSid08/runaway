@@ -6,6 +6,8 @@ It is built around the questions in human-centric agentic AI for emergency decis
 
 ![Advisor card during the incident](docs/images/card.png)
 
+A 3.5-minute recorded run is attached to the [latest release](https://github.com/RealSid08/runaway/releases/latest). In it, the live Codex planner works through the whole incident while a scripted commander accepts, edits and reviews.
+
 ## The scenario
 
 Night at the Glenvale grid battery: twelve battery enclosures in two rows, a transformer, a control room, and homes and a primary school a few hundred metres away. Enclosure B3's battery overheats and goes into thermal runaway. Five appliances arrive over half an hour.
@@ -50,6 +52,11 @@ The simulation core is plain C# with no Unity dependency. The same files run ins
 
 There are three modes for comparing reliance on AI: advisor with reasoning, advisor with actions only, and no advisor.
 
+| | |
+|---|---|
+| ![Venting](docs/images/venting.png) | ![Editing a plan](docs/images/edit.png) |
+| ![Toxic smoke toward the school](docs/images/smoke.png) | ![After-action review](docs/images/review.png) |
+
 ## Results
 
 **Spread forecaster**, on 400 held-out simulated incidents:
@@ -63,7 +70,22 @@ There are three modes for comparing reliance on AI: advisor with reasoning, advi
 
 **Response policies:**
 
-RESULTS_TABLE
+| Response | Incidents | Enclosures lost (mean) | Spread stopped | Worst indoor HF, ppm (mean) | Crew injuries (mean) |
+|---|---|---|---|---|---|
+| No response | 400 | 7.9 | 18% | 5.06 | 0.00 |
+| Rule-of-thumb cooling | 400 | 2.2 | 77% | 1.05 | 0.01 |
+
+Same 5 randomised incidents (seeds 5000, 5001, 5002, 5003, 5004), advisor cards accepted in full:
+
+| Response | Incidents | Enclosures lost (mean) | Spread stopped | Worst indoor HF, ppm (mean) | Crew injuries (mean) |
+|---|---|---|---|---|---|
+| No response | 5 | 9.0 | 0% | 5.71 | 0.00 |
+| Rule-of-thumb cooling | 5 | 2.2 | 80% | 1.54 | 0.00 |
+| Codex planner | 5 | 1.0 | 100% | 0.44 | 0.00 |
+
+Default scenario with the two hidden sensor faults: the planner lost 1 enclosure and stopped the spread at T+48; worst indoor HF 0.41 ppm. The rule-of-thumb response lost 3 and did not stop the spread within 90 minutes; with no response all 12 were lost.
+
+The enclosure whose battery fails first cannot be saved, so one lost enclosure is the practical floor. The advisor runs are few because each one makes 6 to 11 live Codex calls; the baselines are cheap and ran on 400 incidents. Per-run logs are in `eval/`.
 
 ## Run it
 

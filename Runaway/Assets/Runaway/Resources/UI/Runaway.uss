@@ -329,3 +329,13 @@
 .nearby .community-status { flex-direction: row; }
 .nearby .community-action { width: auto; font-size: 13px; margin-right: 10px; }
 .nearby .community-ppm { flex-grow: 0; font-size: 13px; -unity-text-align: middle-left; }
+.nearby .community { margin-bottom: 3px; }
+.nearby .community-name { font-size: 14px; }
+.review-title, .review-sub, .stats, .chart, .review-foot { flex-shrink: 0; }
+.stat { min-height: 96px; }
+.cols { flex-shrink: 1; min-height: 0; overflow: hidden; }
+.col { min-height: 0; }
+.decision { flex-shrink: 0; }
+.lesson { flex-shrink: 0; }
+.truth { flex-shrink: 0; }
+.lesson-title { white-space: normal; }

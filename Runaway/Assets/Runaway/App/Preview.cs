@@ -16,6 +16,7 @@ namespace Runaway.App
         {
             Directory.CreateDirectory(dir);
             rig.InputEnabled = false;
+            g.SkipLessons = true;
             JArray decisions = null;
             if (!string.IsNullOrEmpty(cardsPath) && File.Exists(cardsPath)) decisions = (JArray)JObject.Parse(File.ReadAllText(cardsPath))["decisions"];
 
@@ -55,7 +56,7 @@ namespace Runaway.App
             yield return Frames(60);
             if (decisions != null)
             {
-                var conflict = decisions.FirstOrDefault(d => ((string)d["Trigger"] ?? "").Contains("thermal camera")) ?? decisions[Math.Min(5, decisions.Count - 1)];
+                var conflict = decisions.FirstOrDefault(d => ((string)d["Trigger"] ?? "").Contains("battery sensor reads")) ?? decisions[Math.Min(5, decisions.Count - 1)];
                 Inject(g, conflict);
                 yield return Frames(20);
             }
@@ -69,6 +70,7 @@ namespace Runaway.App
             yield return Frames(40);
             yield return Shot(dir, "08-review");
             while (g.LessonsPending) yield return null;
+            g.PreviewLessons(3);
             yield return Frames(10);
             yield return Shot(dir, "09-review-lessons");
             Application.Quit();

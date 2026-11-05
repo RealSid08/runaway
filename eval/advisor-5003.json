@@ -1,0 +1,810 @@
+{
+  "seed": 5003,
+  "policy": "accept",
+  "outcome": {
+    "Minutes": 90.0,
+    "Lost": 1,
+    "Deflagrations": 0,
+    "Injuries": 0,
+    "Withdrawals": 0,
+    "MaxCrewExposure": 0.0,
+    "ContainedMin": 31.666666666666668,
+    "WaterKl": 421.8950000000005,
+    "Receptors": [
+      {
+        "Id": "homes",
+        "Name": "Glenvale homes",
+        "Action": "None",
+        "PeakOutdoor": 0.0,
+        "PeakIndoor": 0.0,
+        "Dose": 0.0
+      },
+      {
+        "Id": "school",
+        "Name": "Glenvale Primary",
+        "Action": "None",
+        "PeakOutdoor": 0.0,
+        "PeakIndoor": 0.0,
+        "Dose": 0.0
+      },
+      {
+        "Id": "farm",
+        "Name": "Hollis farm",
+        "Action": "Shelter",
+        "PeakOutdoor": 1.7012701232932987,
+        "PeakIndoor": 0.5103810369879896,
+        "Dose": 20.319232475429477
+      }
+    ],
+    "WorstIndoor": 0.5103810369879896,
+    "TotalDose": 20.319232475429477
+  },
+  "decisions": [
+    {
+      "Number": 1,
+      "Time": 350.0,
+      "Trigger": "Pumper 1 is the first crew on scene. Time for a first plan.",
+      "Card": {
+        "headline": "Cool B4 and B6 and shelter Hollis farm",
+        "actions": [
+          {
+            "type": "cool",
+            "unit": "P1",
+            "container": "B4",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 1 protects the downwind neighbour before it heats."
+          },
+          {
+            "type": "cool",
+            "unit": "P2",
+            "container": "B6",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 2 protects the other close neighbour on arrival."
+          },
+          {
+            "type": "shelter",
+            "unit": null,
+            "container": null,
+            "staging": null,
+            "receptor": "farm",
+            "reason": "Shelter Hollis farm before toxic smoke arrives."
+          }
+        ],
+        "rationale": "Hollis farm is downwind while Glenvale homes and Glenvale Primary are upwind. Cool from the north beyond 17 m and keep enclosures closed.",
+        "evidence": [
+          "B5 battery sensor reads 73 C and rises 3.1 C each minute.",
+          "The site wind sensor reads from 55 degrees at 7.8 metres per second.",
+          "The forecast gives B5 a 95% runaway chance within ten minutes."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "2.0",
+            "with": "1.1"
+          },
+          {
+            "label": "Hollis farm peak indoor HF",
+            "without": "1.19 ppm",
+            "with": "0.33 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "The tested plan limits spread, but wind and temperatures lack independent checks.",
+        "would_change_my_mind": "If smoke turns toward Glenvale homes or Glenvale Primary, shelter them immediately.",
+        "sensor_concerns": [
+          "Fixed gas readings are noisy and cannot establish safe entry."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 33.2452896,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 0,
+          "Unit": "P1",
+          "Container": "B4",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 350.0
+        },
+        {
+          "Type": 0,
+          "Unit": "P2",
+          "Container": "B6",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 350.0
+        },
+        {
+          "Type": 3,
+          "Unit": null,
+          "Container": null,
+          "Staging": null,
+          "Receptor": "farm",
+          "Source": "advisor",
+          "Time": 350.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 2,
+      "Time": 590.0,
+      "Trigger": "B5 is heating up. It is at 102°C and rising.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep Pumper 1 cooling B4 and Pumper 2 cooling B6 as B5 heats rapidly. Keep Hollis farm sheltered and crews at least 17 m from B5 if it vents.",
+        "evidence": [
+          "B5 battery sensor reads 118 C, rising 16 C per minute.",
+          "The site anemometer puts Hollis farm downwind.",
+          "Plan testing found no spread reduction from Aerial 1 cooling A5."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1.2",
+            "with": "1.2"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Current orders protect both neighbours, but wind and temperatures lack independent checks.",
+        "would_change_my_mind": "If Aerial 1 reports different smoke drift or another enclosure heating.",
+        "sensor_concerns": [
+          "The trigger says 102 C, but the latest battery reading is 118 C.",
+          "Fixed gas readings are noisy and HAZMAT 1 has not verified them."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 25.7579215,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 3,
+      "Time": 830.0,
+      "Trigger": "B5 is venting flammable gas. Its battery is in thermal runaway. B5 is venting flammable gas. Its battery is in thermal runaway.",
+      "Card": {
+        "headline": "Withdraw both pumpers north and cool B4",
+        "actions": [
+          {
+            "type": "stage",
+            "unit": "P1",
+            "container": null,
+            "staging": "north",
+            "receptor": null,
+            "reason": "Move Pumper 1 beyond B5's 17 metre danger area."
+          },
+          {
+            "type": "stage",
+            "unit": "P2",
+            "container": null,
+            "staging": "north",
+            "receptor": null,
+            "reason": "Move Pumper 2 beyond B5's 17 metre danger area."
+          },
+          {
+            "type": "cool",
+            "unit": "A1",
+            "container": "B4",
+            "staging": null,
+            "receptor": null,
+            "reason": "Aerial 1 should protect B4 from a safe distance on arrival."
+          }
+        ],
+        "rationale": "B5 can explode, so withdraw crews and let it burn. Keep Hollis farm sheltered and have Aerial 1 cool B4 on arrival.",
+        "evidence": [
+          "B5's battery sensor reads 221 C and rising.",
+          "Reported crew positions put both pumpers about 16 metres from B5.",
+          "The site wind sensor shows wind from the northeast at 7 metres per second."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "2.4",
+            "with": "1.2"
+          },
+          {
+            "label": "Peak indoor HF at Hollis farm",
+            "without": "0.56 ppm",
+            "with": "0.41 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "The tested plan improves containment, but independent temperature and wind checks are unavailable.",
+        "would_change_my_mind": "If Aerial 1 finds hotter enclosures or different smoke drift, change cooling and community protection.",
+        "sensor_concerns": [
+          "A5's battery sensor is flat beside B5, so I tested an assumed 80 C.",
+          "Fixed gas readings are noisy and HAZMAT 1 has not verified them."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 42.5104393,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 1,
+          "Unit": "P1",
+          "Container": null,
+          "Staging": "north",
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 830.0
+        },
+        {
+          "Type": 1,
+          "Unit": "P2",
+          "Container": null,
+          "Staging": "north",
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 830.0
+        },
+        {
+          "Type": 0,
+          "Unit": "A1",
+          "Container": "B4",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 830.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 4,
+      "Time": 990.0,
+      "Trigger": "B5 is on fire.",
+      "Card": {
+        "headline": "Cool B3 and B6 now",
+        "actions": [
+          {
+            "type": "cool",
+            "unit": "P1",
+            "container": "B3",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 1 can protect B3 before B4 spreads fire."
+          },
+          {
+            "type": "cool",
+            "unit": "P2",
+            "container": "B6",
+            "staging": null,
+            "receptor": null,
+            "reason": "Pumper 2 can stop B6 heating beside burning B5."
+          }
+        ],
+        "rationale": "Keep Aerial 1 assigned to B4 and Hollis farm sheltered. Cool early to contain spread, keeping crews at least 17 m from venting enclosures.",
+        "evidence": [
+          "B4 battery sensor reads 37 C, rising 7 C per minute.",
+          "B6 battery sensor reads 23 C, rising 2.7 C per minute.",
+          "The site wind meter shows smoke heading toward Hollis farm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "4.8",
+            "with": "2.0"
+          },
+          {
+            "label": "Peak indoor HF at Hollis farm",
+            "without": "0.97 ppm",
+            "with": "0.69 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Testing supports early cooling, but independent wind and thermal checks are unavailable.",
+        "would_change_my_mind": "If Aerial 1 reports different smoke drift or hidden heating, reassess immediately.",
+        "sensor_concerns": [
+          "The site wind meter has no independent smoke drift check.",
+          "Fixed gas readings are noisy and HAZMAT 1 has not verified them."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 26.0580635,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 0,
+          "Unit": "P1",
+          "Container": "B3",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 990.0
+        },
+        {
+          "Type": 0,
+          "Unit": "P2",
+          "Container": "B6",
+          "Staging": null,
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 990.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 5,
+      "Time": 1230.0,
+      "Trigger": "B5 is on fire. Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep Aerial 1 cooling B4 and both pumpers cooling B3 and B6. Crews are upwind and Hollis farm is already sheltered from HF smoke.",
+        "evidence": [
+          "B4 battery sensor reads 56 C and rises 4 C each minute.",
+          "Aerial 1 sees smoke moving southwest toward Hollis farm.",
+          "Aerial 1 thermal camera shows B3 at 17 C and B6 at 14 C."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Hollis farm indoor HF",
+            "without": "0.34 ppm",
+            "with": "0.34 ppm"
+          }
+        ],
+        "confidence": "high",
+        "confidence_reason": "Independent readings agree and the tested orders contain spread without crew exposure.",
+        "would_change_my_mind": "If smoke turns toward Glenvale homes or Glenvale Primary, shelter them immediately.",
+        "sensor_concerns": [
+          "B6 fixed gas reading is unverified and cannot establish safe entry."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 20.001,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 6,
+      "Time": 1540.0,
+      "Trigger": "HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep cooling B3, B4 and B6, and keep Hollis farm sheltered. Entering B5 adds crew exposure without reducing spread.",
+        "evidence": [
+          "Aerial 1 shows B4 at 21 C and B6 at 20 C.",
+          "Aerial 1 reports smoke drifting southwest, away from Glenvale homes and Glenvale Primary.",
+          "Air monitoring shows HF at Hollis farm at 1.07 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved after 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Maximum crew exposure",
+            "without": "0%",
+            "with": "0%"
+          }
+        ],
+        "confidence": "high",
+        "confidence_reason": "Independent temperature and wind readings support holding, and testing predicts no further spread.",
+        "would_change_my_mind": "If smoke turns toward Glenvale homes or Glenvale Primary, shelter them immediately.",
+        "sensor_concerns": [
+          "The B2 fixed gas detector reads 17.5%, but HAZMAT 1 verifies 2.1%.",
+          "The A3 fixed gas detector reads 10.2%, but HAZMAT 1 verifies 0.2%."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 26.6956346,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 7,
+      "Time": 2200.0,
+      "Trigger": "Pumper 3 has arrived. Its tanker means a fourth hose can run.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep cooling B3, B4 and B6 and keep Hollis farm sheltered. A fourth stream adds no tested benefit, so hold Pumper 3 in reserve.",
+        "evidence": [
+          "Aerial 1 measures B4 at 24 C and B6 at 14 C.",
+          "Aerial 1 reports smoke moving southwest, away from Glenvale homes and Glenvale Primary.",
+          "The incident log reports no new fire for 15 minutes."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          }
+        ],
+        "confidence": "high",
+        "confidence_reason": "The camera confirms cool neighbours, and testing found no benefit from cooling A5.",
+        "would_change_my_mind": "If neighbours heat or smoke turns toward Glenvale, change orders immediately.",
+        "sensor_concerns": [
+          "B6's battery sensor is flat beside fire, so testing used the camera estimate of 14 C."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "read_lessons",
+        "test_plan",
+        "test_plan"
+      ],
+      "AdvisorSeconds": 22.1430103,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 8,
+      "Time": 3100.0,
+      "Trigger": "Regular check that the plan is still right.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep cooling B3, B4 and B6 while B5 burns. Keep Hollis farm sheltered and crews upwind.",
+        "evidence": [
+          "Aerial 1 measures B4 at 15 C and B6 at 17 C.",
+          "Aerial 1 reports smoke drifting southwest toward Hollis farm.",
+          "The forecast gives each cooled enclosure a 2% spread risk within 20 minutes."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Peak indoor HF at Hollis farm",
+            "without": "0.57 ppm",
+            "with": "0.57 ppm"
+          }
+        ],
+        "confidence": "high",
+        "confidence_reason": "Independent temperature and wind readings support holding, and the simulation flags no safety concerns.",
+        "would_change_my_mind": "If smoke turns toward Glenvale homes or Glenvale Primary, shelter them immediately.",
+        "sensor_concerns": [
+          "A4's fixed gas detector reads 16%, but HAZMAT 1 verifies zero."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 21.1128902,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 9,
+      "Time": 4000.0,
+      "Trigger": "Regular check that the plan is still right.",
+      "Card": {
+        "headline": "Stage Pumper 1 north and keep neighbours cooled",
+        "actions": [
+          {
+            "type": "stage",
+            "unit": "P1",
+            "container": null,
+            "staging": "north",
+            "receptor": null,
+            "reason": "Save water while Aerial 1 and Pumper 2 protect B5's neighbours."
+          }
+        ],
+        "rationale": "Testing shows the same spread control with Pumper 1 held north. Keep Hollis farm sheltered as toxic smoke continues southwest.",
+        "evidence": [
+          "Aerial 1's thermal camera shows B4 at 16 C and B6 at 24 C.",
+          "Aerial 1 reports smoke drifting southwest toward Hollis farm.",
+          "Hollis farm's air monitor reads HF at 1.08 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Peak indoor HF at Hollis farm",
+            "without": "0.5 ppm",
+            "with": "0.5 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "Independent readings agree, but testing assumes the wind stays steady.",
+        "would_change_my_mind": "If B3 heats or smoke turns toward Glenvale homes or Glenvale Primary.",
+        "sensor_concerns": [
+          "A5's fixed gas detector reads 10.4% while HAZMAT 1 verifies 0%."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 27.8756331,
+      "Response": "accepted",
+      "Applied": [
+        {
+          "Type": 1,
+          "Unit": "P1",
+          "Container": null,
+          "Staging": "north",
+          "Receptor": null,
+          "Source": "advisor",
+          "Time": 4000.0
+        }
+      ],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    },
+    {
+      "Number": 10,
+      "Time": 4390.0,
+      "Trigger": "Smoke is blowing south-west, but the site wind sensor still says the wind is from the north-east.",
+      "Card": {
+        "headline": "Keep the current plan",
+        "actions": [],
+        "rationale": "Keep Aerial 1 cooling B4 and Pumper 2 cooling B6. Keep Hollis farm sheltered and spare crews north, clear of toxic smoke.",
+        "evidence": [
+          "Aerial 1 reports smoke drifting toward 235 degrees, away from Glenvale homes and Glenvale Primary.",
+          "Aerial 1 thermal camera shows B4 at 16 C and B6 at 24 C.",
+          "Hollis farm air monitoring reads HF at 0.57 ppm."
+        ],
+        "expected_effect": [
+          {
+            "label": "Enclosures involved in 20 minutes",
+            "without": "1",
+            "with": "1"
+          },
+          {
+            "label": "Peak indoor HF at Hollis farm",
+            "without": "0.59 ppm",
+            "with": "0.59 ppm"
+          }
+        ],
+        "confidence": "medium",
+        "confidence_reason": "The test using observed smoke direction predicts no spread, but future wind changes remain uncertain.",
+        "would_change_my_mind": "If smoke turns toward Glenvale homes or Glenvale Primary, shelter them immediately.",
+        "sensor_concerns": [
+          "The site wind sensor differs from observed smoke by 26 degrees, so testing used wind from 55 degrees."
+        ],
+        "lessons_cited": []
+      },
+      "Cautions": [],
+      "ToolCalls": [
+        "get_situation",
+        "get_sensor_check",
+        "get_forecast",
+        "test_plan",
+        "read_lessons"
+      ],
+      "AdvisorSeconds": 21.1087477,
+      "Response": "accepted",
+      "Applied": [],
+      "Error": null,
+      "Counterfactual": null,
+      "CounterfactualLabel": null
+    }
+  ],
+  "events": [
+    {
+      "Time": 0.0,
+      "Kind": "start",
+      "Text": "The battery in B5 is overheating. The site operator has raised the alarm.",
+      "Subject": "B5",
+      "Hidden": false
+    },
+    {
+      "Time": 350.0,
+      "Kind": "arrival",
+      "Text": "Pumper 1 on scene.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 350.0,
+      "Kind": "protect",
+      "Text": "Hollis farm told to shelter indoors.",
+      "Subject": "farm",
+      "Hidden": false
+    },
+    {
+      "Time": 430.0,
+      "Kind": "tactic",
+      "Text": "Pumper 1 is spraying water on B4.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 620.0,
+      "Kind": "arrival",
+      "Text": "Pumper 2 on scene.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 630.0,
+      "Kind": "venting",
+      "Text": "B5 is venting flammable gas. Its battery is in thermal runaway.",
+      "Subject": "B5",
+      "Hidden": false
+    },
+    {
+      "Time": 700.0,
+      "Kind": "tactic",
+      "Text": "Pumper 2 is spraying water on B6.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 990.0,
+      "Kind": "fire",
+      "Text": "B5 is on fire.",
+      "Subject": "B5",
+      "Hidden": false
+    },
+    {
+      "Time": 1060.0,
+      "Kind": "tactic",
+      "Text": "Pumper 1 is spraying water on B3.",
+      "Subject": "P1",
+      "Hidden": false
+    },
+    {
+      "Time": 1060.0,
+      "Kind": "tactic",
+      "Text": "Pumper 2 is spraying water on B6.",
+      "Subject": "P2",
+      "Hidden": false
+    },
+    {
+      "Time": 1060.0,
+      "Kind": "arrival",
+      "Text": "Aerial 1 on scene.",
+      "Subject": "A1",
+      "Hidden": false
+    },
+    {
+      "Time": 1200.0,
+      "Kind": "tactic",
+      "Text": "Aerial 1 is spraying water on B4.",
+      "Subject": "A1",
+      "Hidden": false
+    },
+    {
+      "Time": 1540.0,
+      "Kind": "arrival",
+      "Text": "HAZMAT 1 on scene.",
+      "Subject": "H1",
+      "Hidden": false
+    },
+    {
+      "Time": 1900.0,
+      "Kind": "contained",
+      "Text": "The spread has stopped. Nothing new has caught fire for 15 minutes.",
+      "Subject": null,
+      "Hidden": false
+    },
+    {
+      "Time": 2200.0,
+      "Kind": "arrival",
+      "Text": "Pumper 3 on scene.",
+      "Subject": "P3",
+      "Hidden": false
+    },
+    {
+      "Time": 2460.0,
+      "Kind": "wind",
+      "Text": "The wind swung round to blow from the south-west.",
+      "Subject": null,
+      "Hidden": true
+    },
+    {
+      "Time": 5110.0,
+      "Kind": "burnt_out",
+      "Text": "B5 has burnt out.",
+      "Subject": "B5",
+      "Hidden": false
+    }
+  ]
+}

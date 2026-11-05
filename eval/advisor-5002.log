@@ -35,3 +35,25 @@ T+ 25.3  HAZMAT 1 on scene.
 T+ 36.0 *A6's battery sensor froze and kept reading 24°C.
 T+ 37.3  Pumper 3 on scene.
 --- decision 5 at T+37.3: Pumper 3 has arrived. Its tanker means a fourth hose can run.
+   [25s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Adding Pumper 3 on B5 shows no benefit, so conserve water.
+     sensor: B5 fixed gas detector reads 16 percent, but HAZMAT 1 verifies below 1 percent.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 38.8 *The wind swung round to blow from the south-west.
+--- decision 6 at T+42.8: Smoke is blowing south-east, but the site wind sensor still says the wind is from the north.
+   [22s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Tests using the observed wind show no community smoke exposure and no benefit from extra streams.
+     sensor: The site wind sensor disagrees with smoke drift, so tests used wind from 337 degrees.
+     sensor: A6 has a flat battery sensor reading, but the thermal camera confirms it remains cool.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+--- decision 7 at T+57.8: Regular check that the plan is still right.
+   [24s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Extra streams showed no benefit, and smoke is moving away from Glenvale homes and Glenvale Primary.
+     sensor: A6's battery sensor is flat beside fire, but the camera supports 24 C inside.
+     sensor: B1's fixed gas detector reads 14%, while HAZMAT 1 verifies about 1%.
+     effect: Enclosures involved after 20 minutes: 1 -> 1
+T+ 63.2  A5 has burnt out.
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=24 worstIndoor=0.00 dose=0
+   Glenvale homes: outdoor 0.00 indoor 0.00 dose 0 (None)
+   Glenvale Primary: outdoor 0.00 indoor 0.00 dose 0 (None)
+   Hollis farm: outdoor 0.00 indoor 0.00 dose 0 (None)

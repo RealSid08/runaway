@@ -1,0 +1,78 @@
+T+  0.0  The battery in A5 is overheating. The site operator has raised the alarm.
+T+  3.5  A5 is venting flammable gas. Its battery is in thermal runaway.
+T+  5.8  Pumper 1 on scene.
+--- decision 1 at T+5.8: Pumper 1 is the first crew on scene. Time for a first plan.
+   [30s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Cool A6 and A4 and shelter both communities
+     - Pumper 1 cools A6: Pumper 1 can stop spread to the hottest neighbour.
+     - Pumper 2 cools A4: Pumper 2 should cool the other close neighbour on arrival.
+     - Glenvale homes shelters indoors: Protect Glenvale homes before HF smoke arrives.
+     - Glenvale Primary shelters indoors: Protect Glenvale Primary early while smoke direction remains unconfirmed.
+     why: Let A5 burn and keep crews upwind beyond 17 metres. Cooling both close neighbours matched cooling B6 with less crew exposure.
+     sensor: B6 battery sensor is flat beside the incident, so tests assumed 45 C.
+     sensor: The wind meter has no independent smoke drift check.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     effect: Enclosures involved in 20 minutes: 2.1 -> 1.0
+     effect: Peak indoor HF at homes: 0.98 ppm -> 0.2 ppm
+T+  5.8  Glenvale homes told to shelter indoors.
+T+  5.8  Glenvale Primary told to shelter indoors.
+T+  7.0  Pumper 1 is spraying water on A6.
+T+  8.3  A5 is on fire.
+--- decision 2 at T+8.3: A5 is on fire.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 assigned to A4. Let A5 burn and keep Glenvale homes and Glenvale Primary sheltered.
+     sensor: The wind meter has no independent smoke drift check yet.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at homes: 0.46 ppm -> 0.46 ppm
+T+ 11.7  Pumper 2 on scene.
+--- decision 3 at T+12.3: A5 is on fire.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4 while A5 burns. Keep Glenvale homes and Glenvale Primary sheltered because extra cooling showed no benefit.
+     sensor: A5 reports zero gas despite visible fire, so it cannot establish safe entry.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak HF inside Glenvale homes: 0.55 ppm -> 0.55 ppm
+T+ 12.8  Pumper 2 is spraying water on A4.
+T+ 18.2  Aerial 1 on scene.
+--- decision 4 at T+18.2: Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.
+   [24s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4 while A5 burns. Keep Glenvale homes and Glenvale Primary sheltered, as another stream showed no benefit.
+     sensor: B4's battery sensor is flat beside the fire, so tests used the camera estimate of 34 C.
+     sensor: B6's camera estimate exceeds its battery reading, so tests used 53 C.
+     sensor: Fixed gas readings are unverified and cannot justify opening an enclosure.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at Glenvale homes: 0.33 ppm -> 0.33 ppm
+T+ 21.8  HAZMAT 1 on scene.
+--- decision 5 at T+22.2: HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Keep Glenvale homes and Glenvale Primary sheltered because HF smoke is reaching homes.
+     sensor: A3 and A6 fixed gas readings exceed HAZMAT 1 readings, so trust HAZMAT 1.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at homes: 0.55 ppm -> 0.55 ppm
+T+ 23.5  The spread has stopped. Nothing new has caught fire for 15 minutes.
+T+ 26.0 *The wind swung round to blow from the south-west.
+T+ 31.0  Pumper 3 on scene.
+--- decision 6 at T+31.0: Pumper 3 has arrived. Its tanker means a fourth hose can run.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4, with both Glenvale communities sheltered. Extra hoses showed no benefit even with B6 assumed hotter, so conserve water.
+     sensor: B6's camera suggests about 87 C inside, so tests used that higher temperature.
+     sensor: B2's fixed gas detector reads 13 percent, but HAZMAT 1 verifies only 0.2 percent.
+     effect: Enclosures burning in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at homes: 0.11 ppm -> 0.11 ppm
+--- decision 7 at T+46.0: Regular check that the plan is still right.
+   [21s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Keep Glenvale homes and Glenvale Primary sheltered while A5 burns.
+     sensor: The fixed B2 gas detector reads 11%, but HAZMAT 1 verifies about 1%.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+--- decision 8 at T+55.8: B6 is heating up. It is at 100°C and rising.
+   [24s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan,test_plan] Have Aerial 1 cool B6 now
+     - Aerial 1 cools B6: Cool B6 before further heating makes water less effective.
+     why: Keep Pumper 1 and Pumper 2 cooling A6 and A4, with Glenvale homes and Glenvale Primary sheltered. Add one stream to B6 from upwind, keeping crews beyond 17 metres.
+     sensor: A6 fixed gas detector reads 17%, but HAZMAT 1 verifies zero.
+     sensor: B1 and B2 fixed gas readings exceed HAZMAT 1 readings.
+     effect: Enclosures involved after 20 minutes: 1 -> 1
+T+ 58.0  Aerial 1 is spraying water on B6.
+T+ 68.8  A5 has burnt out.
+OUTCOME lost=1 defl=0 inj=0 wd=0 contained=24 worstIndoor=0.45 dose=4
+   Glenvale homes: outdoor 1.51 indoor 0.45 dose 4 (Shelter)
+   Glenvale Primary: outdoor 0.00 indoor 0.00 dose 0 (Shelter)
+   Hollis farm: outdoor 0.00 indoor 0.00 dose 0 (None)

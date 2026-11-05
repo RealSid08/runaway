@@ -57,7 +57,7 @@ Shader "Runaway/Plume"
                 float iso24 = 1 - smoothstep(0, w, abs(l - 1.3802));
                 float n = noise(i.world.xz * 0.035 + _Time.y * float2(0.18, 0.11)) * 0.6 + noise(i.world.xz * 0.11 - _Time.y * 0.3) * 0.4;
                 float edge = smoothstep(0, 0.06, i.uv.x) * smoothstep(0, 0.06, i.uv.y) * smoothstep(1, 0.94, i.uv.x) * smoothstep(1, 0.94, i.uv.y);
-                float a = body * (0.12 + 0.12 * n + 0.22 * smoothstep(-0.2, 1.3, l)) * _Opacity;
+                float a = body * (0.07 + 0.09 * n + 0.2 * smoothstep(0.0, 1.3, l)) * _Opacity;
                 a = max(a, (iso1 * 0.75 + iso24 * 0.9) * _Opacity);
                 col = lerp(col, half3(1, 0.96, 0.9), iso1 * 0.35);
                 return half4(col, saturate(a * edge));

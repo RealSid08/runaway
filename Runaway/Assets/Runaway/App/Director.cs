@@ -229,7 +229,7 @@ namespace Runaway.App
                 else if (windConflict && !plumeView && G.Phase == Phase.Running)
                 {
                     plumeView = true;
-                    _rig.Target = new Vector3(95, 0, 105); _rig.Distance = 420; _rig.Pitch = 56; _rig.Yaw = 196;
+                    _rig.Target = new Vector3(85, 0, 95); _rig.Distance = 400; _rig.Pitch = 52; _rig.Yaw = 22;
                     yield return Wait(6f);
                     Still("plume-school");
                     yield return Wait(4f);

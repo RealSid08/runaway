@@ -1,0 +1,37 @@
+T+  0.0  The battery in A5 is overheating. The site operator has raised the alarm.
+T+  6.7  A5 is venting flammable gas. Its battery is in thermal runaway.
+T+  9.0  Pumper 1 on scene.
+--- decision 1 at T+9.0: Pumper 1 is the first crew on scene. Time for a first plan.
+   [32s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan,test_plan] Cool A6 now and A4 when Pumper 2 arrives
+     - Pumper 1 cools A6: Cool the warmer neighbour before fire heats it further.
+     - Pumper 2 cools A4: Protect the other close neighbour immediately on arrival.
+     why: Keep crews north and at least 17 m from venting A5. Two streams prevent predicted spread as effectively as three, while current wind carries smoke away from Glenvale homes and Glenvale Primary.
+     sensor: The wind reading has no independent smoke check yet.
+     sensor: Fixed gas readings are noisy and remain unverified by HAZMAT 1.
+     effect: Enclosures involved after 40 minutes: 3.1 -> 1.0
+T+  9.3  A5 is on fire.
+T+ 10.2  Pumper 1 is spraying water on A6.
+--- decision 2 at T+13.0: A5 is on fire. A5 is on fire.
+   [21s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 assigned to A4 on arrival. Current orders contain spread in the test, with no predicted HF smoke reaching communities.
+     sensor: The wind reading has no independent smoke drift check.
+     sensor: Fixed gas readings are noisy and remain unverified by HAZMAT 1.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 14.5 *The site wind sensor jammed and kept showing the old wind.
+T+ 14.5  Pumper 2 on scene.
+T+ 15.7  Pumper 2 is spraying water on A4.
+T+ 22.0  Aerial 1 on scene.
+--- decision 3 at T+22.0: Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.
+   [25s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Adding Aerial 1 to B5 gives no predicted benefit and uses more water.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 24.5  The spread has stopped. Nothing new has caught fire for 15 minutes.
+T+ 25.3  HAZMAT 1 on scene.
+--- decision 4 at T+26.0: HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.
+   [20s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A6 and Pumper 2 cooling A4. Adding Aerial 1 on B5 gives no predicted benefit.
+     sensor: A4’s fixed gas detector reads about 9 percent while HAZMAT 1 verifies zero.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 36.0 *A6's battery sensor froze and kept reading 24°C.
+T+ 37.3  Pumper 3 on scene.
+--- decision 5 at T+37.3: Pumper 3 has arrived. Its tanker means a fourth hose can run.

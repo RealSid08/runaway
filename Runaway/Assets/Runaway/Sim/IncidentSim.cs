@@ -67,7 +67,7 @@ namespace Runaway.Sim
             s.Receptors = Site.DefaultReceptors();
             s.Wind = new WindState { From = cfg.WindFrom, Speed = cfg.WindSpeed, StationFrom = cfg.WindFrom, StationSpeed = cfg.WindSpeed };
             s.LastInvolvementAt = 0;
-            s.Log("start", $"BMS alarm at {init.Id}. Site operator reports rising module temperature.", init.Id);
+            s.Log("start", $"The battery in {init.Id} is overheating. The site operator has raised the alarm.", init.Id);
             s.BuildObservation();
             return s;
         }
@@ -117,7 +117,7 @@ namespace Runaway.Sim
                     var pos = CoolingPosition(ci, u);
                     if (u.OnScene) { u.Path = Site.Route(u.Pos, pos); u.Status = UnitStatus.Moving; }
                     else u.Path = new List<V2> { pos };
-                    Log("order", $"{u.Id} assigned to cool {o.Container}.", u.Id);
+                    Log("order", $"{u.Name} sent to cool {o.Container}.", u.Id);
                     break;
                 }
                 case OrderType.Stage:
@@ -127,24 +127,24 @@ namespace Runaway.Sim
                     u.Staging = o.Staging ?? "north";
                     var pos = Site.StagingPos(u.Staging);
                     if (u.OnScene && u.Status != UnitStatus.Withdrawn) { u.Path = Site.Route(u.Pos, pos); u.Status = UnitStatus.Moving; }
-                    Log("order", $"{u.Id} to {Site.StagingName(u.Staging)}.", u.Id);
+                    Log("order", $"{u.Name} sent to the {Site.StagingName(u.Staging)}.", u.Id);
                     break;
                 }
                 case OrderType.InteriorAttack:
                 {
                     var u = UnitById(o.Unit);
                     var c = Containers[Site.ContainerIndex(o.Container)];
-                    Log("order", $"{u.Id} opens {c.Id} for an interior attack.", u.Id);
+                    Log("order", $"{u.Name} opens {c.Id} to fight the fire from inside.", u.Id);
                     c.InteriorAttacked = true;
                     if (c.Gas >= 25)
                     {
-                        Deflagrate(c, "Doors opened into an explosive atmosphere");
+                        Deflagrate(c, "The doors were opened onto built-up gas");
                     }
                     else
                     {
                         c.Intensity *= 0.6;
                         c.BurnSeconds *= 0.55;
-                        Log("tactic", $"Interior attack on {c.Id} is knocking the fire down.", c.Id);
+                        Log("tactic", $"The fire inside {c.Id} is being knocked down.", c.Id);
                     }
                     u.Target = c.Index;
                     u.Status = UnitStatus.Cooling;
@@ -155,7 +155,7 @@ namespace Runaway.Sim
                 {
                     var rc = ReceptorById(o.Receptor);
                     if (rc.Action == Protection.None) rc.Action = Protection.Shelter;
-                    Log("protect", $"Shelter-in-place issued for {rc.Name}.", rc.Id);
+                    Log("protect", $"{rc.Name} told to shelter indoors.", rc.Id);
                     break;
                 }
                 case OrderType.Evacuate:
@@ -166,7 +166,7 @@ namespace Runaway.Sim
                         rc.Action = Protection.Evacuating;
                         rc.EvacDoneAt = Time + Phys.EvacMinutes * 60;
                     }
-                    Log("protect", $"Evacuation ordered for {rc.Name}.", rc.Id);
+                    Log("protect", $"{rc.Name} told to evacuate.", rc.Id);
                     break;
                 }
             }
@@ -277,7 +277,7 @@ namespace Runaway.Sim
                 t = t * t * (3 - 2 * t);
                 baseFrom = Angle.Wrap(cfg.WindFrom + Angle.Delta(cfg.WindFrom, cfg.ShiftTo) * t);
                 baseSpeed = cfg.WindSpeed + (cfg.ShiftSpeed - cfg.WindSpeed) * t;
-                if (!_shiftLogged) { _shiftLogged = true; Log("wind", "Wind begins backing toward the south-west.", null, hidden: true); }
+                if (!_shiftLogged) { _shiftLogged = true; Log("wind", "The wind swung round to blow from the south-west.", null, hidden: true); }
             }
             // Ornstein-Uhlenbeck gusting on direction
             Wind.Gust += (-Wind.Gust / 120.0) * dt + Rng.Gauss() * Math.Sqrt(dt) * 0.55;
@@ -287,7 +287,7 @@ namespace Runaway.Sim
             if (!Wind.StationStuck && m >= cfg.StationStuckMin)
             {
                 Wind.StationStuck = true;
-                Log("sensor", "Site anemometer vane seized. It keeps reporting its last reading.", null, hidden: true);
+                Log("sensor", "The site wind sensor jammed and kept showing the old wind.", null, hidden: true);
             }
             if (!Wind.StationStuck)
             {
@@ -328,7 +328,7 @@ namespace Runaway.Sim
                     if (!u.Injured && u.RehabUntil > 0 && Time >= u.RehabUntil)
                     {
                         u.Status = UnitStatus.Staged; u.Exposure = 0; u.RehabUntil = -1;
-                        Log("arrival", $"{u.Id} crew back from rehab.", u.Id);
+                        Log("arrival", $"{u.Name} crew is back from rest.", u.Id);
                     }
                     else MoveAlong(u, dt);
                     continue;
@@ -349,7 +349,7 @@ namespace Runaway.Sim
                 else if (u.Status == UnitStatus.SettingUp)
                 {
                     u.SetupLeft -= dt;
-                    if (u.SetupLeft <= 0) { u.Status = UnitStatus.Cooling; Log("tactic", $"{u.Id} stream flowing on {Containers[u.Target].Id}.", u.Id); }
+                    if (u.SetupLeft <= 0) { u.Status = UnitStatus.Cooling; Log("tactic", $"{u.Name} is spraying water on {Containers[u.Target].Id}.", u.Id); }
                 }
                 if (u.Status == UnitStatus.Cooling) u.WaterUsed += 1900.0 / 60.0 * dt * u.StreamPower;
 
@@ -369,7 +369,7 @@ namespace Runaway.Sim
                     u.Target = -1;
                     u.RehabUntil = Time + 15 * 60;
                     u.Path = Site.Route(u.Pos, Site.StagingPos(u.Staging));
-                    Log("withdrawn", $"{u.Id} withdrawn: crew reached the smoke exposure limit.", u.Id);
+                    Log("withdrawn", $"{u.Name} crew pulled back after too much smoke.", u.Id);
                 }
             }
         }
@@ -427,7 +427,7 @@ namespace Runaway.Sim
                             c.State = CellState.Venting;
                             c.VentStart = Time;
                             LastInvolvementAt = Time;
-                            Log("venting", $"{c.Id} is venting gas. Thermal runaway has started.", c.Id);
+                            Log("venting", $"{c.Id} is venting flammable gas. Its battery is in thermal runaway.", c.Id);
                         }
                         break;
                     }
@@ -442,7 +442,7 @@ namespace Runaway.Sim
                             c.FireStart = Time;
                             LastInvolvementAt = Time;
                             if (c.Gas > 45 && Rng.Next() < (c.Gas - 45) / 40.0)
-                                Deflagrate(c, "Accumulated gas ignited inside the enclosure");
+                                Deflagrate(c, "Built-up gas ignited inside it");
                             else
                                 Log("fire", $"{c.Id} is on fire.", c.Id);
                         }
@@ -480,7 +480,7 @@ namespace Runaway.Sim
             Deflagrations++;
             if (c.State != CellState.Fire) { c.State = CellState.Fire; c.FireStart = Time; }
             c.Intensity = Math.Max(c.Intensity, 0.8);
-            Log("deflagration", $"Deflagration at {c.Id}. {why}.", c.Id);
+            Log("deflagration", $"Explosion at {c.Id}. {why}.", c.Id);
             foreach (var o in Containers)
             {
                 if (o == c || o.State != CellState.Normal) continue;
@@ -495,7 +495,7 @@ namespace Runaway.Sim
                     u.Injured = true;
                     u.Status = UnitStatus.Withdrawn;
                     u.Target = -1;
-                    Log("injury", $"{u.Id} crew injured in the blast and out of service.", u.Id);
+                    Log("injury", $"{u.Name} crew injured in the blast.", u.Id);
                 }
             }
         }
@@ -521,7 +521,7 @@ namespace Runaway.Sim
                 if (r.Action == Protection.Evacuating && Time >= r.EvacDoneAt)
                 {
                     r.Action = Protection.Evacuated;
-                    Log("protect", $"{r.Name} evacuation complete.", r.Id);
+                    Log("protect", $"{r.Name} is fully evacuated.", r.Id);
                 }
                 r.Ppm = HfAt(r.Pos);
                 r.Peak = Math.Max(r.Peak, r.Ppm);
@@ -542,7 +542,7 @@ namespace Runaway.Sim
             if (!anyVenting && !anyHot && Time - LastInvolvementAt > 15 * 60 && (anyFire || Containers.Any(c => c.State == CellState.BurntOut)))
             {
                 ContainedAt = Time;
-                Log("contained", "Spread stopped. No enclosure is heating and no new enclosure has ignited for 15 minutes.");
+                Log("contained", "The spread has stopped. Nothing new has caught fire for 15 minutes.");
             }
         }
 
@@ -565,7 +565,7 @@ namespace Runaway.Sim
                 var c = Containers[stuck];
                 c.BmsStuck = true;
                 c.BmsStuckValue = Math.Round(c.T + ObsRng.Gauss() * 0.5, 1);
-                Log("sensor", $"{c.Id} BMS telemetry froze at {c.BmsStuckValue:F0} C.", c.Id, hidden: true);
+                Log("sensor", $"{c.Id}'s battery sensor froze and kept reading {c.BmsStuckValue:F0}°C.", c.Id, hidden: true);
             }
 
             obs.Containers = new ContainerObs[12];

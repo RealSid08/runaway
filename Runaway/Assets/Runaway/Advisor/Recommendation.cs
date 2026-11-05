@@ -32,13 +32,15 @@ namespace Runaway.Advisor
 
         public string Describe(IncidentSim sim)
         {
+            var unit = sim?.UnitById(Unit)?.Name ?? Unit;
+            var place = sim?.ReceptorById(Receptor)?.Name ?? Receptor;
             switch ((Type ?? "").ToLowerInvariant())
             {
-                case "cool": return $"{Unit} cool {Container}";
-                case "stage": return $"{Unit} to {Site.StagingName(Staging)}";
-                case "interior_attack": return $"{Unit} interior attack on {Container}";
-                case "shelter": return $"Shelter in place: {sim?.ReceptorById(Receptor)?.Name ?? Receptor}";
-                case "evacuate": return $"Evacuate {sim?.ReceptorById(Receptor)?.Name ?? Receptor}";
+                case "cool": return $"{unit} cools {Container}";
+                case "stage": return $"{unit} moves to the {Staging ?? "north"} gate";
+                case "interior_attack": return $"{unit} opens {Container} to fight it from inside";
+                case "shelter": return $"{place} shelters indoors";
+                case "evacuate": return $"Evacuate {place}";
             }
             return Type;
         }
@@ -65,6 +67,39 @@ namespace Runaway.Advisor
         [JsonProperty("lessons_cited")] public List<string> LessonsCited = new List<string>();
 
         public List<Order> ToOrders() => Actions.Select(a => a.ToOrder()).Where(o => o != null).ToList();
+
+        /// <summary>Safety net for house style: whole sentences, no semicolons or dashes, no sensor jargon.</summary>
+        public void Tidy()
+        {
+            Headline = Plain(Headline).TrimEnd('.');
+            Rationale = Plain(Rationale);
+            ConfidenceReason = Plain(ConfidenceReason);
+            WouldChangeMind = Plain(WouldChangeMind);
+            Evidence = Evidence.Select(Plain).ToList();
+            SensorConcerns = SensorConcerns.Select(Plain).ToList();
+            foreach (var a in Actions) a.Reason = Plain(a.Reason);
+            foreach (var m in ExpectedEffect) { m.Label = Plain(m.Label).TrimEnd('.'); m.Without = Value(m.Without); m.With = Value(m.With); }
+        }
+
+        public static string Plain(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return s;
+            s = s.Replace("\u2014", ". ").Replace("\u2013", " to ").Replace(" - ", ". ");
+            s = System.Text.RegularExpressions.Regex.Replace(s, @"\s*;\s*", ". ");
+            s = System.Text.RegularExpressions.Regex.Replace(s, @"\bBMS\b", "battery sensor");
+            s = System.Text.RegularExpressions.Regex.Replace(s, @"\s*\(([^)]*)\)", ", $1");
+            s = System.Text.RegularExpressions.Regex.Replace(s, @"\.\s+([a-z])", m => ". " + m.Groups[1].Value.ToUpperInvariant());
+            s = System.Text.RegularExpressions.Regex.Replace(s, @"\s{2,}", " ").Replace(" ,", ",").Replace("..", ".");
+            return s.Trim();
+        }
+
+        /// <summary>Keeps just the number and unit from an effect value such as "Current orders: 3.1".</summary>
+        public static string Value(string s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return s;
+            var m = System.Text.RegularExpressions.Regex.Match(s, @"[-+]?\d+(\.\d+)?\s*(%|ppm|min|C|°C)?");
+            return m.Success ? m.Value.Trim() : s.Trim();
+        }
 
         public const string Schema = @"{
   ""type"": ""object"",
@@ -94,7 +129,7 @@ namespace Runaway.Advisor
       ""items"": {
         ""type"": ""object"", ""additionalProperties"": false,
         ""required"": [""label"", ""without"", ""with""],
-        ""properties"": { ""label"": { ""type"": ""string"" }, ""without"": { ""type"": ""string"" }, ""with"": { ""type"": ""string"" } }
+        ""properties"": { ""label"": { ""type"": ""string"", ""description"": ""What is measured, at most 7 words, e.g. 'Enclosures involved in 20 min'."" }, ""without"": { ""type"": ""string"", ""description"": ""Value with current orders only, number and unit only, e.g. '3.1' or '62%' or '2.4 ppm'."" }, ""with"": { ""type"": ""string"", ""description"": ""Value with this plan, number and unit only."" } }
       }
     },
     ""confidence"": { ""type"": ""string"", ""enum"": [""low"", ""medium"", ""high""] },

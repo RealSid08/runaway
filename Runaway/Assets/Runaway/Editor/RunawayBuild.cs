@@ -33,6 +33,12 @@ namespace Runaway.EditorTools
             }
         }
 
+        public static void BuildOnly()
+        {
+            try { Build(); EditorApplication.Exit(0); }
+            catch (Exception e) { Debug.LogError("RunawayBuild failed: " + e); EditorApplication.Exit(1); }
+        }
+
         public static void SetupOnly()
         {
             try { Setup(); EditorApplication.Exit(0); }

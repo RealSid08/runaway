@@ -48,7 +48,7 @@ Shader "Runaway/Plume"
             {
                 float c = SAMPLE_TEXTURE2D(_Conc, sampler_Conc, i.uv).r;
                 float l = log10(max(c, 1e-4));
-                float body = smoothstep(-1.4, -0.4, l);
+                float body = smoothstep(-1.1, -0.3, l);
                 half3 col = lerp(_Low.rgb, _Mid.rgb, smoothstep(-0.4, 0.3, l));
                 col = lerp(col, _High.rgb, smoothstep(0.4, 1.1, l));
                 col = lerp(col, _Severe.rgb, smoothstep(1.2, 1.45, l));
@@ -57,7 +57,7 @@ Shader "Runaway/Plume"
                 float iso24 = 1 - smoothstep(0, w, abs(l - 1.3802));
                 float n = noise(i.world.xz * 0.035 + _Time.y * float2(0.18, 0.11)) * 0.6 + noise(i.world.xz * 0.11 - _Time.y * 0.3) * 0.4;
                 float edge = smoothstep(0, 0.06, i.uv.x) * smoothstep(0, 0.06, i.uv.y) * smoothstep(1, 0.94, i.uv.x) * smoothstep(1, 0.94, i.uv.y);
-                float a = body * (0.26 + 0.2 * n + 0.18 * smoothstep(0, 1.3, l)) * _Opacity;
+                float a = body * (0.12 + 0.12 * n + 0.22 * smoothstep(-0.2, 1.3, l)) * _Opacity;
                 a = max(a, (iso1 * 0.75 + iso24 * 0.9) * _Opacity);
                 col = lerp(col, half3(1, 0.96, 0.9), iso1 * 0.35);
                 return half4(col, saturate(a * edge));

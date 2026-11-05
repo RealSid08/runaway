@@ -72,6 +72,9 @@ namespace Runaway.Sim
         }
 
         public static double Wrap(double d) => ((d % 360.0) + 360.0) % 360.0;
+
+        static readonly string[] Points = { "north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west" };
+        public static string Compass(double bearing) => Points[(int)Math.Round(Wrap(bearing) / 45.0) % 8];
     }
 
     public enum CellState { Normal, Venting, Fire, BurntOut }

@@ -79,7 +79,7 @@ namespace Runaway.App
 
         void BuildGround()
         {
-            var grassTex = Fx.GroundTex(Fx.Hex("#2a2b1f"), Fx.Hex("#3b3826"), Fx.Hex("#4a4433"), 5f);
+            var grassTex = Fx.GroundTex(Fx.Hex("#3a3b2a"), Fx.Hex("#4d4a33"), Fx.Hex("#5e5742"), 5f);
             var grass = Fx.Lit(Color.white, 0.08f);
             grass = new Material(grass) { mainTexture = grassTex };
             grass.SetTexture("_BaseMap", grassTex);
@@ -151,7 +151,7 @@ namespace Runaway.App
                 lgo.transform.localPosition = new Vector3(0, 10, 0);
                 lgo.transform.LookAt(new Vector3(0, 0, 0) - poles[i] * 0.2f + pole.position * 0.0f);
                 var l = lgo.AddComponent<Light>();
-                l.type = LightType.Spot; l.color = Fx.Hex("#ffd7a8"); l.intensity = 38f; l.range = 75f; l.spotAngle = 78f; l.innerSpotAngle = 40f;
+                l.type = LightType.Spot; l.color = Fx.Hex("#ffd7a8"); l.intensity = 120f; l.range = 95f; l.spotAngle = 78f; l.innerSpotAngle = 40f;
                 l.shadows = i < 2 ? LightShadows.Soft : LightShadows.None;
                 l.shadowStrength = 0.8f;
                 lgo.transform.rotation = Quaternion.LookRotation((new Vector3(0, 0, 0) - (poles[i] + Vector3.up * 10)).normalized + Vector3.down * 0.2f);

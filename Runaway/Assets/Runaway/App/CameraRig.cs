@@ -13,6 +13,7 @@ namespace Runaway.App
         Vector3 _t; float _y, _p, _d;
         Camera _cam;
         public Camera Cam => _cam;
+        public float CurrentDistance => _d;
 
         void Awake()
         {

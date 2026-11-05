@@ -1,0 +1,28 @@
+T+  0.0  The battery in A1 is overheating. The site operator has raised the alarm.
+T+  3.0  A1 is venting flammable gas. Its battery is in thermal runaway.
+T+  6.0  Pumper 1 on scene.
+--- decision 1 at T+6.0: Pumper 1 is the first crew on scene. Time for a first plan.
+   [31s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan,test_plan] Shelter Hollis farm and cool A2 now
+     - Hollis farm shelters indoors: Hollis farm lies downwind and faces HF smoke.
+     - Pumper 1 cools A2: Pumper 1 can protect A2 before heat builds.
+     why: Protect Hollis farm now and cool A2 before fire spreads. Keep Pumper 1 upwind, at least 17 metres from A1, with enclosures closed.
+     sensor: A3's fixed gas reading is unverified and noisy, so it cannot justify entry.
+     effect: Hollis farm indoor HF peak: 1.28 ppm -> 0.38 ppm
+T+  6.0  Hollis farm told to shelter indoors.
+T+  7.2  Pumper 1 is spraying water on A2.
+T+  8.3  Pumper 2 on scene.
+T+  9.7  A1 is on fire.
+--- decision 2 at T+9.7: A1 is on fire.
+   [22s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Let A1 burn with crews at least 17 m away.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Hollis farm indoor HF peak: 0.11 ppm -> 0.11 ppm
+--- decision 3 at T+13.7: A1 is on fire.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling A2 and Hollis farm sheltered. Have Aerial 1 check B1 and smoke drift on arrival.
+     sensor: B1's battery sensor is flat at 21 C beside the fire.
+     sensor: A1's fixed gas reading is noisy and unverified by HAZMAT 1.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+T+ 15.2  Aerial 1 on scene.
+T+ 17.5  HAZMAT 1 on scene.
+--- decision 4 at T+17.7: Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes. HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.

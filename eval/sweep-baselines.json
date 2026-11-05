@@ -1,0 +1,8002 @@
+[
+  {
+    "seed": 5000,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 13.485111802101024,
+    "dose": 230.77858847069785
+  },
+  {
+    "seed": 5000,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 73.83333333333333,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 3.7603089399388274,
+    "dose": 20.4467808984795
+  },
+  {
+    "seed": 5001,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.1558071670467984,
+    "dose": 10.54609976249582
+  },
+  {
+    "seed": 5001,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2183750193037712,
+    "dose": 4.592542908599828
+  },
+  {
+    "seed": 5002,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.4645143492949008E-06,
+    "dose": 9.239653978998625E-07
+  },
+  {
+    "seed": 5002,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.4645143492949008E-06,
+    "dose": 9.236811562065061E-07
+  },
+  {
+    "seed": 5003,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.882628115133116,
+    "dose": 287.5628788029089
+  },
+  {
+    "seed": 5003,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 63.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2151729623071093,
+    "dose": 36.527320303093106
+  },
+  {
+    "seed": 5004,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.0505589042448538,
+    "dose": 17.97828720024666
+  },
+  {
+    "seed": 5004,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 51.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.5144576040632893,
+    "dose": 13.332813756508425
+  },
+  {
+    "seed": 5005,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.951180969855978,
+    "dose": 102.32346755305797
+  },
+  {
+    "seed": 5005,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6292518498270463,
+    "dose": 23.733324028570898
+  },
+  {
+    "seed": 5006,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 16.454184755907054,
+    "dose": 639.1980853859604
+  },
+  {
+    "seed": 5006,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.5068481600576018,
+    "dose": 73.90271557325111
+  },
+  {
+    "seed": 5007,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04858812180765798,
+    "dose": 0.13616969021463976
+  },
+  {
+    "seed": 5007,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 81.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.027790789720368716,
+    "dose": 0.07643141345335457
+  },
+  {
+    "seed": 5008,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.2186211241286875,
+    "dose": 169.27760742521494
+  },
+  {
+    "seed": 5008,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 58.166666666666664,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.2005694574065005,
+    "dose": 41.74358631691948
+  },
+  {
+    "seed": 5009,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.54744841891271E-09,
+    "dose": 4.46288996577234E-09
+  },
+  {
+    "seed": 5009,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.54744841891271E-09,
+    "dose": 4.46288996577234E-09
+  },
+  {
+    "seed": 5010,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.46946711071772,
+    "dose": 471.8143747583804
+  },
+  {
+    "seed": 5010,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.678330420115331,
+    "dose": 106.30473030488906
+  },
+  {
+    "seed": 5011,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0001551300042289756,
+    "dose": 0.00011465991980646915
+  },
+  {
+    "seed": 5011,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0001551300042289756,
+    "dose": 0.00011349569381864035
+  },
+  {
+    "seed": 5012,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.926498117367548,
+    "dose": 38.592371685092175
+  },
+  {
+    "seed": 5012,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1762199686330752,
+    "dose": 9.469212683624024
+  },
+  {
+    "seed": 5013,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 18.900043839409722,
+    "dose": 616.6854977984486
+  },
+  {
+    "seed": 5013,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3499835894267929,
+    "dose": 29.126861029016425
+  },
+  {
+    "seed": 5014,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.047294152690032065,
+    "dose": 0.1599003742399841
+  },
+  {
+    "seed": 5014,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 0.03843721367100535,
+    "dose": 0.13932034664181261
+  },
+  {
+    "seed": 5015,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.3211309102225229,
+    "dose": 0.9362103880911847
+  },
+  {
+    "seed": 5015,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 38.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04060629744332497,
+    "dose": 0.10921982351892165
+  },
+  {
+    "seed": 5016,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.07427469031131,
+    "dose": 167.5604191128002
+  },
+  {
+    "seed": 5016,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7138032896272657,
+    "dose": 19.31302953671585
+  },
+  {
+    "seed": 5017,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 15.339187261507234,
+    "dose": 326.08092613347947
+  },
+  {
+    "seed": 5017,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.2570735991695967,
+    "dose": 17.5519184753067
+  },
+  {
+    "seed": 5018,
+    "policy": "none",
+    "lost": 12,
+    "contained": 83.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7588115409964383,
+    "dose": 2.1669632257506604
+  },
+  {
+    "seed": 5018,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.7023967095186692,
+    "dose": 2.0693261315674727
+  },
+  {
+    "seed": 5019,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.522354834736699,
+    "dose": 140.14896210288734
+  },
+  {
+    "seed": 5019,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.127569928713653,
+    "dose": 14.425933986478272
+  },
+  {
+    "seed": 5020,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.006031574835750221,
+    "dose": 0.00650846267045742
+  },
+  {
+    "seed": 5020,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0006230917685804836,
+    "dose": 0.0015973602539182063
+  },
+  {
+    "seed": 5021,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9077694414336825,
+    "dose": 5.552840495283035
+  },
+  {
+    "seed": 5021,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 25.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.7605489948548612,
+    "dose": 5.409523272568349
+  },
+  {
+    "seed": 5022,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.775643057038922,
+    "dose": 69.47525600129782
+  },
+  {
+    "seed": 5022,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 73.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.588445678428054,
+    "dose": 17.700869342283955
+  },
+  {
+    "seed": 5023,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.5978984081343763,
+    "dose": 65.30412483005526
+  },
+  {
+    "seed": 5023,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1734219705919844,
+    "dose": 22.94405764794206
+  },
+  {
+    "seed": 5024,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2227823593135325,
+    "dose": 7.542333094356637
+  },
+  {
+    "seed": 5024,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5025,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.07772603103537065,
+    "dose": 0.09633525209944947
+  },
+  {
+    "seed": 5025,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.07772603103537065,
+    "dose": 0.08358776741903652
+  },
+  {
+    "seed": 5026,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8671605412035164,
+    "dose": 27.164858256227134
+  },
+  {
+    "seed": 5026,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 40.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7145938629903135,
+    "dose": 12.115505836518594
+  },
+  {
+    "seed": 5027,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.1223646794078195,
+    "dose": 43.402044634092114
+  },
+  {
+    "seed": 5027,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4202397587119866,
+    "dose": 8.99515268191866
+  },
+  {
+    "seed": 5028,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.5594072148835374,
+    "dose": 71.45471262984853
+  },
+  {
+    "seed": 5028,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6191122454512228,
+    "dose": 12.98113125062839
+  },
+  {
+    "seed": 5029,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.2620042471919111,
+    "dose": 1.0675774249163534
+  },
+  {
+    "seed": 5029,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 33.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.23672463529288748,
+    "dose": 0.9255747326972249
+  },
+  {
+    "seed": 5030,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.597891704302981,
+    "dose": 82.29458032265104
+  },
+  {
+    "seed": 5030,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.51048744536371,
+    "dose": 18.070974463019056
+  },
+  {
+    "seed": 5031,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 5.877525361601477,
+    "dose": 72.725082047338
+  },
+  {
+    "seed": 5031,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.0402155689860368,
+    "dose": 15.737228505958203
+  },
+  {
+    "seed": 5032,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.3541784765199471,
+    "dose": 0.5591632911212392
+  },
+  {
+    "seed": 5032,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5033,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0037569111566421887,
+    "dose": 0.004306775519474678
+  },
+  {
+    "seed": 5033,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00015724321735379363,
+    "dose": 5.17672709019772E-05
+  },
+  {
+    "seed": 5034,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.753101392835332E-10,
+    "dose": 4.203337490437282E-10
+  },
+  {
+    "seed": 5034,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 43.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.762751953979488E-09,
+    "dose": 7.339932987514399E-10
+  },
+  {
+    "seed": 5035,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.689800431385385E-05,
+    "dose": 3.3494626082308435E-05
+  },
+  {
+    "seed": 5035,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8700398273409678E-05,
+    "dose": 2.7142901947259154E-05
+  },
+  {
+    "seed": 5036,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8759323720438477,
+    "dose": 19.09494299016635
+  },
+  {
+    "seed": 5036,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 50.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.6877407100018813,
+    "dose": 10.021862088837926
+  },
+  {
+    "seed": 5037,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1988612210260166,
+    "dose": 5.648758537061046
+  },
+  {
+    "seed": 5037,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 56.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.5878427641064695,
+    "dose": 3.599450342142351
+  },
+  {
+    "seed": 5038,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.10480462759840868,
+    "dose": 0.2355430336198025
+  },
+  {
+    "seed": 5038,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 48.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.03951091373510356,
+    "dose": 0.10888847878035497
+  },
+  {
+    "seed": 5039,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.237480650594469,
+    "dose": 220.03872151762698
+  },
+  {
+    "seed": 5039,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8452085735958217,
+    "dose": 10.718714020924784
+  },
+  {
+    "seed": 5040,
+    "policy": "none",
+    "lost": 12,
+    "contained": 73.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.117098542234708E-08,
+    "dose": 2.8848063684167575E-08
+  },
+  {
+    "seed": 5040,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 78.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.773936753506407E-07,
+    "dose": 7.825557218471043E-08
+  },
+  {
+    "seed": 5041,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 15.697157035609447,
+    "dose": 653.6155904547478
+  },
+  {
+    "seed": 5041,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 22.833333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.0514680854641436,
+    "dose": 46.38198353949369
+  },
+  {
+    "seed": 5042,
+    "policy": "none",
+    "lost": 12,
+    "contained": 79.33333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 12.265773523218249,
+    "dose": 278.8532038781379
+  },
+  {
+    "seed": 5042,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8829318682718695,
+    "dose": 21.410256299431747
+  },
+  {
+    "seed": 5043,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.796202590365285,
+    "dose": 167.87238275877746
+  },
+  {
+    "seed": 5043,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 55.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.289754959379898,
+    "dose": 32.70330225055551
+  },
+  {
+    "seed": 5044,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.07498884683145904,
+    "dose": 0.14419122570584275
+  },
+  {
+    "seed": 5044,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 37.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.012990217289200726,
+    "dose": 0.01520772576440415
+  },
+  {
+    "seed": 5045,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.680982935414932,
+    "dose": 125.05087548577954
+  },
+  {
+    "seed": 5045,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.333333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.048708551657316,
+    "dose": 22.198763319877976
+  },
+  {
+    "seed": 5046,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7858828727160992E-11,
+    "dose": 8.22488452937837E-12
+  },
+  {
+    "seed": 5046,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.0408971366845498E-11,
+    "dose": 5.405990261895452E-12
+  },
+  {
+    "seed": 5047,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.421820912989288,
+    "dose": 100.47467588287562
+  },
+  {
+    "seed": 5047,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6259207037249017,
+    "dose": 18.447075483283474
+  },
+  {
+    "seed": 5048,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.802697248089486,
+    "dose": 78.91468771015973
+  },
+  {
+    "seed": 5048,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 34.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.0370806376646537,
+    "dose": 20.173081424719125
+  },
+  {
+    "seed": 5049,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.764429454286024E-11,
+    "dose": 4.0517626893002585E-11
+  },
+  {
+    "seed": 5049,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.068286966736069E-12,
+    "dose": 1.2794433474277413E-12
+  },
+  {
+    "seed": 5050,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.836279867383643,
+    "dose": 141.17241792324688
+  },
+  {
+    "seed": 5050,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2133616917503727,
+    "dose": 28.52046218509508
+  },
+  {
+    "seed": 5051,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.0552985372184542,
+    "dose": 7.696275562423432
+  },
+  {
+    "seed": 5051,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0552985372184542,
+    "dose": 7.696275562423432
+  },
+  {
+    "seed": 5052,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 3.2570952134632547,
+    "dose": 65.7430291379365
+  },
+  {
+    "seed": 5052,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1254010782555284,
+    "dose": 12.535726441369434
+  },
+  {
+    "seed": 5053,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.538709203050304E-32,
+    "dose": 4.352125403811951E-33
+  },
+  {
+    "seed": 5053,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.5588644930702415E-32,
+    "dose": 4.388818338813472E-33
+  },
+  {
+    "seed": 5054,
+    "policy": "none",
+    "lost": 12,
+    "contained": 71.66666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.12577689821284443,
+    "dose": 0.49936510324655864
+  },
+  {
+    "seed": 5054,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 21.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.010814711402037016,
+    "dose": 0.0372015676942558
+  },
+  {
+    "seed": 5055,
+    "policy": "none",
+    "lost": 12,
+    "contained": 74.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8004843686408156,
+    "dose": 6.454651038349318
+  },
+  {
+    "seed": 5055,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7379914645117219,
+    "dose": 6.03658439591679
+  },
+  {
+    "seed": 5056,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.388162274641484,
+    "dose": 67.61572897725468
+  },
+  {
+    "seed": 5056,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9834901260498614,
+    "dose": 20.57874070023546
+  },
+  {
+    "seed": 5057,
+    "policy": "none",
+    "lost": 6,
+    "contained": 78.5,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.8341511562621493,
+    "dose": 22.026216084383798
+  },
+  {
+    "seed": 5057,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 79.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6992740931652655,
+    "dose": 13.003691433497826
+  },
+  {
+    "seed": 5058,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.9702769026975577,
+    "dose": 46.933742667910764
+  },
+  {
+    "seed": 5058,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 50.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4414472213120013,
+    "dose": 17.421544195639136
+  },
+  {
+    "seed": 5059,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 20.620818869544152,
+    "dose": 544.0320480097901
+  },
+  {
+    "seed": 5059,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 56.833333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.110096340583703,
+    "dose": 61.73010126352961
+  },
+  {
+    "seed": 5060,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.03751395959460335,
+    "dose": 0.14758967583843854
+  },
+  {
+    "seed": 5060,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 41.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.018792777207205673,
+    "dose": 0.12854593639563316
+  },
+  {
+    "seed": 5061,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 8.401466544597502,
+    "dose": 293.45613143541584
+  },
+  {
+    "seed": 5061,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.9446556492397007,
+    "dose": 45.24665332430402
+  },
+  {
+    "seed": 5062,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.407239058191958E-05,
+    "dose": 6.929391005751005E-05
+  },
+  {
+    "seed": 5062,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 56.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.407239058191958E-05,
+    "dose": 6.929177451896239E-05
+  },
+  {
+    "seed": 5063,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.6216478432152819,
+    "dose": 1.855652511410285
+  },
+  {
+    "seed": 5063,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 5,
+    "worstIndoor": 0.2525550357562505,
+    "dose": 1.0291204085983272
+  },
+  {
+    "seed": 5064,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.587324850401991,
+    "dose": 86.52397872408525
+  },
+  {
+    "seed": 5064,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2632286750494943,
+    "dose": 15.60062942580789
+  },
+  {
+    "seed": 5065,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5748091719114246,
+    "dose": 20.735527299595475
+  },
+  {
+    "seed": 5065,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.169854157103797,
+    "dose": 9.497848265626342
+  },
+  {
+    "seed": 5066,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.036757507943722914,
+    "dose": 0.07692459308552373
+  },
+  {
+    "seed": 5066,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04883366586496012,
+    "dose": 0.12721241815904696
+  },
+  {
+    "seed": 5067,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8966973288701445,
+    "dose": 5.063900188997468
+  },
+  {
+    "seed": 5067,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 77.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.44318112002272386,
+    "dose": 1.9485668422620732
+  },
+  {
+    "seed": 5068,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.4924753074390136,
+    "dose": 45.08077219523163
+  },
+  {
+    "seed": 5068,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 43.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.287762783833074,
+    "dose": 13.061059629836453
+  },
+  {
+    "seed": 5069,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.736696511811143,
+    "dose": 391.9872825728759
+  },
+  {
+    "seed": 5069,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7499502734376589,
+    "dose": 32.391322637246276
+  },
+  {
+    "seed": 5070,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 13.49660279531361,
+    "dose": 290.34917912022803
+  },
+  {
+    "seed": 5070,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.5063613455291982,
+    "dose": 29.89820988400353
+  },
+  {
+    "seed": 5071,
+    "policy": "none",
+    "lost": 12,
+    "contained": 88.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.5687458675099809,
+    "dose": 4.467967877551948
+  },
+  {
+    "seed": 5071,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 83.83333333333333,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.8436085332981638,
+    "dose": 2.4027592057329534
+  },
+  {
+    "seed": 5072,
+    "policy": "none",
+    "lost": 6,
+    "contained": 77.16666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.006353972376432833,
+    "dose": 0.016815373232720563
+  },
+  {
+    "seed": 5072,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 78.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.004157618433235395,
+    "dose": 0.00908119162039411
+  },
+  {
+    "seed": 5073,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.0011604146671781058,
+    "dose": 0.0018432867283198105
+  },
+  {
+    "seed": 5073,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5074,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7711184784184666,
+    "dose": 3.2579973291983957
+  },
+  {
+    "seed": 5074,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 31.333333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.6487841764719282,
+    "dose": 2.4914464145592357
+  },
+  {
+    "seed": 5075,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 18.014793765205305,
+    "dose": 351.4016403035755
+  },
+  {
+    "seed": 5075,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8025927952179255,
+    "dose": 13.169311053380387
+  },
+  {
+    "seed": 5076,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 18.48299251299717,
+    "dose": 554.8798031683147
+  },
+  {
+    "seed": 5076,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 31.666666666666668,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.7780405286443842,
+    "dose": 25.540146124622538
+  },
+  {
+    "seed": 5077,
+    "policy": "none",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0032747495791411456,
+    "dose": 0.004962629256123169
+  },
+  {
+    "seed": 5077,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0032747495791411456,
+    "dose": 0.004962629256084508
+  },
+  {
+    "seed": 5078,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 12.937773340742755,
+    "dose": 503.41458431954555
+  },
+  {
+    "seed": 5078,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.5620324404112864,
+    "dose": 85.12803801611437
+  },
+  {
+    "seed": 5079,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.1205713771782647,
+    "dose": 0.3071966251024191
+  },
+  {
+    "seed": 5079,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 32.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.03134707030644336,
+    "dose": 0.08211699860324571
+  },
+  {
+    "seed": 5080,
+    "policy": "none",
+    "lost": 12,
+    "contained": 74.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.415742349524745,
+    "dose": 216.23472073343083
+  },
+  {
+    "seed": 5080,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": 82.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4939744165962603,
+    "dose": 23.099889038876963
+  },
+  {
+    "seed": 5081,
+    "policy": "none",
+    "lost": 6,
+    "contained": 84.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.007240863183948,
+    "dose": 44.0850621951867
+  },
+  {
+    "seed": 5081,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.9947245785064939,
+    "dose": 13.219635939833324
+  },
+  {
+    "seed": 5082,
+    "policy": "none",
+    "lost": 12,
+    "contained": 67.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.836047974493237E-07,
+    "dose": 6.326842491644661E-07
+  },
+  {
+    "seed": 5082,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 48.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 5.836047974493237E-07,
+    "dose": 6.286448438403032E-07
+  },
+  {
+    "seed": 5083,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.596056891202246,
+    "dose": 127.03388927079592
+  },
+  {
+    "seed": 5083,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3981711628573124,
+    "dose": 24.564791046126587
+  },
+  {
+    "seed": 5084,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 15.549768228367647,
+    "dose": 418.2913453370314
+  },
+  {
+    "seed": 5084,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 81.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.6133907760293895,
+    "dose": 73.37226460817611
+  },
+  {
+    "seed": 5085,
+    "policy": "none",
+    "lost": 12,
+    "contained": 78.16666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 2.5196946294324216,
+    "dose": 26.174695912918892
+  },
+  {
+    "seed": 5085,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.5196946294324216,
+    "dose": 19.008455499312642
+  },
+  {
+    "seed": 5086,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.46649170670911366,
+    "dose": 1.3410402386002949
+  },
+  {
+    "seed": 5086,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.666666666666664,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.1872978754973052,
+    "dose": 0.5118346034948681
+  },
+  {
+    "seed": 5087,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.449064734755837,
+    "dose": 273.9632632041306
+  },
+  {
+    "seed": 5087,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.451346834476438,
+    "dose": 20.176741979705135
+  },
+  {
+    "seed": 5088,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 18.016020651764098,
+    "dose": 621.936605266603
+  },
+  {
+    "seed": 5088,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.275308588991527,
+    "dose": 44.5703503920937
+  },
+  {
+    "seed": 5089,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.29252422137763E-13,
+    "dose": 2.2671798959008953E-13
+  },
+  {
+    "seed": 5089,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 44.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.873231678821734E-22,
+    "dose": 2.393995734694499E-22
+  },
+  {
+    "seed": 5090,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 16.389042702335168,
+    "dose": 508.974749685581
+  },
+  {
+    "seed": 5090,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6512450741787472,
+    "dose": 52.24314823129933
+  },
+  {
+    "seed": 5091,
+    "policy": "none",
+    "lost": 12,
+    "contained": 87.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.523082578640693,
+    "dose": 261.9481578296508
+  },
+  {
+    "seed": 5091,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0120057379372438,
+    "dose": 8.252740483709752
+  },
+  {
+    "seed": 5092,
+    "policy": "none",
+    "lost": 12,
+    "contained": 80.5,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.32631563810916986,
+    "dose": 1.3399545028168633
+  },
+  {
+    "seed": 5092,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 24.333333333333332,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 0.32631563810916986,
+    "dose": 1.2971275397789248
+  },
+  {
+    "seed": 5093,
+    "policy": "none",
+    "lost": 12,
+    "contained": 88.0,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.7973645524409214,
+    "dose": 17.9974977176988
+  },
+  {
+    "seed": 5093,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.9361514543135252,
+    "dose": 15.786264751460324
+  },
+  {
+    "seed": 5094,
+    "policy": "none",
+    "lost": 12,
+    "contained": 89.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.9366067496502745E-12,
+    "dose": 8.561966666373598E-13
+  },
+  {
+    "seed": 5094,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.172547618882463E-14,
+    "dose": 7.023716279131171E-15
+  },
+  {
+    "seed": 5095,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.46273696352565,
+    "dose": 7.83691765603032
+  },
+  {
+    "seed": 5095,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 32.833333333333336,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.1399457638994002,
+    "dose": 3.9149988229794297
+  },
+  {
+    "seed": 5096,
+    "policy": "none",
+    "lost": 12,
+    "contained": 85.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04218271320224895,
+    "dose": 0.0704072705947987
+  },
+  {
+    "seed": 5096,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00952671378730308,
+    "dose": 0.0322209878457656
+  },
+  {
+    "seed": 5097,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.491574832842478,
+    "dose": 566.211664660697
+  },
+  {
+    "seed": 5097,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 33.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.361056839211954,
+    "dose": 42.38295964473983
+  },
+  {
+    "seed": 5098,
+    "policy": "none",
+    "lost": 12,
+    "contained": 79.83333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 5.094004801792541,
+    "dose": 16.42802647931619
+  },
+  {
+    "seed": 5098,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": 88.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.996261616128855,
+    "dose": 6.631790064601569
+  },
+  {
+    "seed": 5099,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 7.537145399008633,
+    "dose": 64.42667456316238
+  },
+  {
+    "seed": 5099,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 2.283196287321425,
+    "dose": 18.304581632517852
+  },
+  {
+    "seed": 5100,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.011674768530854685,
+    "dose": 0.025690514024709604
+  },
+  {
+    "seed": 5100,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.006148094318484096,
+    "dose": 0.017385056241729226
+  },
+  {
+    "seed": 5101,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 10.469465862345636,
+    "dose": 250.87352386193945
+  },
+  {
+    "seed": 5101,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 89.16666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.4733698043175423,
+    "dose": 33.60155978803677
+  },
+  {
+    "seed": 5102,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6840708416309092E-05,
+    "dose": 1.6731359333990785E-05
+  },
+  {
+    "seed": 5102,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6840708416309092E-05,
+    "dose": 1.6112612325477026E-05
+  },
+  {
+    "seed": 5103,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.936538741247504,
+    "dose": 51.80233605299148
+  },
+  {
+    "seed": 5103,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 76.16666666666667,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 4.009916908061496,
+    "dose": 31.14159435833438
+  },
+  {
+    "seed": 5104,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.742319488355843,
+    "dose": 53.729779085010776
+  },
+  {
+    "seed": 5104,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7372723779813934,
+    "dose": 5.372692263956468
+  },
+  {
+    "seed": 5105,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 19.666583671572862,
+    "dose": 539.4156366062625
+  },
+  {
+    "seed": 5105,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.1422025739582313,
+    "dose": 65.12932089569576
+  },
+  {
+    "seed": 5106,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 7.19885052597729,
+    "dose": 173.03688187495965
+  },
+  {
+    "seed": 5106,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 55.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0373612947999098,
+    "dose": 19.76561136011744
+  },
+  {
+    "seed": 5107,
+    "policy": "none",
+    "lost": 6,
+    "contained": 85.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.84104345962014,
+    "dose": 515.8886443152335
+  },
+  {
+    "seed": 5107,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 72.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.04416615351945,
+    "dose": 74.93030878054286
+  },
+  {
+    "seed": 5108,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00026266107938882367,
+    "dose": 0.00010353984134969323
+  },
+  {
+    "seed": 5108,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0638743177618567E-05,
+    "dose": 6.692151071683853E-06
+  },
+  {
+    "seed": 5109,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.372948518952292,
+    "dose": 38.17364787448788
+  },
+  {
+    "seed": 5109,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.9104519746638201,
+    "dose": 20.738797326107623
+  },
+  {
+    "seed": 5110,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.2720384856615565,
+    "dose": 246.49249001985157
+  },
+  {
+    "seed": 5110,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2880758100738305,
+    "dose": 26.996672392245138
+  },
+  {
+    "seed": 5111,
+    "policy": "none",
+    "lost": 12,
+    "contained": 77.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0162779573904899,
+    "dose": 0.013569418365456597
+  },
+  {
+    "seed": 5111,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.833333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.015096599805889436,
+    "dose": 0.01235513988511888
+  },
+  {
+    "seed": 5112,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.44976968505294,
+    "dose": 32.252580563953565
+  },
+  {
+    "seed": 5112,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 36.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1837639912475246,
+    "dose": 5.865165652536523
+  },
+  {
+    "seed": 5113,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.828101811438323,
+    "dose": 436.0629388953349
+  },
+  {
+    "seed": 5113,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.0325275884939895,
+    "dose": 59.49062129774952
+  },
+  {
+    "seed": 5114,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.4521285957187,
+    "dose": 134.260739579801
+  },
+  {
+    "seed": 5114,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2904577810376177,
+    "dose": 11.941544890584826
+  },
+  {
+    "seed": 5115,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.593728757062953,
+    "dose": 133.7240715446224
+  },
+  {
+    "seed": 5115,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2023753281556822,
+    "dose": 4.978482263003749
+  },
+  {
+    "seed": 5116,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.683133938112881,
+    "dose": 102.12759623991586
+  },
+  {
+    "seed": 5116,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2944861528537537,
+    "dose": 22.583239321353737
+  },
+  {
+    "seed": 5117,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.382200040309717,
+    "dose": 138.5139405486538
+  },
+  {
+    "seed": 5117,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2872152326886137,
+    "dose": 3.632343661194999
+  },
+  {
+    "seed": 5118,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.884714988374084,
+    "dose": 179.4355255458327
+  },
+  {
+    "seed": 5118,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3176156056628126,
+    "dose": 39.04989731186142
+  },
+  {
+    "seed": 5119,
+    "policy": "none",
+    "lost": 12,
+    "contained": 78.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 38.52032616605556,
+    "dose": 677.5968923096602
+  },
+  {
+    "seed": 5119,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.15780938071015,
+    "dose": 20.106158402716332
+  },
+  {
+    "seed": 5120,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.27683817297142,
+    "dose": 281.8580952821238
+  },
+  {
+    "seed": 5120,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3742335676189683,
+    "dose": 5.739849183668568
+  },
+  {
+    "seed": 5121,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.933793554590617E-14,
+    "dose": 8.046623421843068E-15
+  },
+  {
+    "seed": 5121,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 58.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.7978090836363166E-14,
+    "dose": 7.65305071604782E-15
+  },
+  {
+    "seed": 5122,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.3193589621322225E-06,
+    "dose": 1.2162968053100048E-06
+  },
+  {
+    "seed": 5122,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3193589621322225E-06,
+    "dose": 1.2162968053604427E-06
+  },
+  {
+    "seed": 5123,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.709513639034183,
+    "dose": 41.69632945166079
+  },
+  {
+    "seed": 5123,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 57.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.827150364643361,
+    "dose": 22.38904140032471
+  },
+  {
+    "seed": 5124,
+    "policy": "none",
+    "lost": 6,
+    "contained": 89.66666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 9.751302383582708,
+    "dose": 308.7871799540995
+  },
+  {
+    "seed": 5124,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.333333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.593580926210003,
+    "dose": 24.10531426793939
+  },
+  {
+    "seed": 5125,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.029103918756333995,
+    "dose": 0.07110213932421251
+  },
+  {
+    "seed": 5125,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5126,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8770806205472417,
+    "dose": 14.581863343131149
+  },
+  {
+    "seed": 5126,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.020155146743083,
+    "dose": 6.3778824855769
+  },
+  {
+    "seed": 5127,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.311375729405637E-10,
+    "dose": 4.370237358975044E-10
+  },
+  {
+    "seed": 5127,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.5173025187171705E-12,
+    "dose": 9.457573722489923E-13
+  },
+  {
+    "seed": 5128,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.887870750024794,
+    "dose": 120.03146334307004
+  },
+  {
+    "seed": 5128,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.520537068940436,
+    "dose": 45.393435651698645
+  },
+  {
+    "seed": 5129,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.3453568632017325,
+    "dose": 13.513040743396642
+  },
+  {
+    "seed": 5129,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 2,
+    "withdrawals": 1,
+    "worstIndoor": 2.3453568632017325,
+    "dose": 11.363851033189086
+  },
+  {
+    "seed": 5130,
+    "policy": "none",
+    "lost": 12,
+    "contained": 88.16666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.8825796073433889,
+    "dose": 6.603440152757965
+  },
+  {
+    "seed": 5130,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 0.5550130143432617,
+    "dose": 4.795301499752848
+  },
+  {
+    "seed": 5131,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0008775256651069096,
+    "dose": 0.0011404534009004565
+  },
+  {
+    "seed": 5131,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 58.5,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 0.0008775256651069096,
+    "dose": 0.001131498795219614
+  },
+  {
+    "seed": 5132,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.894132289942764,
+    "dose": 207.28888231882004
+  },
+  {
+    "seed": 5132,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 51.666666666666664,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.6340358714438938,
+    "dose": 22.929341962126625
+  },
+  {
+    "seed": 5133,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.634800914646521,
+    "dose": 207.77390576761135
+  },
+  {
+    "seed": 5133,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3884304226034285,
+    "dose": 21.834837150271994
+  },
+  {
+    "seed": 5134,
+    "policy": "none",
+    "lost": 12,
+    "contained": 88.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 21.318529955660935,
+    "dose": 446.09703058274835
+  },
+  {
+    "seed": 5134,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5173525755803579,
+    "dose": 5.411226175489018
+  },
+  {
+    "seed": 5135,
+    "policy": "none",
+    "lost": 12,
+    "contained": 89.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.09184006942171996,
+    "dose": 0.36909877976749955
+  },
+  {
+    "seed": 5135,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.06621017929567943,
+    "dose": 0.20632621962809886
+  },
+  {
+    "seed": 5136,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.005360658943271171,
+    "dose": 0.008956990025873987
+  },
+  {
+    "seed": 5136,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 60.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.0039593821599144515,
+    "dose": 0.006505219102388341
+  },
+  {
+    "seed": 5137,
+    "policy": "none",
+    "lost": 12,
+    "contained": 86.33333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 24.234498031955304,
+    "dose": 718.7203310753666
+  },
+  {
+    "seed": 5137,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8634732120848494,
+    "dose": 57.98573584695292
+  },
+  {
+    "seed": 5138,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0022672996231506816,
+    "dose": 0.0024918682797548585
+  },
+  {
+    "seed": 5138,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0003105183989806933,
+    "dose": 0.00029718030272530936
+  },
+  {
+    "seed": 5139,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.4945843308817959,
+    "dose": 1.8815216758156312
+  },
+  {
+    "seed": 5139,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.19661601522997704,
+    "dose": 0.8560835332006396
+  },
+  {
+    "seed": 5140,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.005473376890005353,
+    "dose": 0.005146766349976564
+  },
+  {
+    "seed": 5140,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0007510099456874156,
+    "dose": 0.0012803082958724478
+  },
+  {
+    "seed": 5141,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.23746431767003,
+    "dose": 241.7865975481699
+  },
+  {
+    "seed": 5141,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.0908450425149994,
+    "dose": 56.75877632804192
+  },
+  {
+    "seed": 5142,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.5566647287627293,
+    "dose": 96.56547947331048
+  },
+  {
+    "seed": 5142,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 31.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1773810386096868,
+    "dose": 20.933179081666694
+  },
+  {
+    "seed": 5143,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.1194564816036697,
+    "dose": 0.16712888324086295
+  },
+  {
+    "seed": 5143,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.08821152582571541,
+    "dose": 0.11397984650871823
+  },
+  {
+    "seed": 5144,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.763156095213277,
+    "dose": 79.67776997187725
+  },
+  {
+    "seed": 5144,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 31.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0271657624165356,
+    "dose": 15.397480169094393
+  },
+  {
+    "seed": 5145,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0007416022829411323,
+    "dose": 0.0016384524321377705
+  },
+  {
+    "seed": 5145,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.001147306160155297,
+    "dose": 0.0023255927904603972
+  },
+  {
+    "seed": 5146,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.5315488726213737,
+    "dose": 42.993805247796956
+  },
+  {
+    "seed": 5146,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0496461596110196,
+    "dose": 13.776495433136892
+  },
+  {
+    "seed": 5147,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.160768493627307,
+    "dose": 37.9633303327948
+  },
+  {
+    "seed": 5147,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0347277366385619,
+    "dose": 16.61626479974492
+  },
+  {
+    "seed": 5148,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00020865631600761305,
+    "dose": 0.00017081505462459247
+  },
+  {
+    "seed": 5148,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00020865631600761305,
+    "dose": 0.00015686267622325647
+  },
+  {
+    "seed": 5149,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.026328890176377E-10,
+    "dose": 2.8375665565920055E-10
+  },
+  {
+    "seed": 5149,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.833333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 5.54130588256677E-08,
+    "dose": 3.035562846054846E-08
+  },
+  {
+    "seed": 5150,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.841427206737206,
+    "dose": 215.35879984574012
+  },
+  {
+    "seed": 5150,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 79.83333333333333,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.3195471899704465,
+    "dose": 55.84010763921939
+  },
+  {
+    "seed": 5151,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.172473371291562,
+    "dose": 41.34942166049576
+  },
+  {
+    "seed": 5151,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.4700525459486804,
+    "dose": 10.406223757536006
+  },
+  {
+    "seed": 5152,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 25.168720326147735,
+    "dose": 670.0602412169783
+  },
+  {
+    "seed": 5152,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 57.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3234585382025166,
+    "dose": 58.210315307362265
+  },
+  {
+    "seed": 5153,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.644623452324556,
+    "dose": 354.8580112183252
+  },
+  {
+    "seed": 5153,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.0070818094542457,
+    "dose": 56.63209813279572
+  },
+  {
+    "seed": 5154,
+    "policy": "none",
+    "lost": 12,
+    "contained": 85.66666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 5.111176633029313,
+    "dose": 79.09387347296413
+  },
+  {
+    "seed": 5154,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1765575813299776,
+    "dose": 19.90572186459139
+  },
+  {
+    "seed": 5155,
+    "policy": "none",
+    "lost": 12,
+    "contained": 73.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.176575679433913,
+    "dose": 599.2258475351753
+  },
+  {
+    "seed": 5155,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 51.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7294862842911778,
+    "dose": 55.07512817440805
+  },
+  {
+    "seed": 5156,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.497937587207251,
+    "dose": 115.2900515714383
+  },
+  {
+    "seed": 5156,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.086769601690885,
+    "dose": 13.39581581328011
+  },
+  {
+    "seed": 5157,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 15.392608827927116,
+    "dose": 351.42298533438924
+  },
+  {
+    "seed": 5157,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.96919696563523,
+    "dose": 12.352001470461715
+  },
+  {
+    "seed": 5158,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.018538913400345,
+    "dose": 316.01525600977135
+  },
+  {
+    "seed": 5158,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.91084988209011,
+    "dose": 20.352092147653966
+  },
+  {
+    "seed": 5159,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.75768019378129,
+    "dose": 252.40554921642342
+  },
+  {
+    "seed": 5159,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9371164970101968,
+    "dose": 26.048483356760688
+  },
+  {
+    "seed": 5160,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.5403400455983875E-06,
+    "dose": 8.164532348619914E-07
+  },
+  {
+    "seed": 5160,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5029802338213994E-06,
+    "dose": 7.97030779951251E-07
+  },
+  {
+    "seed": 5161,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 6.6154217089082765,
+    "dose": 217.1758836986296
+  },
+  {
+    "seed": 5161,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.304684129156758,
+    "dose": 37.574259929163716
+  },
+  {
+    "seed": 5162,
+    "policy": "none",
+    "lost": 12,
+    "contained": 74.66666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.0603041345865401,
+    "dose": 0.12355247929985937
+  },
+  {
+    "seed": 5162,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 29.5,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 0.05679745362283973,
+    "dose": 0.11846006376860482
+  },
+  {
+    "seed": 5163,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.264789187343934,
+    "dose": 107.58763690265178
+  },
+  {
+    "seed": 5163,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.3709294617134535,
+    "dose": 25.492972715177352
+  },
+  {
+    "seed": 5164,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.86477892650595,
+    "dose": 65.9763098621268
+  },
+  {
+    "seed": 5164,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.529860458549463,
+    "dose": 7.047513777765536
+  },
+  {
+    "seed": 5165,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.169466370038983,
+    "dose": 117.80151238698494
+  },
+  {
+    "seed": 5165,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 32.166666666666664,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.418450998627722,
+    "dose": 26.48977533565722
+  },
+  {
+    "seed": 5166,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.8552937860768783,
+    "dose": 22.920857483310048
+  },
+  {
+    "seed": 5166,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.027165892754196,
+    "dose": 9.319978773029277
+  },
+  {
+    "seed": 5167,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9735241503778176,
+    "dose": 23.622341820975866
+  },
+  {
+    "seed": 5167,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2087668789461725,
+    "dose": 4.231672248943045
+  },
+  {
+    "seed": 5168,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.383149616292911,
+    "dose": 337.5911595183345
+  },
+  {
+    "seed": 5168,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.2188662191624537,
+    "dose": 30.258916082444294
+  },
+  {
+    "seed": 5169,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.1440215895814605,
+    "dose": 146.6123008718825
+  },
+  {
+    "seed": 5169,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.833333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.523579409785299,
+    "dose": 30.795559138763004
+  },
+  {
+    "seed": 5170,
+    "policy": "none",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3379582180679163E-23,
+    "dose": 2.2471013917830583E-24
+  },
+  {
+    "seed": 5170,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.6084607264967045E-33,
+    "dose": 8.496902077728121E-34
+  },
+  {
+    "seed": 5171,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.206018446085754E-05,
+    "dose": 2.8229127749111308E-05
+  },
+  {
+    "seed": 5171,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.2380278042513204E-05,
+    "dose": 2.0580828699635395E-05
+  },
+  {
+    "seed": 5172,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.6956945781248685,
+    "dose": 165.03960110763657
+  },
+  {
+    "seed": 5172,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.9358808206722464,
+    "dose": 18.375939619803493
+  },
+  {
+    "seed": 5173,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.3857807170843317,
+    "dose": 1.1719585280615041
+  },
+  {
+    "seed": 5173,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 73.16666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.3857807170843317,
+    "dose": 1.168266596148656
+  },
+  {
+    "seed": 5174,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 7.327317412849709,
+    "dose": 163.2655029833931
+  },
+  {
+    "seed": 5174,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 4.124153100074459,
+    "dose": 57.03736855827677
+  },
+  {
+    "seed": 5175,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.554162859789854,
+    "dose": 276.59450952801245
+  },
+  {
+    "seed": 5175,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7065358189086832,
+    "dose": 30.00460562669327
+  },
+  {
+    "seed": 5176,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.4761882434825626,
+    "dose": 58.576742513211
+  },
+  {
+    "seed": 5176,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.7873854641980955,
+    "dose": 21.689135934957797
+  },
+  {
+    "seed": 5177,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.4971338765951545,
+    "dose": 71.53769140648423
+  },
+  {
+    "seed": 5177,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5915457074574422,
+    "dose": 20.009000817268372
+  },
+  {
+    "seed": 5178,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.881421833128343E-05,
+    "dose": 1.3900227907733629E-05
+  },
+  {
+    "seed": 5178,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 83.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.306599647590213E-06,
+    "dose": 6.785898514704684E-06
+  },
+  {
+    "seed": 5179,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.05278671441363139,
+    "dose": 0.092963528846913
+  },
+  {
+    "seed": 5179,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.026311425516387626,
+    "dose": 0.059066682219152164
+  },
+  {
+    "seed": 5180,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 22.99069596209468,
+    "dose": 463.6927155202648
+  },
+  {
+    "seed": 5180,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5181,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.606702519228752E-08,
+    "dose": 4.4968858122687374E-08
+  },
+  {
+    "seed": 5181,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.950302009139483E-10,
+    "dose": 1.9547992838505882E-10
+  },
+  {
+    "seed": 5182,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.120208372507362,
+    "dose": 227.9211139091448
+  },
+  {
+    "seed": 5182,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 78.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4746794836868076,
+    "dose": 18.583797928232933
+  },
+  {
+    "seed": 5183,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.557762030318134,
+    "dose": 221.65427302070762
+  },
+  {
+    "seed": 5183,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.686166772981433,
+    "dose": 49.5290084534892
+  },
+  {
+    "seed": 5184,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3090842867489818E-07,
+    "dose": 4.462611713622364E-08
+  },
+  {
+    "seed": 5184,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.608021163385747E-08,
+    "dose": 1.5209370705968424E-08
+  },
+  {
+    "seed": 5185,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.08116204206346,
+    "dose": 237.15752399481607
+  },
+  {
+    "seed": 5185,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 36.666666666666664,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.4028437031625034,
+    "dose": 14.937497303021836
+  },
+  {
+    "seed": 5186,
+    "policy": "none",
+    "lost": 12,
+    "contained": 81.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.733317750159091,
+    "dose": 53.76190126853194
+  },
+  {
+    "seed": 5186,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.0690601154927553,
+    "dose": 2.415890942241367
+  },
+  {
+    "seed": 5187,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.622035519047894,
+    "dose": 208.41161140099712
+  },
+  {
+    "seed": 5187,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 55.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2801876419469733,
+    "dose": 31.996418804263282
+  },
+  {
+    "seed": 5188,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.782946016782181,
+    "dose": 315.2887628177953
+  },
+  {
+    "seed": 5188,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6289161574025648,
+    "dose": 31.185287738458847
+  },
+  {
+    "seed": 5189,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.3870932438516705,
+    "dose": 49.768911431890714
+  },
+  {
+    "seed": 5189,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2628731126157866,
+    "dose": 24.523065585383538
+  },
+  {
+    "seed": 5190,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7756362337251699,
+    "dose": 4.06371517548469
+  },
+  {
+    "seed": 5190,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.11325772479965629,
+    "dose": 0.4041343978329582
+  },
+  {
+    "seed": 5191,
+    "policy": "none",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.5089486769764146E-05,
+    "dose": 6.233029242455424E-05
+  },
+  {
+    "seed": 5191,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.5089486769764146E-05,
+    "dose": 6.233029075827604E-05
+  },
+  {
+    "seed": 5192,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.48581357837733885,
+    "dose": 1.7952943589595918
+  },
+  {
+    "seed": 5192,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 0.4075022197192957,
+    "dose": 0.9997325664665708
+  },
+  {
+    "seed": 5193,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.285488434513606,
+    "dose": 160.87144502760844
+  },
+  {
+    "seed": 5193,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4027914291766466,
+    "dose": 4.598955761380297
+  },
+  {
+    "seed": 5194,
+    "policy": "none",
+    "lost": 12,
+    "contained": 80.33333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.7892978477655083,
+    "dose": 4.087362630000228
+  },
+  {
+    "seed": 5194,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 76.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.17332761161329308,
+    "dose": 0.8003626635306823
+  },
+  {
+    "seed": 5195,
+    "policy": "none",
+    "lost": 12,
+    "contained": 77.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.05303460450747387,
+    "dose": 0.09260005536623946
+  },
+  {
+    "seed": 5195,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.012650681830430381,
+    "dose": 0.015460041837776875
+  },
+  {
+    "seed": 5196,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.06793810218933033,
+    "dose": 0.3162596751745032
+  },
+  {
+    "seed": 5196,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.05921655775339849,
+    "dose": 0.1445481225557992
+  },
+  {
+    "seed": 5197,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 19.555186750340365,
+    "dose": 470.43085644614655
+  },
+  {
+    "seed": 5197,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 76.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.5157809363473023,
+    "dose": 63.09430591835221
+  },
+  {
+    "seed": 5198,
+    "policy": "none",
+    "lost": 12,
+    "contained": 74.83333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 5.59417645666247,
+    "dose": 69.3674969485434
+  },
+  {
+    "seed": 5198,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2022090452389567,
+    "dose": 15.041772678071046
+  },
+  {
+    "seed": 5199,
+    "policy": "none",
+    "lost": 6,
+    "contained": 88.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0045423896902910925,
+    "dose": 0.010295007172736355
+  },
+  {
+    "seed": 5199,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 79.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0027517340535415952,
+    "dose": 0.004623614663181903
+  },
+  {
+    "seed": 5200,
+    "policy": "none",
+    "lost": 6,
+    "contained": 88.16666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.0033246966814511705,
+    "dose": 0.006027433454738752
+  },
+  {
+    "seed": 5200,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0033246966814511705,
+    "dose": 0.005839089656817675
+  },
+  {
+    "seed": 5201,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 16.82856680002341,
+    "dose": 416.15344848943505
+  },
+  {
+    "seed": 5201,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4394604623531244,
+    "dose": 32.308643553663224
+  },
+  {
+    "seed": 5202,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1182743437264722,
+    "dose": 1.3155011699496375
+  },
+  {
+    "seed": 5202,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1182743437264722,
+    "dose": 1.3126189543265157
+  },
+  {
+    "seed": 5203,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.869724019776862,
+    "dose": 206.54766689881518
+  },
+  {
+    "seed": 5203,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.1354800274520676,
+    "dose": 42.12006128404373
+  },
+  {
+    "seed": 5204,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.9276183862336014,
+    "dose": 15.098866341688131
+  },
+  {
+    "seed": 5204,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9522318866006052,
+    "dose": 9.842514786616285
+  },
+  {
+    "seed": 5205,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 16.49237544650745,
+    "dose": 470.67479825037384
+  },
+  {
+    "seed": 5205,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 25.333333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.299807728390792,
+    "dose": 54.54447710659028
+  },
+  {
+    "seed": 5206,
+    "policy": "none",
+    "lost": 12,
+    "contained": 84.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.07152521855262542,
+    "dose": 0.2075676078896638
+  },
+  {
+    "seed": 5206,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.053256033224827304,
+    "dose": 0.1867906854556243
+  },
+  {
+    "seed": 5207,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.355667674691865,
+    "dose": 213.62253468635504
+  },
+  {
+    "seed": 5207,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7292701996928155,
+    "dose": 21.14599130020352
+  },
+  {
+    "seed": 5208,
+    "policy": "none",
+    "lost": 12,
+    "contained": 89.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 21.72969187165537,
+    "dose": 755.5887839937524
+  },
+  {
+    "seed": 5208,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.0432742446077343,
+    "dose": 73.74060814549968
+  },
+  {
+    "seed": 5209,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.756535062352986,
+    "dose": 244.30248730109503
+  },
+  {
+    "seed": 5209,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 84.66666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.2522183091087893,
+    "dose": 37.150312651136
+  },
+  {
+    "seed": 5210,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7866651032889699,
+    "dose": 1.1865545268822912
+  },
+  {
+    "seed": 5210,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.38230606774677833,
+    "dose": 0.5897343806017772
+  },
+  {
+    "seed": 5211,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.300838042394903,
+    "dose": 46.41291753758703
+  },
+  {
+    "seed": 5211,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1429742378183243,
+    "dose": 4.407431324224247
+  },
+  {
+    "seed": 5212,
+    "policy": "none",
+    "lost": 12,
+    "contained": 69.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.861287926081543,
+    "dose": 392.63014329996787
+  },
+  {
+    "seed": 5212,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 76.66666666666667,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.2274724692190695,
+    "dose": 29.766492405616702
+  },
+  {
+    "seed": 5213,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.553253502148535,
+    "dose": 20.623567393738995
+  },
+  {
+    "seed": 5213,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2582261198905977,
+    "dose": 7.178510949516018
+  },
+  {
+    "seed": 5214,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.08731059567124952,
+    "dose": 0.10236828874463026
+  },
+  {
+    "seed": 5214,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.08731059567124952,
+    "dose": 0.0987832142324364
+  },
+  {
+    "seed": 5215,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.277276242044092,
+    "dose": 146.56319638255914
+  },
+  {
+    "seed": 5215,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7913329212966458,
+    "dose": 35.80076131637516
+  },
+  {
+    "seed": 5216,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.264065426566329,
+    "dose": 208.70135135614606
+  },
+  {
+    "seed": 5216,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4588833090044124,
+    "dose": 29.9680662443186
+  },
+  {
+    "seed": 5217,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.3518576615568145,
+    "dose": 77.8306487066378
+  },
+  {
+    "seed": 5217,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8090279285182882,
+    "dose": 22.49862052490242
+  },
+  {
+    "seed": 5218,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.885552670967527,
+    "dose": 200.44404570178725
+  },
+  {
+    "seed": 5218,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.341764121921888,
+    "dose": 21.75222917602529
+  },
+  {
+    "seed": 5219,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.4945487614510142,
+    "dose": 10.265497924536593
+  },
+  {
+    "seed": 5219,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 25.833333333333332,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 0.7327520377689697,
+    "dose": 2.799967186779363
+  },
+  {
+    "seed": 5220,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.3245100508189394,
+    "dose": 39.09862845225658
+  },
+  {
+    "seed": 5220,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0790168505325437,
+    "dose": 15.683327701853075
+  },
+  {
+    "seed": 5221,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.255842173446647,
+    "dose": 230.0037583827089
+  },
+  {
+    "seed": 5221,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.658955545262065,
+    "dose": 38.219420807974494
+  },
+  {
+    "seed": 5222,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.4441706547964315E-09,
+    "dose": 9.316762982031463E-10
+  },
+  {
+    "seed": 5222,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.974551089410288E-10,
+    "dose": 7.743787530830634E-10
+  },
+  {
+    "seed": 5223,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.037292857789275,
+    "dose": 80.94128936729184
+  },
+  {
+    "seed": 5223,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5224,
+    "policy": "none",
+    "lost": 12,
+    "contained": 83.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.287706643515534E-05,
+    "dose": 2.99381249594973E-05
+  },
+  {
+    "seed": 5224,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.333333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 3.811362256792666E-05,
+    "dose": 2.6482973433532526E-05
+  },
+  {
+    "seed": 5225,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 8.059975574373748E-13,
+    "dose": 1.5628186189247515E-13
+  },
+  {
+    "seed": 5225,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2189294236686473E-17,
+    "dose": 2.0768074311818502E-18
+  },
+  {
+    "seed": 5226,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.010413942745804632,
+    "dose": 0.032560520443202595
+  },
+  {
+    "seed": 5226,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0062247545816662645,
+    "dose": 0.016910697259756403
+  },
+  {
+    "seed": 5227,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.020911909795712346,
+    "dose": 0.014972710312147856
+  },
+  {
+    "seed": 5227,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.020911909795712346,
+    "dose": 0.014953253681770839
+  },
+  {
+    "seed": 5228,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8754077629045245,
+    "dose": 5.2399643395999265
+  },
+  {
+    "seed": 5228,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.833333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.7755217956722319,
+    "dose": 4.6287676018018615
+  },
+  {
+    "seed": 5229,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.003681886965630239,
+    "dose": 0.00803597946033988
+  },
+  {
+    "seed": 5229,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5230,
+    "policy": "none",
+    "lost": 12,
+    "contained": 85.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00413613627638028,
+    "dose": 0.008265032712862793
+  },
+  {
+    "seed": 5230,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00413613627638028,
+    "dose": 0.008258146942566427
+  },
+  {
+    "seed": 5231,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.27509838450447,
+    "dose": 58.431490253133944
+  },
+  {
+    "seed": 5231,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.3761344651003453,
+    "dose": 13.83376119212002
+  },
+  {
+    "seed": 5232,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.9768083708958697,
+    "dose": 77.78147263603172
+  },
+  {
+    "seed": 5232,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1607458716684713,
+    "dose": 22.312959869900844
+  },
+  {
+    "seed": 5233,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.1691294398940935,
+    "dose": 2.063108728866842
+  },
+  {
+    "seed": 5233,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.5557791907736217,
+    "dose": 1.259465364283476
+  },
+  {
+    "seed": 5234,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.651606320811021E-15,
+    "dose": 7.941748289098682E-16
+  },
+  {
+    "seed": 5234,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 76.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.2160361629172712E-16,
+    "dose": 3.724385535113288E-17
+  },
+  {
+    "seed": 5235,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 5.077590345028616E-07,
+    "dose": 1.3235207309205352E-07
+  },
+  {
+    "seed": 5235,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.813531200129909E-07,
+    "dose": 1.0492373519705095E-07
+  },
+  {
+    "seed": 5236,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.3229685717486888,
+    "dose": 22.94464525736789
+  },
+  {
+    "seed": 5236,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7268649849337074,
+    "dose": 9.247491331817214
+  },
+  {
+    "seed": 5237,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8111676222800273,
+    "dose": 24.490067763479917
+  },
+  {
+    "seed": 5237,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8912388532866403,
+    "dose": 10.753131007456343
+  },
+  {
+    "seed": 5238,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 2.0102912106684494,
+    "dose": 11.283333205176518
+  },
+  {
+    "seed": 5238,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.0102912106684494,
+    "dose": 11.280154182554707
+  },
+  {
+    "seed": 5239,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.055782578143904E-16,
+    "dose": 1.132377988672073E-16
+  },
+  {
+    "seed": 5239,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2570525173455701E-15,
+    "dose": 2.65857570209676E-16
+  },
+  {
+    "seed": 5240,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.314689906324826,
+    "dose": 70.13177022314564
+  },
+  {
+    "seed": 5240,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 65.66666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.051106091760189,
+    "dose": 14.659198807353471
+  },
+  {
+    "seed": 5241,
+    "policy": "none",
+    "lost": 6,
+    "contained": 85.5,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.466065343098754,
+    "dose": 2.0206834029037535
+  },
+  {
+    "seed": 5241,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 59.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.062421979494433455,
+    "dose": 0.27284155936600196
+  },
+  {
+    "seed": 5242,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00025691456912413043,
+    "dose": 9.6863408812923E-05
+  },
+  {
+    "seed": 5242,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.0002475663685714746,
+    "dose": 9.37106576149941E-05
+  },
+  {
+    "seed": 5243,
+    "policy": "none",
+    "lost": 6,
+    "contained": 87.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.619287942091375,
+    "dose": 87.0271363009634
+  },
+  {
+    "seed": 5243,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2406980063637125,
+    "dose": 19.121391246610862
+  },
+  {
+    "seed": 5244,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.021646574023739956,
+    "dose": 0.023955052385837398
+  },
+  {
+    "seed": 5244,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.004437450670589313,
+    "dose": 0.005488670392585053
+  },
+  {
+    "seed": 5245,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.1557935929814672,
+    "dose": 0.8368366649809563
+  },
+  {
+    "seed": 5245,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 33.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.10517334581592029,
+    "dose": 0.37390952468027283
+  },
+  {
+    "seed": 5246,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 16.491431196329177,
+    "dose": 494.4780154627825
+  },
+  {
+    "seed": 5246,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 21.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8087703949333571,
+    "dose": 18.845446406069627
+  },
+  {
+    "seed": 5247,
+    "policy": "none",
+    "lost": 12,
+    "contained": 73.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.9844380511131128,
+    "dose": 44.64921923791788
+  },
+  {
+    "seed": 5247,
+    "policy": "baseline",
+    "lost": 9,
+    "contained": 78.16666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.2930270651174516,
+    "dose": 15.055103791831439
+  },
+  {
+    "seed": 5248,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.24518336716518307,
+    "dose": 0.30552261692736615
+  },
+  {
+    "seed": 5248,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.13810628458186328,
+    "dose": 0.1709847028775491
+  },
+  {
+    "seed": 5249,
+    "policy": "none",
+    "lost": 12,
+    "contained": 87.33333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 5.300945410811064,
+    "dose": 74.90279921517464
+  },
+  {
+    "seed": 5249,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5119247714704356,
+    "dose": 18.1395404804172
+  },
+  {
+    "seed": 5250,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.05529207714032251,
+    "dose": 0.05503637264367063
+  },
+  {
+    "seed": 5250,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5251,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.823539738601202,
+    "dose": 46.45097483342001
+  },
+  {
+    "seed": 5251,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0369345505783203,
+    "dose": 4.659052313790123
+  },
+  {
+    "seed": 5252,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.228715059809825,
+    "dose": 28.46777516054453
+  },
+  {
+    "seed": 5252,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0171541890415554,
+    "dose": 16.18088933835488
+  },
+  {
+    "seed": 5253,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4746000630905876,
+    "dose": 5.098857549706986
+  },
+  {
+    "seed": 5253,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.3170126960237343,
+    "dose": 2.690325635965522
+  },
+  {
+    "seed": 5254,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.09260318248871183,
+    "dose": 0.2518797484871313
+  },
+  {
+    "seed": 5254,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 21.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.029492858085618034,
+    "dose": 0.053779396388829545
+  },
+  {
+    "seed": 5255,
+    "policy": "none",
+    "lost": 12,
+    "contained": 76.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.924421693080262,
+    "dose": 100.674965130587
+  },
+  {
+    "seed": 5255,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0107786792893374,
+    "dose": 4.9034803351945815
+  },
+  {
+    "seed": 5256,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.923170314603136,
+    "dose": 7.535256874613553
+  },
+  {
+    "seed": 5256,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 33.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.2698412809134895,
+    "dose": 1.180754959909152
+  },
+  {
+    "seed": 5257,
+    "policy": "none",
+    "lost": 12,
+    "contained": 73.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.2333855170308006,
+    "dose": 17.26223115044574
+  },
+  {
+    "seed": 5257,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 77.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.1754987367379601,
+    "dose": 7.175125205817896
+  },
+  {
+    "seed": 5258,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.9287905930302435E-06,
+    "dose": 1.1334010691083067E-06
+  },
+  {
+    "seed": 5258,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.470969813649203E-07,
+    "dose": 2.944822289481495E-07
+  },
+  {
+    "seed": 5259,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 10.30812265256639,
+    "dose": 188.5489363573931
+  },
+  {
+    "seed": 5259,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 69.66666666666667,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.774315563524377,
+    "dose": 33.23136438636239
+  },
+  {
+    "seed": 5260,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 6.1763947785418125,
+    "dose": 32.026040750281155
+  },
+  {
+    "seed": 5260,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1818418978286414,
+    "dose": 10.177964354671992
+  },
+  {
+    "seed": 5261,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.2850091688057517,
+    "dose": 50.241337979971064
+  },
+  {
+    "seed": 5261,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8878724392959562,
+    "dose": 7.541814552067833
+  },
+  {
+    "seed": 5262,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.898433522411406,
+    "dose": 226.8472840776917
+  },
+  {
+    "seed": 5262,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6367849238802648,
+    "dose": 47.92088030703117
+  },
+  {
+    "seed": 5263,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 19.082494061298515,
+    "dose": 673.3700209853623
+  },
+  {
+    "seed": 5263,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 37.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.0638548959016028,
+    "dose": 113.59187440812096
+  },
+  {
+    "seed": 5264,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.137221048518529,
+    "dose": 9.825279638490194
+  },
+  {
+    "seed": 5264,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 29.166666666666668,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.2352276843266594,
+    "dose": 6.438978439401845
+  },
+  {
+    "seed": 5265,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 18.71838959761308,
+    "dose": 405.5299789509225
+  },
+  {
+    "seed": 5265,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8235805041538664,
+    "dose": 46.585841334137825
+  },
+  {
+    "seed": 5266,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.4023090485995546,
+    "dose": 1.6077413656910546
+  },
+  {
+    "seed": 5266,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.21634641755320877,
+    "dose": 0.5370780904830437
+  },
+  {
+    "seed": 5267,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.894422438883424,
+    "dose": 581.4658651053198
+  },
+  {
+    "seed": 5267,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 24.0,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.676789472989146,
+    "dose": 40.4476524430732
+  },
+  {
+    "seed": 5268,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0016418464216287267,
+    "dose": 0.0015539696399123103
+  },
+  {
+    "seed": 5268,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 56.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00035832196122074,
+    "dose": 0.0002788419722969295
+  },
+  {
+    "seed": 5269,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.737082393748592,
+    "dose": 208.352543995613
+  },
+  {
+    "seed": 5269,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.4127904760672223,
+    "dose": 40.32428548753991
+  },
+  {
+    "seed": 5270,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.640318942561555,
+    "dose": 345.6220188226972
+  },
+  {
+    "seed": 5270,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0334949726510572,
+    "dose": 18.041607556470773
+  },
+  {
+    "seed": 5271,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.761295651416184,
+    "dose": 189.0276958908005
+  },
+  {
+    "seed": 5271,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.159211602950734,
+    "dose": 29.62049272764103
+  },
+  {
+    "seed": 5272,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.9384572546201214E-06,
+    "dose": 7.815025458607409E-07
+  },
+  {
+    "seed": 5272,
+    "policy": "baseline",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 9.61632765704253E-07,
+    "dose": 2.0843797545492109E-07
+  },
+  {
+    "seed": 5273,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.812573163201402,
+    "dose": 41.32588029421659
+  },
+  {
+    "seed": 5273,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1077397948930359,
+    "dose": 9.196109155071609
+  },
+  {
+    "seed": 5274,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.1376215044866733,
+    "dose": 0.7687907787881406
+  },
+  {
+    "seed": 5274,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.05713974771269386,
+    "dose": 0.16221249429979273
+  },
+  {
+    "seed": 5275,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.6375831355753805,
+    "dose": 12.717484616625379
+  },
+  {
+    "seed": 5275,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 54.166666666666664,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.4716874544744036,
+    "dose": 7.697383577979613
+  },
+  {
+    "seed": 5276,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.219612573903053E-13,
+    "dose": 1.27005103994172E-13
+  },
+  {
+    "seed": 5276,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.219612573903053E-13,
+    "dose": 1.27005103994172E-13
+  },
+  {
+    "seed": 5277,
+    "policy": "none",
+    "lost": 6,
+    "contained": 81.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2380533447212947,
+    "dose": 10.271782929275977
+  },
+  {
+    "seed": 5277,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1354726962067896,
+    "dose": 9.614584322139747
+  },
+  {
+    "seed": 5278,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.256370671014205,
+    "dose": 159.25628334325268
+  },
+  {
+    "seed": 5278,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 38.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9241010623583765,
+    "dose": 26.53274075972552
+  },
+  {
+    "seed": 5279,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.042742227465892,
+    "dose": 161.35715162933195
+  },
+  {
+    "seed": 5279,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5128226682397676,
+    "dose": 28.70895307148113
+  },
+  {
+    "seed": 5280,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.3226101123217662E-06,
+    "dose": 1.7119480158719159E-06
+  },
+  {
+    "seed": 5280,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.574342030723158E-07,
+    "dose": 1.213824250074909E-07
+  },
+  {
+    "seed": 5281,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7179741286853708,
+    "dose": 4.9067172343135
+  },
+  {
+    "seed": 5281,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.17984479031698225,
+    "dose": 0.9289768519801236
+  },
+  {
+    "seed": 5282,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.6803653905954925E-15,
+    "dose": 1.2297090636969777E-15
+  },
+  {
+    "seed": 5282,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.6803653905954925E-15,
+    "dose": 1.2297023823374743E-15
+  },
+  {
+    "seed": 5283,
+    "policy": "none",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5715026031117376,
+    "dose": 27.80071686767715
+  },
+  {
+    "seed": 5283,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 20.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2128003676191468,
+    "dose": 24.97736502477055
+  },
+  {
+    "seed": 5284,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 16.56287389902166,
+    "dose": 391.9014466470047
+  },
+  {
+    "seed": 5284,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5285,
+    "policy": "none",
+    "lost": 10,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.365597320853722,
+    "dose": 145.95067093633944
+  },
+  {
+    "seed": 5285,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 61.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4896048997447096,
+    "dose": 31.993839095177243
+  },
+  {
+    "seed": 5286,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.005098598321357966,
+    "dose": 0.003296537397451996
+  },
+  {
+    "seed": 5286,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 26.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.005098598321357966,
+    "dose": 0.003295832098767831
+  },
+  {
+    "seed": 5287,
+    "policy": "none",
+    "lost": 12,
+    "contained": 77.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.004041843037866224,
+    "dose": 0.004259957541744566
+  },
+  {
+    "seed": 5287,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.003751216243995876,
+    "dose": 0.003988167783586682
+  },
+  {
+    "seed": 5288,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.099155510065693,
+    "dose": 36.840741851140585
+  },
+  {
+    "seed": 5288,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2266607518673411,
+    "dose": 11.197667534219745
+  },
+  {
+    "seed": 5289,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.628341391921423,
+    "dose": 204.50268452935384
+  },
+  {
+    "seed": 5289,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.4184480430445894,
+    "dose": 38.620687165494836
+  },
+  {
+    "seed": 5290,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.391471404993771,
+    "dose": 124.1951635974029
+  },
+  {
+    "seed": 5290,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.9380074639902244,
+    "dose": 16.710390963343453
+  },
+  {
+    "seed": 5291,
+    "policy": "none",
+    "lost": 12,
+    "contained": 71.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.874376339835653,
+    "dose": 241.08849627751854
+  },
+  {
+    "seed": 5291,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3278263464951563,
+    "dose": 25.609452818778923
+  },
+  {
+    "seed": 5292,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.055956655919440754,
+    "dose": 0.09069546204848104
+  },
+  {
+    "seed": 5292,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 26.833333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.055956655919440754,
+    "dose": 0.08998971096467745
+  },
+  {
+    "seed": 5293,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.5953622326908983,
+    "dose": 61.17415917080894
+  },
+  {
+    "seed": 5293,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0169541677978666,
+    "dose": 14.286200569594943
+  },
+  {
+    "seed": 5294,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 15.71687135849149,
+    "dose": 446.97248972562335
+  },
+  {
+    "seed": 5294,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.1229705477947394,
+    "dose": 82.83924049710156
+  },
+  {
+    "seed": 5295,
+    "policy": "none",
+    "lost": 12,
+    "contained": 67.5,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.03731160783257388,
+    "dose": 0.019436696866023447
+  },
+  {
+    "seed": 5295,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.015540035937286438,
+    "dose": 0.01289197117227577
+  },
+  {
+    "seed": 5296,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.002081869676957,
+    "dose": 62.89035757980103
+  },
+  {
+    "seed": 5296,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.136089934053399,
+    "dose": 3.9032401692686824
+  },
+  {
+    "seed": 5297,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0489060017307117E-09,
+    "dose": 1.766914668555979E-10
+  },
+  {
+    "seed": 5297,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.339157007527249E-13,
+    "dose": 3.048526617026996E-13
+  },
+  {
+    "seed": 5298,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.442276126141195E-15,
+    "dose": 1.3255284204304417E-15
+  },
+  {
+    "seed": 5298,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.333333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 7.42431924432324E-15,
+    "dose": 1.3222529011132543E-15
+  },
+  {
+    "seed": 5299,
+    "policy": "none",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.233543342741388E-09,
+    "dose": 6.328659379021802E-10
+  },
+  {
+    "seed": 5299,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.233543342741388E-09,
+    "dose": 6.328659376036954E-10
+  },
+  {
+    "seed": 5300,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 12.530726366341755,
+    "dose": 367.863271150322
+  },
+  {
+    "seed": 5300,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.135691596053786,
+    "dose": 59.28944095233447
+  },
+  {
+    "seed": 5301,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.890900949164399E-09,
+    "dose": 1.255071114432085E-09
+  },
+  {
+    "seed": 5301,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 28.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.6413559536361387E-09,
+    "dose": 1.0975117192825714E-09
+  },
+  {
+    "seed": 5302,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.181340397512545,
+    "dose": 26.54106936048932
+  },
+  {
+    "seed": 5302,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0738138796561847,
+    "dose": 13.249534010031438
+  },
+  {
+    "seed": 5303,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.1019134432759709,
+    "dose": 0.2726127006836644
+  },
+  {
+    "seed": 5303,
+    "policy": "baseline",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.04983254760853023,
+    "dose": 0.18089462566200756
+  },
+  {
+    "seed": 5304,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00881146201242768,
+    "dose": 0.007142862214842338
+  },
+  {
+    "seed": 5304,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.005073263282973892,
+    "dose": 0.0044998879668623985
+  },
+  {
+    "seed": 5305,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.182028313854035,
+    "dose": 126.28184394998459
+  },
+  {
+    "seed": 5305,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.487698343583268,
+    "dose": 26.493193012124415
+  },
+  {
+    "seed": 5306,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.660522246520125E-07,
+    "dose": 5.133039999837487E-07
+  },
+  {
+    "seed": 5306,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 59.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.4471453931858604E-06,
+    "dose": 7.452284254100026E-07
+  },
+  {
+    "seed": 5307,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.4092319593445574,
+    "dose": 1.9045704933507228
+  },
+  {
+    "seed": 5307,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.20033546998431448,
+    "dose": 1.3098889578533885
+  },
+  {
+    "seed": 5308,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.914311637982871,
+    "dose": 38.74936414345098
+  },
+  {
+    "seed": 5308,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.914311637982871,
+    "dose": 22.5884294346574
+  },
+  {
+    "seed": 5309,
+    "policy": "none",
+    "lost": 6,
+    "contained": 84.33333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.9667171995405486,
+    "dose": 4.260961977052755
+  },
+  {
+    "seed": 5309,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 79.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.9667171995405486,
+    "dose": 4.2594593043079065
+  },
+  {
+    "seed": 5310,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.052338965068675,
+    "dose": 66.02730260238944
+  },
+  {
+    "seed": 5310,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5311,
+    "policy": "none",
+    "lost": 12,
+    "contained": 87.0,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 2.242961464111605,
+    "dose": 30.223029945369525
+  },
+  {
+    "seed": 5311,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 34.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0112473583695727,
+    "dose": 7.948775960020342
+  },
+  {
+    "seed": 5312,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 12.05261962387188,
+    "dose": 424.4326393064629
+  },
+  {
+    "seed": 5312,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 31.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.29640769622325,
+    "dose": 26.290501366581395
+  },
+  {
+    "seed": 5313,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.0462124702181113,
+    "dose": 15.508711060383964
+  },
+  {
+    "seed": 5313,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1476733027359798,
+    "dose": 10.377783673055808
+  },
+  {
+    "seed": 5314,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.696873427925578,
+    "dose": 202.2913063537827
+  },
+  {
+    "seed": 5314,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 42.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3186750614928955,
+    "dose": 34.6047408260115
+  },
+  {
+    "seed": 5315,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3159905922677153,
+    "dose": 2.35650778806292
+  },
+  {
+    "seed": 5315,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.2166494559101442,
+    "dose": 2.2365834650327994
+  },
+  {
+    "seed": 5316,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 6.287058695178566,
+    "dose": 111.9174483517289
+  },
+  {
+    "seed": 5316,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3453080571446507,
+    "dose": 23.22388028951505
+  },
+  {
+    "seed": 5317,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.191696959668057,
+    "dose": 83.64304007772033
+  },
+  {
+    "seed": 5317,
+    "policy": "baseline",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.8265187260055298,
+    "dose": 18.712390727670673
+  },
+  {
+    "seed": 5318,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.9327296501909454,
+    "dose": 3.2624761773253557
+  },
+  {
+    "seed": 5318,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.7340966069816228,
+    "dose": 2.885377830632038
+  },
+  {
+    "seed": 5319,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.801421943773772,
+    "dose": 276.72309214803715
+  },
+  {
+    "seed": 5319,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.980730177857119,
+    "dose": 61.61583184992132
+  },
+  {
+    "seed": 5320,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 14.762463774602308,
+    "dose": 444.22890131023775
+  },
+  {
+    "seed": 5320,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 31.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.3836151075090113,
+    "dose": 30.604134148629882
+  },
+  {
+    "seed": 5321,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2498052130933381,
+    "dose": 17.92629498456385
+  },
+  {
+    "seed": 5321,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0015923971332494,
+    "dose": 10.09141318774524
+  },
+  {
+    "seed": 5322,
+    "policy": "none",
+    "lost": 12,
+    "contained": 85.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.6464330563224254,
+    "dose": 39.408210487841224
+  },
+  {
+    "seed": 5322,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.014336544869271,
+    "dose": 9.138881855958559
+  },
+  {
+    "seed": 5323,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 4.932528422481353,
+    "dose": 40.702672066165235
+  },
+  {
+    "seed": 5323,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0872287711153379,
+    "dose": 16.64161422976595
+  },
+  {
+    "seed": 5324,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.812694787561112,
+    "dose": 216.67964474139646
+  },
+  {
+    "seed": 5324,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.0000571721112066,
+    "dose": 26.985952481589134
+  },
+  {
+    "seed": 5325,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8656661854907062,
+    "dose": 3.276937154635868
+  },
+  {
+    "seed": 5325,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 75.16666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.5615768733058464,
+    "dose": 3.1136002672901255
+  },
+  {
+    "seed": 5326,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.37112512654616187,
+    "dose": 0.7857987590461654
+  },
+  {
+    "seed": 5326,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 67.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.37112512654616187,
+    "dose": 0.7857735426385059
+  },
+  {
+    "seed": 5327,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.9507809696863574,
+    "dose": 60.98879691466383
+  },
+  {
+    "seed": 5327,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 81.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.018274507779345,
+    "dose": 13.66537351789291
+  },
+  {
+    "seed": 5328,
+    "policy": "none",
+    "lost": 12,
+    "contained": 89.16666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.302590764366283,
+    "dose": 185.4017140695437
+  },
+  {
+    "seed": 5328,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 51.833333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.5141602512629204,
+    "dose": 30.082183181029684
+  },
+  {
+    "seed": 5329,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.357861208413403,
+    "dose": 35.80023630497876
+  },
+  {
+    "seed": 5329,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2804875499653487,
+    "dose": 4.269494481369374
+  },
+  {
+    "seed": 5330,
+    "policy": "none",
+    "lost": 12,
+    "contained": 78.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 14.342885151908815,
+    "dose": 472.7209274169394
+  },
+  {
+    "seed": 5330,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1742499126539152,
+    "dose": 20.5364544243614
+  },
+  {
+    "seed": 5331,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.310935260980013,
+    "dose": 105.41533394192768
+  },
+  {
+    "seed": 5331,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 80.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.841111793190949,
+    "dose": 20.433522957725046
+  },
+  {
+    "seed": 5332,
+    "policy": "none",
+    "lost": 12,
+    "contained": 88.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.823505996035174,
+    "dose": 81.0936492726134
+  },
+  {
+    "seed": 5332,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 30.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.221895253913897,
+    "dose": 13.678327974271868
+  },
+  {
+    "seed": 5333,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2899189359108294,
+    "dose": 7.071855373166097
+  },
+  {
+    "seed": 5333,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2899189359108294,
+    "dose": 6.3571747813440505
+  },
+  {
+    "seed": 5334,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.055933962549635,
+    "dose": 79.79776513148737
+  },
+  {
+    "seed": 5334,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.9318538606533813,
+    "dose": 19.73509545947535
+  },
+  {
+    "seed": 5335,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 10.206910073124922,
+    "dose": 408.7690908398155
+  },
+  {
+    "seed": 5335,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0032330722025762,
+    "dose": 20.564287509541483
+  },
+  {
+    "seed": 5336,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.17189047412656533,
+    "dose": 0.42576448700333375
+  },
+  {
+    "seed": 5336,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04193066492064874,
+    "dose": 0.05888819225377213
+  },
+  {
+    "seed": 5337,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.3182680546100203,
+    "dose": 28.994441429677902
+  },
+  {
+    "seed": 5337,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 56.666666666666664,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.2145112104093212,
+    "dose": 8.317246450792814
+  },
+  {
+    "seed": 5338,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.346552686185846,
+    "dose": 9.25785766548726
+  },
+  {
+    "seed": 5338,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 26.333333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.2435044484603501,
+    "dose": 8.814591508964387
+  },
+  {
+    "seed": 5339,
+    "policy": "none",
+    "lost": 12,
+    "contained": 78.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.775568408488006,
+    "dose": 224.22798581709338
+  },
+  {
+    "seed": 5339,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2446192384401182,
+    "dose": 21.787889728505238
+  },
+  {
+    "seed": 5340,
+    "policy": "none",
+    "lost": 12,
+    "contained": 88.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 13.84807304034185,
+    "dose": 223.27454245292606
+  },
+  {
+    "seed": 5340,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4780265349491255,
+    "dose": 12.832201983281248
+  },
+  {
+    "seed": 5341,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.205709654294131E-06,
+    "dose": 1.0226693286404675E-06
+  },
+  {
+    "seed": 5341,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 22.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7202524325061792E-06,
+    "dose": 7.835741774452701E-07
+  },
+  {
+    "seed": 5342,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 10.006773206194744,
+    "dose": 387.1451549541351
+  },
+  {
+    "seed": 5342,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 52.333333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.0843583319432015,
+    "dose": 56.45257097064163
+  },
+  {
+    "seed": 5343,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.772975097577978,
+    "dose": 255.8599101867107
+  },
+  {
+    "seed": 5343,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.166666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2969125520034581,
+    "dose": 22.522523113225198
+  },
+  {
+    "seed": 5344,
+    "policy": "none",
+    "lost": 8,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.426698483369546,
+    "dose": 33.914855261739156
+  },
+  {
+    "seed": 5344,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2103735623721965,
+    "dose": 17.239513789335923
+  },
+  {
+    "seed": 5345,
+    "policy": "none",
+    "lost": 6,
+    "contained": 83.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.2253798996587086,
+    "dose": 39.37070113057414
+  },
+  {
+    "seed": 5345,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 76.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0711159188189197,
+    "dose": 13.639010960516991
+  },
+  {
+    "seed": 5346,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.568718948192073,
+    "dose": 408.9622738499512
+  },
+  {
+    "seed": 5346,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.7864839562455936,
+    "dose": 35.74774307603539
+  },
+  {
+    "seed": 5347,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 7.131283590706804,
+    "dose": 82.9333590682768
+  },
+  {
+    "seed": 5347,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.4649235368438336,
+    "dose": 9.45585991404833
+  },
+  {
+    "seed": 5348,
+    "policy": "none",
+    "lost": 6,
+    "contained": 82.33333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 11.511870551209906,
+    "dose": 268.0354706940581
+  },
+  {
+    "seed": 5348,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 65.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.925575388307072,
+    "dose": 48.516699492514505
+  },
+  {
+    "seed": 5349,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 9.913481754819432E-11,
+    "dose": 2.072715590794759E-11
+  },
+  {
+    "seed": 5349,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 60.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 9.913481754819432E-11,
+    "dose": 2.0727155896314977E-11
+  },
+  {
+    "seed": 5350,
+    "policy": "none",
+    "lost": 6,
+    "contained": 89.83333333333333,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 4.533297313796308,
+    "dose": 80.67915102144372
+  },
+  {
+    "seed": 5350,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 21.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.453049815721601,
+    "dose": 18.878725116920553
+  },
+  {
+    "seed": 5351,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.8131760106399717,
+    "dose": 32.16048819813254
+  },
+  {
+    "seed": 5351,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8577771938019266,
+    "dose": 7.673986720677348
+  },
+  {
+    "seed": 5352,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 8.733395261470289,
+    "dose": 233.3533074620007
+  },
+  {
+    "seed": 5352,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.333333333333336,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.8361832051646734,
+    "dose": 28.048995596210755
+  },
+  {
+    "seed": 5353,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 19.00447623919038,
+    "dose": 391.82874711463626
+  },
+  {
+    "seed": 5353,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.3778695265175158,
+    "dose": 40.06982823713904
+  },
+  {
+    "seed": 5354,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.2935998893266958,
+    "dose": 1.0545999642058113
+  },
+  {
+    "seed": 5354,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 45.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.2935998893266958,
+    "dose": 1.0545999642058113
+  },
+  {
+    "seed": 5355,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.013717766596432717,
+    "dose": 0.025424880882330927
+  },
+  {
+    "seed": 5355,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 51.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.004883463639153363,
+    "dose": 0.01014650626716703
+  },
+  {
+    "seed": 5356,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.351161902130638,
+    "dose": 39.838357212967594
+  },
+  {
+    "seed": 5356,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 22.166666666666668,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.4068619681907157,
+    "dose": 19.111180095922133
+  },
+  {
+    "seed": 5357,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 1.0832495775260877,
+    "dose": 7.810203672873025
+  },
+  {
+    "seed": 5357,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.9344034431240368,
+    "dose": 7.010231658791692
+  },
+  {
+    "seed": 5358,
+    "policy": "none",
+    "lost": 9,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0016815359261326641,
+    "dose": 0.0015116202269891445
+  },
+  {
+    "seed": 5358,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 52.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0015125841681949222,
+    "dose": 0.0014146203277117502
+  },
+  {
+    "seed": 5359,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3445195638912089,
+    "dose": 6.103286757044145
+  },
+  {
+    "seed": 5359,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7294374752404269,
+    "dose": 3.4221198205136454
+  },
+  {
+    "seed": 5360,
+    "policy": "none",
+    "lost": 12,
+    "contained": 71.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.517101098520529E-05,
+    "dose": 2.8267104721099887E-05
+  },
+  {
+    "seed": 5360,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 53.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2165643596764514E-05,
+    "dose": 1.876016583043632E-05
+  },
+  {
+    "seed": 5361,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 3.0567932932081,
+    "dose": 75.82936284705512
+  },
+  {
+    "seed": 5361,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.166666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.910323290222287,
+    "dose": 33.22098143490125
+  },
+  {
+    "seed": 5362,
+    "policy": "none",
+    "lost": 11,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.3437580147561938,
+    "dose": 9.482053597838545
+  },
+  {
+    "seed": 5362,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.6812091947406648,
+    "dose": 4.948031795031377
+  },
+  {
+    "seed": 5363,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.6195654331364593,
+    "dose": 4.37691359860558
+  },
+  {
+    "seed": 5363,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 50.666666666666664,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.34708424517454795,
+    "dose": 2.7452875253939
+  },
+  {
+    "seed": 5364,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.018436023140567467,
+    "dose": 0.040426023897354474
+  },
+  {
+    "seed": 5364,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 29.833333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.018436023140567467,
+    "dose": 0.04018088681517638
+  },
+  {
+    "seed": 5365,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.779663361852101,
+    "dose": 11.839105535489328
+  },
+  {
+    "seed": 5365,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 21.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.8338603675500819,
+    "dose": 6.467920906182035
+  },
+  {
+    "seed": 5366,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.6062126330092549,
+    "dose": 2.0884480268134986
+  },
+  {
+    "seed": 5366,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.333333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.031246754074557077,
+    "dose": 0.20284073259918609
+  },
+  {
+    "seed": 5367,
+    "policy": "none",
+    "lost": 12,
+    "contained": 81.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04835884892238699,
+    "dose": 0.09422982329178607
+  },
+  {
+    "seed": 5367,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": 88.33333333333333,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.04835884892238699,
+    "dose": 0.09109037701519497
+  },
+  {
+    "seed": 5368,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.04839977684012094,
+    "dose": 0.2821178896964764
+  },
+  {
+    "seed": 5368,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5369,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 6.226391747963712,
+    "dose": 76.95225356163503
+  },
+  {
+    "seed": 5369,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5751638595572717,
+    "dose": 18.70009329761617
+  },
+  {
+    "seed": 5370,
+    "policy": "none",
+    "lost": 12,
+    "contained": 87.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.005232533173177257,
+    "dose": 0.0081134735855965
+  },
+  {
+    "seed": 5370,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": 73.33333333333333,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.0009438073160803979,
+    "dose": 0.003042569400718085
+  },
+  {
+    "seed": 5371,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.19786766307762463,
+    "dose": 0.5260740540342986
+  },
+  {
+    "seed": 5371,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5372,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 7.1007611489853835,
+    "dose": 39.67180707505675
+  },
+  {
+    "seed": 5372,
+    "policy": "baseline",
+    "lost": 7,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 3,
+    "worstIndoor": 1.758916781861573,
+    "dose": 15.696609832606761
+  },
+  {
+    "seed": 5373,
+    "policy": "none",
+    "lost": 12,
+    "contained": 73.16666666666667,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 0.0013868295620209556,
+    "dose": 0.0015758161484675222
+  },
+  {
+    "seed": 5373,
+    "policy": "baseline",
+    "lost": 8,
+    "contained": 72.0,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 0.0006375072977158956,
+    "dose": 0.000512043471227725
+  },
+  {
+    "seed": 5374,
+    "policy": "none",
+    "lost": 12,
+    "contained": 71.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.0607905093651901,
+    "dose": 5.719402315475612
+  },
+  {
+    "seed": 5374,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 23.833333333333332,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 0.9797025312892216,
+    "dose": 5.494779765027936
+  },
+  {
+    "seed": 5375,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00012104498020314057,
+    "dose": 6.544661349816928E-05
+  },
+  {
+    "seed": 5375,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 32.333333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00012104498020314057,
+    "dose": 6.544459818049947E-05
+  },
+  {
+    "seed": 5376,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.8001484607424763,
+    "dose": 49.517846764926674
+  },
+  {
+    "seed": 5376,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1768243493403334,
+    "dose": 13.97762726609885
+  },
+  {
+    "seed": 5377,
+    "policy": "none",
+    "lost": 12,
+    "contained": 89.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.660990917285137E-05,
+    "dose": 2.3205812839781383E-05
+  },
+  {
+    "seed": 5377,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 1.4223598889003408E-05,
+    "dose": 1.0627923117622176E-05
+  },
+  {
+    "seed": 5378,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 18.1992249539987,
+    "dose": 336.4310365958556
+  },
+  {
+    "seed": 5378,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 57.5,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 2.932369389682141,
+    "dose": 53.41072566403656
+  },
+  {
+    "seed": 5379,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 11.579190663907085,
+    "dose": 172.35295448985764
+  },
+  {
+    "seed": 5379,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 77.33333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.7566014053246044,
+    "dose": 36.6520269558813
+  },
+  {
+    "seed": 5380,
+    "policy": "none",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.594652017692749,
+    "dose": 30.829166398523952
+  },
+  {
+    "seed": 5380,
+    "policy": "baseline",
+    "lost": 0,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0,
+    "dose": 0.0
+  },
+  {
+    "seed": 5381,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 22.965819645474614,
+    "dose": 600.2878596143844
+  },
+  {
+    "seed": 5381,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": 89.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.0408878965546196,
+    "dose": 97.05322199330912
+  },
+  {
+    "seed": 5382,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 22.96754326509657,
+    "dose": 845.9687287698565
+  },
+  {
+    "seed": 5382,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 4.135858728428398,
+    "dose": 140.06582354052603
+  },
+  {
+    "seed": 5383,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 4,
+    "worstIndoor": 3.463482112700503,
+    "dose": 29.656665116806074
+  },
+  {
+    "seed": 5383,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.4503761315820127,
+    "dose": 12.865937648194649
+  },
+  {
+    "seed": 5384,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.783572858624823,
+    "dose": 35.98320923005608
+  },
+  {
+    "seed": 5384,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 24.666666666666668,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.7649535964878444,
+    "dose": 7.114477157018557
+  },
+  {
+    "seed": 5385,
+    "policy": "none",
+    "lost": 12,
+    "contained": 78.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 17.482449809149884,
+    "dose": 583.2867267542653
+  },
+  {
+    "seed": 5385,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 71.16666666666667,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.538870059069707,
+    "dose": 39.866817042046755
+  },
+  {
+    "seed": 5386,
+    "policy": "none",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0002761432285484901,
+    "dose": 0.0001298452254053092
+  },
+  {
+    "seed": 5386,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 35.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.00012656564641805798,
+    "dose": 6.249060146014328E-05
+  },
+  {
+    "seed": 5387,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.588647984167985,
+    "dose": 135.5244536421843
+  },
+  {
+    "seed": 5387,
+    "policy": "baseline",
+    "lost": 6,
+    "contained": 51.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.5031857810225329,
+    "dose": 27.542150943528664
+  },
+  {
+    "seed": 5388,
+    "policy": "none",
+    "lost": 6,
+    "contained": 85.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.18016981643024726,
+    "dose": 0.6285265387918461
+  },
+  {
+    "seed": 5388,
+    "policy": "baseline",
+    "lost": 4,
+    "contained": 87.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.11358324825602481,
+    "dose": 0.16897942512453953
+  },
+  {
+    "seed": 5389,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 4.231932712314919,
+    "dose": 56.25348871902625
+  },
+  {
+    "seed": 5389,
+    "policy": "baseline",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.6127526589119996,
+    "dose": 17.560567439576207
+  },
+  {
+    "seed": 5390,
+    "policy": "none",
+    "lost": 12,
+    "contained": 77.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.361593342230277,
+    "dose": 8.121473618270022
+  },
+  {
+    "seed": 5390,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 24.0,
+    "injuries": 0,
+    "withdrawals": 1,
+    "worstIndoor": 1.256139869592756,
+    "dose": 7.786205771166739
+  },
+  {
+    "seed": 5391,
+    "policy": "none",
+    "lost": 6,
+    "contained": 80.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.5066468368894965,
+    "dose": 0.7125553482992408
+  },
+  {
+    "seed": 5391,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": 72.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.11279579277045729,
+    "dose": 0.17369588184349471
+  },
+  {
+    "seed": 5392,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.1127210281025275,
+    "dose": 60.447805003576406
+  },
+  {
+    "seed": 5392,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.1894081774595684,
+    "dose": 7.596343282073152
+  },
+  {
+    "seed": 5393,
+    "policy": "none",
+    "lost": 12,
+    "contained": 84.83333333333333,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0001821119319808754,
+    "dose": 0.00015641295152631649
+  },
+  {
+    "seed": 5393,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 2,
+    "worstIndoor": 9.269417309018578E-06,
+    "dose": 7.4457191947807735E-06
+  },
+  {
+    "seed": 5394,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.01695550433722909,
+    "dose": 0.02465278607689237
+  },
+  {
+    "seed": 5394,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.5,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.0032008554526571573,
+    "dose": 0.004260744248125619
+  },
+  {
+    "seed": 5395,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 5.964295878596206,
+    "dose": 14.466278101807559
+  },
+  {
+    "seed": 5395,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 37.833333333333336,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.9041831271283534,
+    "dose": 3.808022362487322
+  },
+  {
+    "seed": 5396,
+    "policy": "none",
+    "lost": 12,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.5229827800691479,
+    "dose": 2.9875068583147915
+  },
+  {
+    "seed": 5396,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 25.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.1024312570916637,
+    "dose": 0.4268416152540011
+  },
+  {
+    "seed": 5397,
+    "policy": "none",
+    "lost": 6,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 3.5787202357638295,
+    "dose": 53.34246053215087
+  },
+  {
+    "seed": 5397,
+    "policy": "baseline",
+    "lost": 1,
+    "contained": 27.833333333333332,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.2374367874522878,
+    "dose": 15.75167883608772
+  },
+  {
+    "seed": 5398,
+    "policy": "none",
+    "lost": 5,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 2.2732873460421163E-42,
+    "dose": 3.7888169435479824E-43
+  },
+  {
+    "seed": 5398,
+    "policy": "baseline",
+    "lost": 2,
+    "contained": 54.0,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 1.5806495856846205E-54,
+    "dose": 7.300696430873351E-55
+  },
+  {
+    "seed": 5399,
+    "policy": "none",
+    "lost": 12,
+    "contained": 89.66666666666667,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.3018825711040034,
+    "dose": 1.1698688681466178
+  },
+  {
+    "seed": 5399,
+    "policy": "baseline",
+    "lost": 3,
+    "contained": null,
+    "injuries": 0,
+    "withdrawals": 0,
+    "worstIndoor": 0.07773370822460032,
+    "dose": 0.20019377419596884
+  }
+]

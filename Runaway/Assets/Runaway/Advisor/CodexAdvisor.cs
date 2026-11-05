@@ -136,6 +136,8 @@ namespace Runaway.Advisor
             try
             {
                 var parsed = parse(json);
+                parsed.Card?.Tidy();
+                if (parsed.Lessons != null) foreach (var l in parsed.Lessons.Lessons) { l.Title = Recommendation.Plain(l.Title)?.TrimEnd('.'); l.Text = Recommendation.Plain(l.Text); }
                 parsed.Ok = true;
                 parsed.Seconds = sw.Elapsed.TotalSeconds;
                 parsed.ToolCalls = result.ToolCalls;

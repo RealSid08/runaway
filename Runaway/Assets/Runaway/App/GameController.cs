@@ -247,6 +247,29 @@ namespace Runaway.App
             DecisionsChanged?.Invoke();
         }
 
+        /// <summary>Preview tooling: show a recorded card without calling the advisor.</summary>
+        public void InjectCard(DecisionRecord rec)
+        {
+            rec.Snapshot = Sim.Clone();
+            rec.Time = Sim.Time;
+            rec.Cautions = Doctrine.Check(Sim, rec.Card.ToOrders());
+            Decisions.Add(rec);
+            Pending = rec;
+            DecisionLeft = DecisionWindow * 0.62f;
+            SetPhase(Phase.Deciding);
+            DecisionsChanged?.Invoke();
+        }
+
+        /// <summary>Preview tooling: advance the simulation instantly.</summary>
+        public void FastForward(double minutes)
+        {
+            var target = Sim.Time + minutes * 60;
+            while (Sim.Time < target && !Sim.Finished) { Sim.Step(); FlushEvents(); }
+            UpdateRisk();
+        }
+
+        public void ForcePhase(Phase p) => SetPhase(p);
+
         public void Accept() { if (Pending?.Card != null) Respond("accepted", Pending.Card.ToOrders()); }
         public void Dismiss() { Respond("dismissed", new List<Order>()); }
         public void ApplyEdited(IEnumerable<int> keep)
@@ -279,22 +302,23 @@ namespace Runaway.App
         {
             if (Phase == Phase.Review) return;
             Pending = null;
-            SetPhase(Phase.Review);
             foreach (var d in Decisions.Where(d => d.Card != null && d.Snapshot != null))
             {
                 var later = Sim.OrderLog;
                 if (d.Response == "accepted")
                 {
                     d.Counterfactual = Counterfactual.Replay(d.Snapshot, new List<Order>(), later, Sim.Time);
-                    d.CounterfactualLabel = "If this advice had been ignored";
+                    d.CounterfactualLabel = "Without this advice";
                 }
                 else
                 {
                     d.Counterfactual = Counterfactual.Replay(d.Snapshot, d.Card.ToOrders(), later, Sim.Time);
-                    d.CounterfactualLabel = "If this advice had been followed in full";
+                    d.CounterfactualLabel = "If you had followed it in full";
                 }
             }
             ReviewReady = true;
+            if (Mode != AdvisorMode.Off) LessonsPending = true;
+            SetPhase(Phase.Review);
             SaveRun();
             DecisionsChanged?.Invoke();
             if (Mode != AdvisorMode.Off)

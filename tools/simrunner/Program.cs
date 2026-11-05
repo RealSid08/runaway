@@ -11,6 +11,7 @@ static class Program
         {
             case "calibrate": Calibrate(args.Skip(1).ToArray()); return 0;
             case "advise": return Headless.Run(args.Skip(1).ToArray()).GetAwaiter().GetResult();
+            case "sweep": Sweep.Run(int.Parse(args[1]), int.Parse(args[2]), args[3]); return 0;
             case "datagen": DataGen.Run(int.Parse(args[1]), args[2], args.Length > 3 ? int.Parse(args[3]) : 1000); return 0;
             default: Console.Error.WriteLine("modes: calibrate"); return 2;
         }

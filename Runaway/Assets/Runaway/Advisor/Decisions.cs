@@ -30,10 +30,10 @@ namespace Runaway.Advisor
                 else if (e.Kind == "arrival" && Once("arr:" + e.Subject))
                 {
                     var u = sim.UnitById(e.Subject);
-                    if (u?.Id == "P1") urgent.Add("Pumper 1 is first on scene. Set the initial plan.");
-                    else if (u?.Id == "A1") normal.Add("Aerial 1 is on scene. Its thermal camera and smoke drift reports are now available.");
-                    else if (u?.Id == "H1") normal.Add("HAZMAT 1 is on scene with verified gas readings and air monitoring.");
-                    else if (u?.Id == "P3") normal.Add("Pumper 3 is on scene. Its tanker adds a fourth stream.");
+                    if (u?.Id == "P1") urgent.Add("Pumper 1 is the first crew on scene. Time for a first plan.");
+                    else if (u?.Id == "A1") normal.Add("Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.");
+                    else if (u?.Id == "H1") normal.Add("HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.");
+                    else if (u?.Id == "P3") normal.Add("Pumper 3 has arrived. Its tanker means a fourth hose can run.");
                     else if (u != null && !u.Injured && e.Text.Contains("rehab")) normal.Add(e.Text);
                 }
             }
@@ -42,28 +42,28 @@ namespace Runaway.Advisor
             {
                 var smokeFrom = Angle.Wrap(obs.SmokeToward.Value + 180);
                 if (Math.Abs(Angle.Delta(obs.StationFrom, smokeFrom)) > 25 && Once("wind_conflict"))
-                    urgent.Add($"Aerial 1 reports smoke drifting toward {obs.SmokeToward.Value:F0} deg, but the anemometer still reads wind from {obs.StationFrom:F0} deg.");
+                    urgent.Add($"Smoke is blowing {Angle.Compass(obs.SmokeToward.Value)}, but the site wind sensor still says the wind is from the {Angle.Compass(obs.StationFrom)}.");
             }
             foreach (var c in obs.Containers)
             {
                 if (c.Visible == "normal" && c.Estimate > 100 && (c.RatePerMin ?? 1) > 0 && Once("hot:" + c.Id))
-                    normal.Add($"{c.Id} is at {c.Estimate:F0} C ({c.EstimateSource}) and rising.");
+                    normal.Add($"{c.Id} is heating up. It is at {c.Estimate:F0}°C and rising.");
                 if (c.SensorConflict && Once("conflict:" + c.Id))
-                    urgent.Add($"{c.Id}: BMS reads {c.Bms:F0} C but the thermal camera implies {14 + (c.Thermal - 14) / 0.6:F0} C.");
+                    urgent.Add($"{c.Id}'s battery sensor reads {c.Bms:F0}°C, but the thermal camera shows about {14 + (c.Thermal - 14) / 0.6:F0}°C.");
             }
             foreach (var u in sim.Units)
                 if (u.Available && u.Exposure > 0.7 * Phys.ExposureLimit && Once("exp:" + u.Id + ":" + (int)(u.RehabUntil)))
-                    normal.Add($"{u.Id} crew exposure is at {u.Exposure / Phys.ExposureLimit * 100:F0}% of the limit.");
+                    normal.Add($"{u.Name} crew has taken {u.Exposure / Phys.ExposureLimit * 100:F0}% of their safe smoke exposure.");
             foreach (var r in obs.Receptors)
                 if (r.Measured.HasValue && r.Measured.Value > 0.5 && r.Action == Protection.None && Once("hf:" + r.Id))
-                    urgent.Add($"Air monitoring at {r.Name} reads {r.Measured.Value:F1} ppm HF.");
+                    urgent.Add($"Toxic smoke has reached {r.Name}. HAZMAT measures {r.Measured.Value:F1} ppm.");
 
             if (sim.Events.Any(e => e.Kind == "arrival" && e.Subject == "P1") == false) return null; // nobody to command yet
             var since = (now - _last) / 60.0;
             string reason = null;
             if (urgent.Count > 0 && since >= 1.5) reason = string.Join(" ", urgent.Concat(normal).Take(3));
             else if (normal.Count > 0 && since >= CooldownMin) reason = string.Join(" ", normal.Take(3));
-            else if (since >= QuietMin && sim.Containers.Any(c => c.State == CellState.Fire || c.State == CellState.Venting)) reason = "Scheduled review: check the plan is still right.";
+            else if (since >= QuietMin && sim.Containers.Any(c => c.State == CellState.Fire || c.State == CellState.Venting)) reason = "Regular check that the plan is still right.";
             else if (urgent.Count + normal.Count > 0) { foreach (var x in urgent.Concat(normal)) _pending.Add(x); }
 
             if (reason == null && _pending.Count > 0 && since >= CooldownMin) { reason = string.Join(" ", _pending.Take(3)); }

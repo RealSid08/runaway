@@ -1,0 +1,96 @@
+T+  0.0  The battery in B3 is overheating. The site operator has raised the alarm.
+T+  7.0  Pumper 1 on scene.
+--- decision 1 at T+7.0: Pumper 1 is the first crew on scene. Time for a first plan.
+   [32s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan,test_plan] Cool B3 now and shelter Glenvale homes
+     - Pumper 1 cools B3: Pumper 1 can cool B3 before it starts venting.
+     - Glenvale homes shelters indoors: Protect Glenvale homes before HF smoke arrives.
+     why: B3 is overheating without visible venting, so early cooling may prevent ignition. Work from upwind and stay at least 17 m away if venting starts.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     effect: Enclosures involved in 20 minutes: 1.2 -> 0
+     effect: Peak indoor HF at Glenvale homes: 2.36 ppm -> 0 ppm
+T+  7.0  Glenvale homes told to shelter indoors.
+T+  8.3  Pumper 1 is spraying water on B3.
+T+ 11.0  Pumper 2 on scene.
+T+ 15.0  Aerial 1 on scene.
+--- decision 2 at T+15.0: Aerial 1 has arrived. Its thermal camera can now check temperatures and see where the smoke goes.
+   [23s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 1 cooling B3 and Glenvale homes sheltered. Adding cooling at B4 showed no benefit, so keep spare crews ready.
+     sensor: Fixed gas readings are noisy and HAZMAT 1 has not verified them.
+     sensor: The wind reading has no independent smoke check yet.
+     effect: Enclosures involved in 20 minutes: 0 -> 0
+T+ 19.0 *A3's battery sensor froze and kept reading 15°C.
+T+ 20.0  HAZMAT 1 on scene.
+--- decision 3 at T+20.0: HAZMAT 1 has arrived. It can measure gas and the smoke reaching nearby homes.
+   [34s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons,test_plan,test_plan,test_plan] Cool B4 and A5 now
+     - Pumper 2 cools B4: Pumper 2 can protect B4 before B3 ignites.
+     - Aerial 1 cools A5: Aerial 1 can prevent the spread predicted across the aisle.
+     why: Keep Pumper 1 cooling B3 and Glenvale homes sheltered. Testing B3 at the camera estimate of 90 C favours protecting both exposures.
+     sensor: B3 battery sensor reads below the camera estimate, so testing used 90 C.
+     sensor: Fixed gas readings exceed HAZMAT 1 readings, so trust HAZMAT 1.
+     effect: Enclosures involved in 20 minutes: 2.6 -> 1.0
+     effect: Peak indoor HF at Glenvale homes: 0.71 ppm -> 0.65 ppm
+T+ 21.2  Pumper 2 is spraying water on B4.
+T+ 22.2  Aerial 1 is spraying water on A5.
+T+ 25.0 *The site wind sensor jammed and kept showing the old wind.
+--- decision 4 at T+26.7: B3 is heating up. It is at 101°C and rising.
+   [19s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep the current plan
+     why: Keep Pumper 1 cooling B3 and Pumper 2 cooling B4. Keep Aerial 1 cooling A5 and Glenvale homes sheltered because reassignment adds no predicted benefit.
+     sensor: B1 fixed gas detector reads 10% while HAZMAT 1 verifies about 1%.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at Glenvale homes: 0.54 ppm -> 0.54 ppm
+T+ 27.0 *The wind swung round to blow from the south-west.
+T+ 28.8  B3 is venting flammable gas. Its battery is in thermal runaway.
+--- decision 5 at T+28.8: B3 is venting flammable gas. Its battery is in thermal runaway.
+   [36s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Withdraw nearby crews and cool B4 with Aerial 1
+     - Pumper 1 moves to the north gate: Water on B3 cannot stop its thermal runaway.
+     - Pumper 2 moves to the north gate: Pumper 2 is within about 17 metres of venting B3.
+     - Aerial 1 cools B4: Protect the closest downwind neighbour from a safer position.
+     why: Let B3 burn and keep crews beyond 17 metres. Keep Glenvale homes sheltered and move Aerial 1 from cool A5 to B4.
+     sensor: A3's flat battery reading is suspicious, so testing used the camera estimate of 11 C.
+     sensor: B3's low gas readings do not override visible venting and confirmed thermal runaway.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at homes: 0.6 ppm -> 0.6 ppm
+T+ 29.0  Pumper 3 on scene.
+T+ 31.2  Aerial 1 is spraying water on B4.
+T+ 32.3  B3 is on fire.
+--- decision 6 at T+32.3: B3 is on fire.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Shelter Glenvale Primary and keep cooling B4
+     - Glenvale Primary shelters indoors: HF smoke is drifting toward Glenvale Primary.
+     why: Shelter Glenvale Primary now and keep Glenvale homes sheltered. Keep Aerial 1 cooling B4 and other crews clear because extra cooling showed no benefit.
+     sensor: The wind sensor disagrees with Aerial 1 smoke drift, so testing used wind from 239 degrees.
+     effect: Peak indoor HF at Glenvale Primary: 1.14 ppm -> 0.34 ppm
+T+ 32.3  Glenvale Primary told to shelter indoors.
+--- decision 7 at T+36.3: B3 is on fire.
+   [28s, tools: get_situation,get_sensor_check,get_forecast,read_lessons,test_plan,test_plan] Cool B2 and keep B4 covered
+     - Pumper 2 cools B2: Pumper 2 can cool B2 before its rising temperature becomes dangerous.
+     why: Cool B2 early and keep Aerial 1 cooling B4. Keep Glenvale homes and Glenvale Primary sheltered as smoke drifts northeast.
+     sensor: The wind sensor disagrees with observed smoke, so testing used wind from 233 degrees.
+     sensor: A5 fixed gas detector reads 12%, but HAZMAT 1 verifies zero.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at school: 0.47 ppm -> 0.47 ppm
+T+ 37.7  Pumper 2 is spraying water on B2.
+--- decision 8 at T+41.7: A3's battery sensor reads 15°C, but the thermal camera shows about 52°C.
+   [28s, tools: get_situation,get_sensor_check,get_forecast,test_plan,test_plan,read_lessons] Keep cooling B2 and B4 and maintain shelter
+     why: Keep Pumper 2 on B2, Aerial 1 on B4, and both communities sheltered. Testing A3 at 52 C showed no spread reduction from extra cooling.
+     sensor: A3's battery sensor reads 15 C despite camera evidence indicating 52 C.
+     sensor: The wind sensor disagrees with smoke drift, so tests used wind from 222 degrees.
+     sensor: A4's fixed gas detector disagrees with HAZMAT 1's verified near-zero reading.
+     effect: Enclosures involved after 20 minutes: 1 -> 1
+T+ 47.5  The spread has stopped. Nothing new has caught fire for 15 minutes.
+--- decision 9 at T+56.7: Regular check that the plan is still right.
+   [26s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 2 cooling B2 and Aerial 1 cooling B4, with Glenvale homes and Glenvale Primary sheltered. Corrected tests show no spread benefit from two extra streams.
+     sensor: A3 battery sensor reads 15 C despite camera evidence of hotter batteries.
+     sensor: B2 battery sensor is flat beside fire, though the camera confirms cooling.
+     sensor: The wind sensor disagrees with smoke drift, so tests used wind from 222 degrees.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak indoor HF at school: 0.59 ppm -> 0.59 ppm
+--- decision 10 at T+71.7: Regular check that the plan is still right.
+   [27s, tools: get_situation,get_sensor_check,get_forecast,test_plan,read_lessons,test_plan] Keep the current plan
+     why: Keep Pumper 2 cooling B2, Aerial 1 cooling B4, and both communities sheltered. Adding streams at A3 and A4 showed no benefit after correcting the suspect readings.
+     sensor: A3 battery sensor reads 15 C despite a 54 C skin.
+     sensor: The wind sensor disagrees with smoke drift, so tests used wind from 231 degrees.
+     sensor: B6 fixed gas detector reads 14 percent, but HAZMAT 1 verifies below one percent.
+     effect: Enclosures involved in 20 minutes: 1 -> 1
+     effect: Peak school indoor HF: 0.54 ppm -> 0.54 ppm
+--- decision 11 at T+86.7: Regular check that the plan is still right.

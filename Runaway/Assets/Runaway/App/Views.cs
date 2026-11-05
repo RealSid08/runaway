@@ -135,12 +135,12 @@ namespace Runaway.App
             }
             _flame = Particles.Make(transform, "Flame", addMat, 300);
             {
-                var m = _flame.main; m.startLifetime = new ParticleSystem.MinMaxCurve(0.6f, 1.2f); m.startSpeed = new ParticleSystem.MinMaxCurve(2.5f, 5f);
-                m.startSize = new ParticleSystem.MinMaxCurve(1.6f, 3.4f); m.startRotation = new ParticleSystem.MinMaxCurve(0, Mathf.PI * 2);
+                var m = _flame.main; m.startLifetime = new ParticleSystem.MinMaxCurve(0.7f, 1.5f); m.startColor = new Color(2.2f, 1.6f, 1.1f, 1f); m.startSpeed = new ParticleSystem.MinMaxCurve(2.5f, 5f);
+                m.startSize = new ParticleSystem.MinMaxCurve(2.2f, 4.6f); m.startRotation = new ParticleSystem.MinMaxCurve(0, Mathf.PI * 2);
                 var sh = _flame.shape; sh.shapeType = ParticleSystemShapeType.Box; sh.scale = new Vector3(5.6f, 0.5f, 2.2f); sh.position = new Vector3(0, 2.6f, 0);
                 var sz = _flame.sizeOverLifetime; sz.enabled = true; sz.size = new ParticleSystem.MinMaxCurve(1, AnimationCurve.EaseInOut(0, 1f, 1, 0.2f));
                 var col = _flame.colorOverLifetime; col.enabled = true;
-                col.color = Particles.Grad((Fx.Hex("#fff2c4"), 0.9f, 0f), (Fx.Hex("#ffb347"), 0.85f, 0.25f), (Fx.Hex("#ff5a1f"), 0.5f, 0.6f), (Fx.Hex("#7a1f0a"), 0f, 1f));
+                col.color = Particles.Grad((Fx.Hex("#fff6d8"), 1f, 0f), (Fx.Hex("#ffc061"), 1f, 0.2f), (Fx.Hex("#ff6a22"), 0.75f, 0.55f), (Fx.Hex("#8a2408"), 0f, 1f));
             }
             _embers = Particles.Make(transform, "Embers", dotMat, 200);
             {
@@ -205,7 +205,7 @@ namespace Runaway.App
             }
             float I = (float)c.Intensity;
             bool burning = c.State == CellState.Fire;
-            SetRate(_flame, burning ? 70 * I + 10 : 0);
+            SetRate(_flame, burning ? 120 * I + 16 : 0);
             SetRate(_embers, burning ? 22 * I : c.State == CellState.BurntOut ? 3 * I : 0);
             SetRate(_smoke, burning ? 16 * I + 4 : c.State == CellState.BurntOut ? 6 * I : 0);
             if (burning || c.State == CellState.BurntOut)

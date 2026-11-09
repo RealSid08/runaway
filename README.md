@@ -6,7 +6,11 @@ It is built around the questions in human-centric agentic AI for emergency decis
 
 ![Advisor card during the incident](docs/images/card.png)
 
-A 3.5-minute recorded run is attached to the [latest release](https://github.com/RealSid08/runaway/releases/latest). In it, the live Codex planner works through the whole incident while a scripted commander accepts, edits and reviews.
+A narrated demo with captions (3 minutes):
+
+https://github.com/user-attachments/assets/4ff30c02-5921-4a9b-9bee-b2feac688776
+
+A full-quality copy of this video and the original 3.5-minute recorded run are attached to the [latest release](https://github.com/RealSid08/runaway/releases/latest). In the run, the live Codex planner works through the whole incident while a scripted commander accepts, edits and reviews.
 
 ## The scenario
 
